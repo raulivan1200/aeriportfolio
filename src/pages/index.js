@@ -15,7 +15,9 @@
       <Head>
         <title>✨Esmeralda Rivera Ux/Ui✨</title>
       </Head>
+      <section id="head-section">
       <Header/>
+      </section>
         <Transition/>
         <section id="menu-section">
           <Menu />
