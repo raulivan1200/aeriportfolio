@@ -1,6 +1,6 @@
 import React from 'react'
-import { Imagikidstext } from './components/examples/Imagikidstext'
-import Foot from './components/foot/Foot'
+import { Imagikidstext } from '../components/examples/Imagikidstext'
+import Foot from '../components/foot/Foot'
 import sample from "../../public/images/sample.jpg"
 import Image from 'next/image'
 import Link from 'next/link'

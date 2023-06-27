@@ -1,6 +1,6 @@
 import React from 'react'
 import Tekotext from "../components/examples/Tekotext"
-import Foot from './components/foot/Foot'
+import Foot from '../components/foot/Foot'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/pj.module.css"
@@ -12,7 +12,7 @@ function teko() {
   <>
     <div className='pm'>
         <Head>
-        <title>Page not found</title>
+        <title>💙teko</title>
       </Head>
         <Image src={tek} height={1080} width={1920} style={{objectFit:"scale-down !important", height:"auto", width:"100vw",backgroundColor:"white !important"}} alt='restaurant ux ui designer Abril Rivera woffles wofflles wofles'/>
             <Tekotext/>
