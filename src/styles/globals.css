@@ -463,8 +463,14 @@ color: var(--black);
 }
   
   @media screen and (max-width:768px) {
-    .slick-list {margin: 0 -6px;}
-    .slick-slide>div {padding: 0 6px;}
+
+.slick-slide > div {
+  margin: 0 16px;
+}
+.slick-list {
+  margin: 0 -16px;
+}
+
     .slick-slider{
         width: 80%;
     }
@@ -481,11 +487,10 @@ color: var(--black);
         height: 24px;
     }
   }
-  .slick-slide {
-    margin: 0 36px;
-}
 
-/* the parent */
-.slick-list {
+  .slick-slide > div {
+    margin: 0 36px;
+  }
+  .slick-list {
     margin: 0 -36px;
-}
+  }

@@ -22,6 +22,7 @@ export const Imagerowf = () => {
   };
 
   const settings = {
+    rows: 1,
     infinite: true,
     autoplaySpeed: 5000,
     autoplay:true,
@@ -40,16 +41,12 @@ export const Imagerowf = () => {
           slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
-          dots: true
-        }
-      },{
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1.8,
-          slidesToScroll: 1
+          dots: true,
+          rows: 1
         }
       },
       {
+        rows:1,
         breakpoint: 568,
         settings: {
           slidesToShow: 1.1,
