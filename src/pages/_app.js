@@ -1,4 +1,4 @@
-import './styles/globals.css'
+import '@/styles/globals.css'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
