@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-.fp-watermark {
-    display: none !important;
-    }
+* {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
 :root {
     --white: #ffffff;
     --black:#000000;
