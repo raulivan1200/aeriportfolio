@@ -24,17 +24,21 @@ export default function ErrorPage() {
 
   return (
     <>
-      <Head>
+<div style={{backgroundColor:"var(--background)",textAlign:"center" ,alignContent:"center",justifyContent:"center",alignItems:"center",margin:"0 auto"}}>
+<Head>
         <title>⚠️Page not found⚠️</title>
       </Head>
-      <main>
+      <main style={{textAlign:"center"}}>
         <h1 style={{color:"var(--black) !important"}} >404</h1>
 
-        <p style={{color:"var(--black) !important"}}>
+        <h3 style={{color:"var(--black) !important"}}>
           This page cannot be found. Redirecting to the homepage in{' '}
           {secondsRemaining} {secondsRemaining > 1 ? 'seconds' : 'second'}.
-        </p>
+        </h3>
+        <h6>perdon me equivoque si habia donde correr :v</h6>
+        <h1>😭😿💔😓😥😔😖</h1>
       </main>
+</div>
     </>
   );
 }

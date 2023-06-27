@@ -480,3 +480,11 @@ color: var(--black);
         height: 24px;
     }
   }
+  .slick-slide {
+    margin: 0 36px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -36px;
+}
