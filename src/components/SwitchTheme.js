@@ -47,7 +47,7 @@ const SwitchTheme = () => {
         width={48}
         height={48}
           src="./logos/moon.svg"
-          className="svcom"
+          className="svco"
           alt="Dark Theme"
           fill
           animate={rotateAndScale}
@@ -67,7 +67,7 @@ const SwitchTheme = () => {
                 width={48}
                 height={48}
           src="/logos/sun.svg"
-          className="svcom"
+          className="svco"
           alt="Light Theme"
           fill
           animate={rotateAndScale}

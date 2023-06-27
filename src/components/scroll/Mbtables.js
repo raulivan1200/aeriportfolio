@@ -8,6 +8,7 @@ const Mbtables = () => {
     
     <div style={{paddingTop:"10%", width:"100vw"}}>
     <h1 style={{paddingLeft:"10%", marginBottom:"-20px",color:"var(--black)"}} className={styles.smtu}>Esmeralda</h1>
+    <hr style={{color:"var(--black)",marginTop:"1%", width:"30vw", backgroundColor:"var(--black)",height:"1px" }}/>
     <h3 style={{paddingLeft:"10%", marginBottom:"-20px"}} className='wh'>UX /UI Designer</h3>
     <h3 style={{paddingLeft:"10%", marginBottom:"8px",paddingBottom:"10%"}} className='wh'>03 exp. years</h3>
     

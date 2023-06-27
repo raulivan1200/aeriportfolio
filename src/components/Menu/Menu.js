@@ -67,7 +67,7 @@ function Menu({ onProjectClick, onContactClick }) {
           >
             <div className='mpm'> 
            <div style={{width:"100%",justifyContent:"space-between", display:"flex", flexDirection:"row"}}>
-           <Image src="./logos/close.svg" className='svcom' alt='close' width={48} height={48} onClick={handleClose}></Image>
+           <Image src="./logos/close.svg" className='svco' alt='close' width={48} height={48} onClick={handleClose}></Image>
             <SwitchTheme/>
            </div>
 

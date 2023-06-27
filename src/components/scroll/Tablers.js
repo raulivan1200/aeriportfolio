@@ -13,6 +13,7 @@ export const Tablers = () => {
   <div className={styles.myrows}>
     <div className={styles.columns}>
       <h1 className='wh'>Esmeralda</h1>
+      <hr style={{color:"var(--black)",marginTop:"1%", width:"13vw", backgroundColor:"var(--black)",height:"1px" }}/>
       <h3 className='wh'>UX /UI Designer</h3>
           </div>
     <div className={styles.columns}>
