@@ -40,7 +40,7 @@
       margin-left: 0 !important;
     }
     .hrx{
-      width: 20vw !important;
+      width: 70vw !important;
       margin-top: -3em;
       margin-bottom: 0px;
     }
@@ -145,11 +145,11 @@ color: var(--black);
   @media only screen and (max-width: 400px) {
     .bigtxt{
     font-size: 20vw !important;
-    line-height: 10vh;
+    line-height: 11vh;
     }
     .cont{padding-top: 15%;}
     .hrx{
-      margin-top: -9vh;
+      margin-top: -8vh;
     }
   }
 
