@@ -3,13 +3,13 @@ import styles from "../../styles/pj.module.css"
 import Image from 'next/image'
 import wofflescreens from "/public/images/Portfolio/wofflesshoot.png"
 import wofflesrule from "/public/images/Portfolio/wofflescolors.png"
+import Menupj from '../Menu/Menupj'
 
 import { Imagerowf } from './Imagerowf'
 function Wofflestext() {
   return (
     <div className={styles.pm}>
-
-
+  <Menupj/>
 <div className={styles.container}>
   <div className={styles.texle}>
 

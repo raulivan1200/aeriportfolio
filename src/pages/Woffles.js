@@ -11,7 +11,7 @@ function Wofflles() {
   return (
     <div className='pm'>
           <Head>
-        <title>Page not found</title>
+        <title>🐶🧇Woffles</title>
       </Head>
         <Image src={wof} height={1080} width={1920} style={{objectFit:"cover !important", height:"auto", width:"100vw",backgroundColor:"var(--white) !important"}} alt='restaurant ux ui designer Abril Rivera woffles wofflles wofles'/>
             <Wofflestext/>

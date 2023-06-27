@@ -4,13 +4,12 @@ import styles from "../../styles/pj.module.css"
 import wofflescreens from "../../../public/images/sample.jpg"
 import wofflesrule from "../../../public/images/sample.jpg"
 import { Imagerowf } from './Imagerowf'
-
+import Menupj from '../Menu/Menupj'
 
 export const Sfs = () => {
   return (
     <div className={styles.pm}>
-
-
+  <Menupj/>
     <div className={styles.container}>
       <div className={styles.texle}>
     

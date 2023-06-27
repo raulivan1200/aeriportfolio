@@ -78,46 +78,32 @@ export const Imagerowf = () => {
 
 
       <Slider  ref={sliderRef} {...settings}>
-          <div className='gapx'>
           <div className="img-wrapper">
    <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg'/></a>
 </div>
-          </div>
-          <div>
         <div className="img-wrapper">
    <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg"  className='rsimg'/></a>
 </div>
-          </div>
-          <div>
         <div className="img-wrapper">
    <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg"  className='rsimg'/></a>
 </div>
-          </div>
-          <div>
         <div className="img-wrapper">
    <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg"  className='rsimg'/></a>
-</div>
           </div>
+        <div className="img-wrapper">
+   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg' /></a>
+</div>
           <div>
         <div className="img-wrapper">
    <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg' /></a>
 </div>
           </div>
-          <div>
-        <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg' /></a>
-</div>
-          </div>
-          <div>
         <div className="img-wrapper">
    <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg"  className='rsimg'/></a>
 </div>
-          </div>
-          <div>
         <div className="img-wrapper">
    <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg' /></a>
 </div>
-          </div>
         </Slider>
 
     </div>

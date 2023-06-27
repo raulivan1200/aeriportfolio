@@ -3,14 +3,13 @@ import Image from 'next/image'
 import styles from "../../styles/pj.module.css"
 import wofflescreens from "../../../public/images/sample.jpg"
 import wofflesrule from "../../../public/images/sample.jpg"
-
+import Menupj from '../Menu/Menupj'
 import { Imagerowf } from './Imagerowf'
 
 export const Billsplittertext = () => {
   return (
     <div className={styles.pm}>
-
-
+      <Menupj/>
     <div className={styles.container}>
       <div className={styles.texle}>
     

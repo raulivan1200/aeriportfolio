@@ -440,6 +440,7 @@ color: var(--black);
 }
 
 .slick-slider{
+  overflow-y: hidden !important;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;

@@ -5,13 +5,12 @@ import wofflescreens from "/public/images/Portfolio/wofflesshoot.png"
 import wofflesrule from "/public/images/Portfolio/wofflescolors.png"
 
 import { Imagerowf } from './Imagerowf'
-
+import Menupj from '../Menu/Menupj'
 
 export const Imagikidstext = () => {
   return (
     <div className={styles.pm}>
-
-
+  <Menupj/>
     <div className={styles.container}>
       <div className={styles.texle}>
     
