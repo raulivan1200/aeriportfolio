@@ -1,0 +1,182 @@
+import React from 'react'
+import sample from "../../../public/images/sample.jpg"
+import Image from 'next/image'
+import styles from "../../styles/Grid.module.css"
+import ux1 from "/public/images/Portfolio/system.png"
+import ux2 from "/public/images/Portfolio/pay.png"
+import ux3 from "/public/images/Portfolio/system.png"
+import ux4 from "/public/images/Portfolio/teko.png"
+import ux5 from "/public/images/Portfolio/imagiki.png"
+import ux6 from "/public/images/Portfolio/woffles.png"
+import { Parallax } from 'react-scroll-parallax'
+import useMouse from '@react-hook/mouse-position'
+import { motion, useTransform } from "framer-motion";
+import { useState } from 'react'
+
+function Deskgrid() {
+  const[cursorYear, setcursorYear]=useState("")
+  const [cursorText, setCursorText] = useState("");
+  const [cursorVariant, setCursorVariant] = useState("default");
+
+  const ref = React.useRef(null);
+  const mouse = useMouse(ref, {
+    enterDelay: 100,
+    leaveDelay: 100
+  });
+
+  let mouseXPosition = 0;
+  let mouseYPosition = 0;
+
+  if (mouse.x !== null) {
+    mouseXPosition = mouse.clientX;
+  }
+
+  if (mouse.y !== null) {
+    mouseYPosition = mouse.clientY;
+  }
+
+  const variants = {
+    default: {
+      opacity: 0,
+      height: 10,
+      width: 10,
+      fontSize: "16px",
+      backgroundColor: "var(--background)",
+      x: mouseXPosition,
+      y: mouseYPosition,
+      transition: {
+        type: "spring",
+        mass: 0.6
+      }
+    },
+    project: {
+      opacity: 1,
+      // backgroundColor: "rgba(255, 255, 255, 0.6)",
+      backgroundColor: "var(--black)",
+      color: "var(--white)",
+      height: 180,
+      width: 180,
+      fontSize: "18px",
+      x: mouseXPosition - 32,
+      y: mouseYPosition - 32
+    },
+    contact: {
+      opacity: 1,
+      backgroundColor: "#FFBCBC",
+      color: "#000",
+      height: 64,
+      width: 64,
+      fontSize: "32px",
+      x: mouseXPosition - 48,
+      y: mouseYPosition - 48
+    }
+  };
+
+  const spring = {
+    type: "spring",
+    stiffness: 500,
+    damping: 28
+  };
+
+  function projectEnter(event) {
+    setCursorText("Bill splitter");
+    setCursorVariant("project");
+    setcursorYear("2022")
+  }
+
+  function projectLeave(event) {
+    setCursorText("");
+    setCursorVariant("default");
+    setcursorYear("")
+  }
+  function TekoEnter(event) {
+    setCursorText("Teko Studio");
+    setCursorVariant("project");
+    setcursorYear("2022")
+  }
+  function KidsyEnter(event) {
+    setcursorYear("2022")
+    setCursorText("Kidsy");
+    setCursorVariant("project");
+  }
+  function WofflesEnter(event) {
+    setCursorText("Woffles");
+    setcursorYear("2022")
+    setCursorVariant("project");
+  }
+  function SysalesEnter(event) {
+    setCursorText("Woffles");
+    setcursorYear("2022")
+    setCursorVariant("project");
+  }
+
+  return (
+    <div ref={ref}>
+       <motion.div
+          variants={variants}
+          className="circle"
+          animate={cursorVariant}
+          transition={spring}
+        >
+          <span className="cursorText"><h3>{cursorText}</h3><h6>{cursorYear}</h6></span>
+        </motion.div>
+
+        <div className={styles.containerds}>
+        <Parallax translateY={[10, -15]} easing={'ease'} speed={9} scale={[1,1.02]}>
+
+  <div className={styles.bigds} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>  
+  <div className={styles.brims}>
+  <a href="/Billsplitter">  <Image className={styles.imrs}   src={ux1} alt="Abril Rivera front end ux design designer"></Image> </a>
+  </div>
+  </div>
+  </Parallax>
+
+  <Parallax translateY={[-15, 25]} easing={'ease'} speed={10} scale={[1,1.01]}>
+
+  <div className={styles.bb3} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>
+  <div className={styles.brims}>
+  <a href="/Billsplitter"> <Image className={styles.imrs}  src={ux2} alt="ux systems"></Image></a>
+  </div>
+     </div>
+     </Parallax>
+
+     <Parallax translateY={[30, -10]} easing={'ease'} speed={11} scale={[1,1.03]}>
+  <div className={styles.bb2} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>
+  <div className={styles.brims}>
+  <a href="/Billsplitter">  <Image className={styles.imrs}  src={ux3} alt="bill splitter ux ui designer"></Image></a>
+  </div>
+     </div>
+     </Parallax>
+
+     <Parallax translateY={[15, 10]} easing={'ease'} speed={10} scale={[1,1.01]}>
+  <div className={styles.bb4} onMouseEnter={TekoEnter} onMouseLeave={projectLeave}>
+  <div className={styles.brims}>
+   <a href="/Teko"> <Image className={styles.imrs}  src={ux4} alt="ux agency business design "></Image></a>
+   </div>
+     </div>
+     </Parallax>
+
+     <Parallax translateY={[10, -30]} easing={'ease'} speed={3} scale={[1,1.05]}>
+
+  <div className={styles.bb5} onMouseEnter={KidsyEnter} onMouseLeave={projectLeave}>
+    <div className={styles.brims}>
+        <a href="/Imagikids"> <Image className={styles.imrs}  src={ux5} alt="kids app ux design"></Image></a>
+    </div>
+  </div>
+  </Parallax>
+
+  <Parallax translateY={[5, 30]} easing={'easeInSine'} speed={15} scale={[1.02,1.0]}>
+  <div className={styles.bb6} onMouseEnter={WofflesEnter} onMouseLeave={projectLeave}>
+  <div className={styles.brims}>
+  <a href="/Woffles"> <Image className={styles.imrs}  src={ux6} alt="ux restaurant design"></Image></a>
+  </div>
+     </div>
+     </Parallax>
+
+</div>
+
+    </div>
+  )
+}
+
+export default Deskgrid

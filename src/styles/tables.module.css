@@ -1,0 +1,168 @@
+
+.containers {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 5%;
+
+  }
+  
+  .myrows {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+  }
+  
+  .mycolums {
+    width: 50%;
+    margin: 0 auto;
+
+  }
+  
+  .mycolums:last-child {
+    margin-left: 0 auto;
+    justify-content: end; 
+    justify-items: end; 
+  }
+  
+
+  .mytable {
+    border-collapse: separate;
+    border: solid var(--black) 1px;
+    border-radius: 12px;
+    width: 100%; /* Add a width property to the .mytable */
+  }
+  
+  .mytd, .myth {
+    border-left: solid var(--black) 1px;
+    border-top: solid var(--black) 1px;
+  }
+  
+  .myth {
+    border-top: none;
+    padding: 16.5px;
+  }
+  
+  .mytd:first-child, .myth:first-child {
+    border-left: none;
+    padding-left: 24px;
+  }
+  
+  .mytd:last-child, .myth:last-child {
+    padding-right: 24px;
+  }
+  
+  @media screen and (max-width:768px) {
+    .frim{
+      margin-top: -1em;
+      width:9rem;
+       height:14rem;
+       object-fit: cover;
+    }
+    .myth {
+        border-top: none;
+        padding: 8px 16px;
+      }
+    .conta{
+        padding: 8px 0px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin: 0% auto;
+    }
+
+.cen{
+    margin: 0 auto;
+    padding: 0 auto;
+    
+  } 
+  .mytable{
+    margin: 0 auto;
+    
+  }
+ }
+  
+
+ .texcen {
+  z-index: -1;
+  width: 100vw;
+  margin: -5% 0px;
+  padding-top: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frim {
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.frimx {
+  object-fit: cover;
+
+  border-radius: 400px 400px 20px 20px;
+
+  border: 4px solid var(--black);
+}
+
+.bate {
+  position: relative;
+  margin-top: -45%;
+  z-index: 1;
+  text-align: center;
+}
+@media screen and (min-width:1660px) {
+  .frim{
+    border-radius: 400px 400px 20px 20px;
+  }
+  .frimx{
+    border-radius: 400px 400px 20px 20px;
+  }
+}
+@media screen and (max-width:350px) {
+  
+.myth,.mytd{
+  padding: 0;
+}
+.smtu{
+  font-size: 12px;
+  color:"white !important"
+}
+.simt{
+  width: 80%;
+}
+}
+@media screen and (max-width:250px) {
+  .simt{
+    width: 9px;
+  }
+}
+
+
+
+@media screen and (min-width:351px) {
+    .simt{
+      width: 35px;
+    }  
+   
+}
+@media screen and (min-width:351px) {
+.mytable{
+  margin-bottom: -1%;
+}
+
+}
+.ffs{
+  -ms-overflow-style: none;  
+}
+
+
+/* el tr ponerle margin - en desktop y en mobile ps asi veda xdd*/

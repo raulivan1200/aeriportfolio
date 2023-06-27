@@ -1,0 +1,70 @@
+import React, { useRef } from 'react';
+import { Canvas, extend, useFrame } from '@react-three/fiber';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
+import { MeshLambertMaterial } from 'three';
+import { OrbitControls } from '@react-three/drei';
+import myFont from '../img/Inter_Regular.json';
+
+extend({ TextGeometry });
+
+const positions = [
+  [0, 10, 0], // top
+  [0, 0, -10], // front
+  [0, -10, 0], // bottom
+  [0, 0, 10], // back
+];
+
+function Texts({ texts, size, height }) {
+  const font = new FontLoader().parse(myFont);
+  const material = new MeshLambertMaterial({ color: 'gold' });
+  const textsRef = useRef();
+
+  useFrame(({ clock }) => {
+    const time = clock.getElapsedTime();
+
+    textsRef.current.position.set(
+      Math.sin(time) * 5,
+      Math.sin(time * 1.1) * 5,
+      Math.sin(time * 1.2) * 5
+    );
+
+    textsRef.current.children.forEach((text, index) => {
+      text.rotation.y += 0.01;
+    });
+  });
+
+  return (
+    <group ref={textsRef}>
+      {positions.map((position, index) => (
+        <mesh key={index} position={position}>
+          <Text text={texts[index]} font={font} size={size} height={height} material={material} />
+        </mesh>
+      ))}
+    </group>
+  );
+}
+
+function Text({ text, font, size, height, material }) {
+  const geometry = new TextGeometry(text, { font, size, height });
+
+  return (
+    <>
+      <primitive object={geometry} attach='geometry' />
+      <primitive object={material} attach='material' />
+    </>
+  );
+}
+
+export default function CircularTextCarousel() {
+  const texts = ['top', 'front', 'bottom', 'back'];
+
+  return (
+    <Canvas>
+      <OrbitControls />
+      <ambientLight intensity={0.5} />
+      <spotLight position={[10, 15, 10]} angle={0.3} />
+      <Texts texts={texts} size={5} height={1} />
+    </Canvas>
+  );
+}

@@ -1,0 +1,160 @@
+  .cont {  
+    margin: 0 auto;
+    height: 100vh !important;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--background);
+  }
+ 
+
+  @media (max-width: 768px) {
+    .svcom{
+      display: none;
+    }
+   .ima{
+    max-width: 100%;
+    width: 100% !important;
+   }
+    .cont {
+      padding-top: 0%;
+      padding-left: 0% !important;
+      display: flex;
+      flex-direction: column;
+      height: fit-content !important
+    }
+    .right{
+      height: 40vh !important;
+      padding-top: 15%;
+      padding-left: 0% !important;
+      margin-left: 0% !important
+    }
+    .left{
+      padding-left: 10%;
+      margin-left: 0 !important;
+    }
+    .hrx{
+      width: 20vw !important;
+      margin-top: -3em;
+      margin-bottom: 0px;
+    }
+    .thm{
+      display: none;
+    }
+    .mouseim{display: none;}
+  
+  }
+
+.left{
+margin: 0 auto;
+display: flex;
+width: 50%;
+flex-direction: column;
+justify-content: center;
+left: 5%;
+
+}
+.right {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+  .hrx {
+    justify-content: left;
+    width:15vw;
+    display: block;
+    background-color: var(--black);
+      color:"var(--black)";
+    margin-top: -3.5em;
+    margin-bottom: -0.5em;
+    margin-left: 0;
+    border: 1px solid var(--black);
+    
+  }
+  .ima {
+    width: 40%;
+    border: 3px solid var(--white);
+    border-radius: 12px;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .thm{    color: var(--black) !important;
+    }
+    .hrx{
+      color:"var(--black)";
+
+      width: 15vw;
+    margin-top: -3em;
+    margin-bottom: -0.5em;
+    height: 0.5%; /* to ensure the hr has some visible height */
+    }
+}
+.wh{
+  color: white;
+  }
+  @media only screen and (min-width: 2000px) {
+    .hrx{
+      color:"var(--black)";
+      width: 15vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 1px; /* to ensure the hr has some visible height */
+    }
+}
+.wh{
+  color: var(--black) !important;  }
+  .ima{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center ;
+  }
+  .mousecont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    align-items: center;
+    top: 80%;
+  }
+
+  .thm{
+    color: var(--white);
+  }
+  .bigtxt{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 96px !important;
+line-height: 90px;
+/* or 94% */
+color: var(--black);
+  }
+  @media only screen and (max-width: 400px) {
+    .bigtxt{
+    font-size: 20vw !important;
+    line-height: 10vh;
+    }
+    .cont{padding-top: 15%;}
+    .hrx{
+      margin-top: -9vh;
+    }
+  }
+
+  @media screen and (min-width:1921px) {
+    .bigtxt{
+      font-size: 96px;
+    }
+  }

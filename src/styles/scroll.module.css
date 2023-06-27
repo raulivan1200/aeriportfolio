@@ -1,0 +1,22 @@
+.myTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .myTh,
+  .myTd {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .myTable {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .myTh,
+    .myTd {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,101 @@
+.wh{
+  color: var(--black);
+}
+.parentflex {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    height: 100vh;
+  }
+  
+  .lpf,
+  .rpf {
+    width: 100%;
+    text-align: center;
+  }
+  .rpf{
+    padding-left: 5%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .parentflex {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .lpf {
+      width: 50% !important;
+      order: 1;
+    }
+  
+    .rpf {
+      width: 50% !important;
+      order: 0;
+    }
+  }
+  .pad5{
+    padding: 0%;
+    text-align: left;
+    font-size: 64px;
+
+}  
+
+.t4{
+  
+/* Desktop/H4 */
+font-size: 24px;
+font-family: Raleway;
+font-weight: 500;
+line-height: 28px;
+}
+.t3{/* Desktop/H7 */
+  font-size: 16px;
+  font-family: Raleway;
+  line-height: 21px;}
+
+  @media screen and (max-width: 768px) {
+    .parentflex {
+      flex-direction: column;
+      height: fit-content;
+
+    }
+    .lpf{
+      height: 60vh;
+    }
+    .rpf{
+      width: auto;
+      padding-left: 10% !important;
+    }
+
+    .t3{
+  /* Desktop/H7 */
+  font-size: 16px;
+  font-family: Raleway;
+  line-height: 21px;
+  width: 90% !important;
+      }
+    .t4{
+      font-size: 24px;
+    font-family: Raleway;
+    font-weight: 500;
+    line-height: 28px;
+    }
+  .pad5{
+    text-align: left;
+    padding: 5%;
+    font-size: 36px;
+}  
+}
+
+
+
+
+.hrpp{
+  background: var(--black);
+  height: 1px;
+  width: 40%;
+}
+.tfgame{
+  height: 100%;
+  background-color: yellow;
+}

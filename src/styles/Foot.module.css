@@ -1,0 +1,139 @@
+.patx{
+  padding-left: 5%;
+}
+.fbtext {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 75px;
+  margin: 0; /* Reset margin */
+
+  /* Light Text */
+  
+  color:  var(--white);
+}
+
+.acs {
+  color:  var(--white);
+  text-decoration: none !important;
+}
+
+.acs:link {
+  color: pink;
+}
+
+.acs:hover {
+  color: hotpink;
+}
+
+.acs:active {
+  color: blue;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.71px solid var(--white);
+  border-radius: 32px;
+  background-color: transparent;
+  color:  var(--white);
+  padding: 12px 24px;
+  gap: 10px;
+  width: fit-content;
+}
+
+.socialMedia {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .patx{
+    padding-left: 10%;
+  }
+  .smtxt{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0px !important;  
+  letter-spacing: 0.02em;
+  }
+  .fbtext {
+    padding-bottom: 48px !important;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    width:"60%"
+    
+  }
+
+  .btx {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0; /* Remove default margin */
+    line-height: 1; /* Reset line-height to prevent extra space */
+  }
+
+  .socialMedia {
+    transform: translateY(0%) !important;
+    left: 0% !important;
+    padding-top: 48px !important;
+    position: relative !important;
+    display: flex;
+    text-align: left !important;
+    flex-direction: column; /* Change to column */
+    padding: 0px;
+gap: 16px;
+  }
+}
+.btx{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0; /* Remove default margin */
+  line-height: 1; /* Reset line-height to prevent extra space */
+}
+.socialMedia{
+  left: 90%;
+  position: absolute;
+  text-align: right;
+  transform: translateY(-40%);
+
+}
+
+.smtxt{
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+/* Light Text */
+
+color: var(--white);
+}
+@media only screen and (min-width: 768px) and (max-width: 1620px) {
+  .socialMedia{
+    left: 85%;
+  }
+}
+.smtxt:hover{
+  color: pink;
+  scale: 1.01;
+  transition: ease-in-out;
+}
+.btn:hover{
+  scale: 1.01;
+  color: pink;
+}
+.han:hover{
+  transform: rotate(180deg);
+  color: pink;
+  transition: ease-in-out;
+}

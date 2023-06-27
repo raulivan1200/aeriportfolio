@@ -1,0 +1,226 @@
+
+.containers {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 5%;
+
+  }
+  
+  .myrows {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+  }
+  
+  .mycolums {
+    width: 50%;
+    margin: 0 auto;
+
+  }
+  
+  .mycolums:last-child {
+    margin-left: 0 auto;
+    justify-content: end; 
+    justify-items: end; 
+  }
+  
+
+  .mytable {
+    border-collapse: separate;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 12px;
+    width: 100%; /* Add a width property to the .mytable */
+  }
+  
+  .mytd, .myth {
+    border-left: solid rgb(255, 255, 255) 1px;
+    border-top: solid rgb(255, 255, 255) 1px;
+  }
+  
+  .myth {
+    border-top: none;
+    padding: 16.5px;
+  }
+  
+  .mytd:first-child, .myth:first-child {
+    border-left: none;
+    padding-left: 24px;
+  }
+  
+  .mytd:last-child, .myth:last-child {
+    padding-right: 24px;
+  }
+  
+  @media screen and (max-width:768px) {
+    .myth {
+        border-top: none;
+        padding: 8px 16px;
+      }
+    .conta{
+        padding: 8px 0px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin: 0% auto;
+    }
+
+.cen{
+    margin: 0 auto;
+    padding: 0 auto;
+    
+  } 
+  .mytable{
+    margin: 0 auto;
+    
+  }
+ }
+  
+
+ .texcen {
+  margin: -5% 0px;
+  padding-top: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frim {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 153.5px 153.5px 20px 20px;
+  border: 4px solid #FFFFFF;
+  filter: drop-shadow(0px 8px 12px rgba(82, 16, 20, 0.15)) drop-shadow(0px 0px 40px rgba(99, 16, 36, 0.4));
+}
+
+.bate {
+  position: relative;
+  margin-top: -45%;
+  z-index: 1;
+  text-align: center;
+}
+@media screen and (min-width:1660px) {
+  .frim{
+    border-radius: 400px 400px 20px 20px;
+  }
+}
+@media screen and (max-width:350px) {
+  
+.myth,.mytd{
+  padding: 0;
+}
+.smtu{
+  font-size: 12px;
+}
+.simt{
+  width: 80%;
+}
+}
+@media screen and (max-width:250px) {
+  .simt{
+    width: 9px;
+  }
+}
+
+
+
+@media screen and (min-width:351px) {
+    .simt{
+      width: 35px;
+    }  
+   
+}
+@media screen and (min-width:351px) {
+.mytable{
+  margin-bottom: -1%;
+}
+
+}
+
+
+
+
+
+import React from 'react'
+import styles from "../../styles/tables.module.css"
+import sample from "../../../public/images/sample.jpg"
+import Image from 'next/image'
+export const Tablers = () => {
+  return (
+    <div>
+           <div>
+
+<div className={styles.containers}>
+  <div className={styles.myrows}>
+    <div className={styles.columns}>
+      <h1 className='wh'>ESMERALDA</h1>
+      <h3 className='wh'>UX /UI Designer</h3>
+          </div>
+    <div className={styles.columns}>
+<h2 style={{textAlign:"end"}} className='wh'>03 exp. years</h2>    
+</div>
+  </div>
+</div>
+
+<div className={styles.texcen}>
+  <Image src={sample} width={"200"} alt="your-image-alt" className={styles.frim}/>
+  <h1 className={styles.bate} style={{fontSize:"108px", fontWeight:"700", color:"white"}}>MY SKILLS</h1>
+</div>
+
+<div className={styles.containers}>
+  <div className={styles.myrows}>
+    <div className={styles.columns}>
+      <h6 className='wh'>Amo el diseño de experiencias que van<br/>más alla de las expectativas.</h6>         
+<table className={styles.mytable}>
+        <th className={styles.myth}> 
+          
+        </th>
+        <th className={styles.myth}> 
+          
+
+        </th>
+        <th className={styles.myth}> 
+          
+          
+        </th>
+        <th className={styles.myth}> 
+
+        </th>
+        <th className={styles.myth}> 
+          
+
+
+        </th>
+        <th className={styles.myth}> 
+
+
+        </th>
+        <th className={styles.myth}> 
+          
+
+
+        </th>
+        <th className={styles.myth}> 
+          
+
+
+        </th>
+  
+</table>
+           </div>
+    <div className={styles.columns}>
+<h6 style={{textAlign:"end"}} className='wh'>  Information architecture <br/> Design System<br/>  Wireframing<br/> Prototyping<br/> Mockups </h6>    </div>
+  </div>
+</div>
+
+    </div>
+    </div>
+  )
+}
