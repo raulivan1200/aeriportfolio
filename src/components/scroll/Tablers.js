@@ -12,7 +12,7 @@ export const Tablers = () => {
 <div className={styles.containers}>
   <div className={styles.myrows}>
     <div className={styles.columns}>
-      <h1 className='wh'>ESMERALDA</h1>
+      <h1 className='wh'>Esmeralda</h1>
       <h3 className='wh'>UX /UI Designer</h3>
           </div>
     <div className={styles.columns}>

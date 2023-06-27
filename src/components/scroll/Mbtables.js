@@ -7,7 +7,7 @@ const Mbtables = () => {
   return (
     
     <div style={{paddingTop:"10%", width:"100vw"}}>
-    <h1 style={{paddingLeft:"10%", marginBottom:"-20px",color:"var(--black)"}} className={styles.smtu}>ESMERALDA</h1>
+    <h1 style={{paddingLeft:"10%", marginBottom:"-20px",color:"var(--black)"}} className={styles.smtu}>Esmeralda</h1>
     <h3 style={{paddingLeft:"10%", marginBottom:"-20px"}} className='wh'>UX /UI Designer</h3>
     <h3 style={{paddingLeft:"10%", marginBottom:"8px",paddingBottom:"10%"}} className='wh'>03 exp. years</h3>
     

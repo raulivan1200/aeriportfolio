@@ -8,17 +8,6 @@ function Foot() {
 
       <div style={{width:"100vw"}}>
         <div className={styles.patx}>
-
-
-        <div className="text-container clip-path">
-      <svg width="0" height="0">
-        <clipPath id="clipPath">
-          <text x="0" y="60">Colors of Creativity</text>
-        </clipPath>
-      </svg>
-      <h1>Colors of Creativity</h1>
-    </div>
-
     
         <p style={{paddingBottom:"100px", paddingTop:"100px"}} className={styles.fbtext}>Work with the colors of creativity to create extraordinary experiences</p>
         <a  style={{textDecoration:"none"}} href="mailto:someone@yoursite.com" target='_blank'><div className={styles.btn}><p style={{color:"var(--white)"}} className={styles.btx}>Let´s create</p></div></a>
