@@ -11,14 +11,13 @@ function Dessk() {
 </div>
 <div className={styles.rpf}>
   <h1 className={styles.pad5} style={{ color:"var(--black)",fontWeight:"600"}}>My Experience</h1>
-  <hr className={styles.pjhr} style={{
-  marginTop: "-2%",
-  width:"30%",
+  <hr style={{
+  marginTop: "-3%",
+  width:"50%",
   color: "var(--black)",
   backgroundColor: "var(--black)",
   borderColor: "var(--black)",
   marginLeft:0,
-  marginTop:"-4%",
 }} />  <Textan/>
 </div>
     </div>

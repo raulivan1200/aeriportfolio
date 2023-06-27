@@ -12,8 +12,8 @@ export const Tablers = () => {
 <div className={styles.containers}>
   <div className={styles.myrows}>
     <div className={styles.columns}>
-      <h1 className='wh'>Esmeralda</h1>
-      <hr style={{color:"var(--black)",marginTop:"1%", width:"13vw", backgroundColor:"var(--black)",height:"1px" }}/>
+      <h1 className='wh' style={{fontWeight:"600"}}>Esmeralda</h1>
+      <hr style={{color:"var(--black)",marginTop:"-2em",marginLeft:"0", width:"14.5vw", backgroundColor:"var(--black)",height:"1px" }}/>
       <h3 className='wh'>UX /UI Designer</h3>
           </div>
     <div className={styles.columns}>
