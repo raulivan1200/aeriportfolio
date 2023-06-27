@@ -46,7 +46,7 @@ const SwitchTheme = () => {
         <motion.img
         width={48}
         height={48}
-          src="/logos/moon.svg"
+          src="./logos/moon.svg"
           className="svcom"
           alt="Dark Theme"
           fill

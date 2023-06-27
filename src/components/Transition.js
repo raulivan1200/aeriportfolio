@@ -29,7 +29,7 @@ const Transition = () => {
   return (
     <>
       <motion.video
-        src="/axocameramove.mp4"
+        src="./axocameramove.mp4"
         autoPlay
         muted
         loop

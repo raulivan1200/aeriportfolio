@@ -49,7 +49,7 @@ function Menu({ onProjectClick, onContactClick }) {
   return (
     <div className="menux">
       <div className="izqx" style={{mixBlendMode:"difference !important",width:"50%"}}>
-      <Image src="/logos/open.svg" className='svcom' alt='open' width={48} height={48} onClick={handleClick}></Image>
+      <Image src="./logos/open.svg" className='svcom' alt='open' width={48} height={48} onClick={handleClick}></Image>
         <h5 style={{color:"var(--black)", paddingLeft:"16px"}}>
             Esmeralda Rivera
         </h5>
@@ -67,7 +67,7 @@ function Menu({ onProjectClick, onContactClick }) {
           >
             <div className='mpm'> 
            <div style={{width:"100%",justifyContent:"space-between", display:"flex", flexDirection:"row"}}>
-           <Image src="/logos/close.svg" className='svcom' alt='close' width={48} height={48} onClick={handleClose}></Image>
+           <Image src="./logos/close.svg" className='svcom' alt='close' width={48} height={48} onClick={handleClose}></Image>
             <SwitchTheme/>
            </div>
 

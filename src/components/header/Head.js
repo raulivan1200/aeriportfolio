@@ -16,7 +16,7 @@ function Header() {
       <video
         style={{ zIndex: 0 , width:'100%'}}
         loop
-        src="/axofin.webm"
+        src="./axofin.webm"
         autoPlay
         muted
         type="video/webm"
@@ -26,7 +26,7 @@ function Header() {
 
       <div className={styles.mousecont}>
      <h6 className={styles.thm}> Let´s Scroll</h6>
-      <Image className="svcom" src="/logos/mouse.svg"   width={30} height={30}></Image>
+      <Image className="svcom" src="./logos/mouse.svg"   width={30} height={30}></Image>
       </div>
 
     </div>
