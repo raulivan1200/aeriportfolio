@@ -1,4 +1,4 @@
-import { Sfs } from "./components/examples/Sfs";
+import { Sfs } from "../components/examples/Sfs";
 import Image from "next/image";
 import sample from "../../public/images/Portfolio/pay.png"
 import Head from 'next/head';
