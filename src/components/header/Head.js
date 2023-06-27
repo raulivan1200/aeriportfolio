@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../../styles/Head.module.css';
 import Image from 'next/image'
 function Header() {
+  
   return (  
     <div className={styles.cont}>
       <div className={styles.left}>
@@ -18,6 +19,7 @@ function Header() {
         loop
         src="./axofin.webm"
         autoPlay
+        playsinline
         muted
         type="video/webm"
       >
