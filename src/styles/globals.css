@@ -465,7 +465,9 @@ color: var(--black);
 }
   
   @media screen and (max-width:768px) {
-
+.mf{
+  font-size: 12px !important;
+}
 .slick-slide > div {
   margin: 0 16px;
 }

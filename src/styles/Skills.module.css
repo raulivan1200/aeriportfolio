@@ -57,7 +57,7 @@ line-height: 28px;
   @media screen and (max-width: 768px) {
    
     .hrpp{
-      margin-top: -9vw !important;
+      margin-top: -5% !important;
     }
     .parentflex {
       flex-direction: column;

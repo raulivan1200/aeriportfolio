@@ -73,7 +73,7 @@ left: 5%;
     display: block;
     background-color: var(--black);
       color:"var(--black)";
-    margin-top: -3.5em;
+    margin-top: -4.5em;
     margin-bottom: -0.5em;
     margin-left: 0;
     border: 1px solid var(--black);
@@ -92,7 +92,7 @@ left: 5%;
       color:"var(--black)";
 
       width: 15vw;
-    margin-top: -3em;
+    margin-top: -4.5em;
     margin-bottom: -0.5em;
     height: 0.5%; /* to ensure the hr has some visible height */
     }
