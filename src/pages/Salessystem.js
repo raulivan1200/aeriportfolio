@@ -1,8 +1,8 @@
-import { Sfs } from "@/components/examples/Sfs";
+import { Sfs } from "./components/examples/Sfs";
 import Image from "next/image";
 import sample from "../../public/images/Portfolio/pay.png"
 import Head from 'next/head';
-import Foot from '@/components/foot/Foot'
+import Foot from './components/foot/Foot'
 
 const sfsale = () => {
     return (  

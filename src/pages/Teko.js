@@ -1,6 +1,6 @@
 import React from 'react'
 import Tekotext from "../components/examples/Tekotext"
-import Foot from '@/components/foot/Foot'
+import Foot from './components/foot/Foot'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/pj.module.css"
