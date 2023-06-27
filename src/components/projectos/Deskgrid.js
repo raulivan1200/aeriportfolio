@@ -122,7 +122,7 @@ function Deskgrid() {
         </motion.div>
 
         <div className={styles.containerds}>
-        <Parallax translateY={[10, -15]} easing={'ease'} speed={9} scale={[1,1.02]}>
+        <Parallax translateY={[3, -15]} easing={'ease'} speed={9} scale={[1,1.02]}>
 
   <div className={styles.bigds} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>  
   <div className={styles.brims}>
