@@ -49,7 +49,7 @@ function Menu({ onProjectClick, onContactClick }) {
   return (
     <div className="menux">
       <div className="izqx" style={{mixBlendMode:"difference !important",width:"50%"}}>
-      <Image src="./logos/open.svg" className='svco' alt='open' width={48} height={48} onClick={handleClick}></Image>
+      <Image src="./logos/open.svg" className='svco' alt='open' width={48} height={48} style={{cursor:"pointer"}} onClick={handleClick}></Image>
         <h5 style={{color:"var(--black)", paddingLeft:"16px"}}>
             Esmeralda Rivera
         </h5>
