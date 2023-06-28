@@ -35,7 +35,7 @@ const SwitchTheme = () => {
   };
 
   return (
-    <div className="mr" style={{ cursor: "pointer" }} onClick={handleThemeToggle}>
+    <div className="mr" style={{ cursor: "pointer",marginTop:"0",paddingTop:"0" }} onClick={handleThemeToggle}>
       <motion.div
         variants={imageVariants}
         initial="hidden"
@@ -51,7 +51,6 @@ const SwitchTheme = () => {
           alt="Dark Theme"
           fill
           animate={rotateAndScale}
-          whileHover={{ scale: 1.3, opacity: 0.9 }} // Add whileHover effect
 
         />
       </motion.div>
@@ -71,7 +70,6 @@ const SwitchTheme = () => {
           alt="Light Theme"
           fill
           animate={rotateAndScale}
-          whileHover={{ scale: 1.3, opacity: 0.9 }} // Add whileHover effect
 
         />
       </motion.div>

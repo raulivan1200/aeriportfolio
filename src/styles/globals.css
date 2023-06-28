@@ -19,7 +19,7 @@
   }
   .svco:hover{
     cursor: pointer;
-    scale: 1.03;
+    scale: 1.05;
     opacity: .95;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
