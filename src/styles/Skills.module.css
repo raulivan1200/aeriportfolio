@@ -55,20 +55,25 @@ line-height: 28px;
   @media screen and (max-width: 1005px) {
     .pad5{font-size: 40px !important;}}
   @media screen and (max-width: 768px) {
-   
+    .tresde{
+      width: 80% !important;
+      height: 75vh !important;
+      padding-left: 10%;
+    }
     .hrpp{
       margin-top: -5% !important;
     }
     .parentflex {
       flex-direction: column;
-      height: fit-content;
-
+      height: max-content !important;
+      padding-bottom: 5%;
     }
     .lpf{
-      height: 60vh;
+      height: fit-content;
+      
     }
     .rpf{
-      width: auto;
+      width: fit-content;
       padding-left: 10% !important;
     }
 

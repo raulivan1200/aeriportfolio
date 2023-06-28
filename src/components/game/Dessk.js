@@ -11,7 +11,8 @@ function Dessk() {
 </div>
 <div className={styles.rpf}>
   <h1 className={styles.pad5} style={{ color:"var(--black)",fontWeight:"600"}}>My Experience</h1>
-  <hr className={styles.hrpp} />  <Textan/>
+  <hr className={styles.hrpp} />  
+  <Textan/>
 </div>
     </div>
   )

@@ -157,9 +157,16 @@
 @media screen and (min-width:351px) {
 .mytable{
   margin-bottom: -1%;
-}
 
 }
+}
+@media screen and (max-width:400px) {
+  .myth {
+    border-top: none;
+    padding: 0 0 !important;
+  }
+  }
+  
 .ffs{
   -ms-overflow-style: none;  
 }

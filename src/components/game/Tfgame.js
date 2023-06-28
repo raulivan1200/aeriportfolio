@@ -31,7 +31,7 @@ function MyRotatingBox() {
 
 function Tfgame() {
   return (
-    <div style={{height:"100vh", justifyContent:"center", alignItems:"center"}}>
+    <div style={{height:"100vh", justifyContent:"center", alignItems:"center"}} className={styles.tresde}>
       <Canvas>
       <OrbitControls/>
       <Suspense fallback={null}>

@@ -7,8 +7,10 @@ function Header() {
   return (  
     <div className={styles.cont} style={{overflowX:"hidden"}}>
       <div className={styles.left}>
+
         <h2 className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </h2>
         <hr className={styles.hrx}/>
+        
         <h3 className={styles.wh}>Abril Rivera</h3>
         <h7 className={styles.wh}>UX/UI Designer</h7>
 
