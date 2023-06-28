@@ -1,45 +1,76 @@
-  import Grid from "../components/projectos/Grid"
-  import Exp from "../components/scroll/Exp";
-  import Skills from "../components/game/Skills";
-  import Foot from "../components/foot/Foot";
-  import Menu from "../components/Menu/Menu";
-  import Transition from "../../src/components/Transition"
-  import Head from 'next/head';
-  import Header from "../components/header/Head"
+import Grid from "../components/projectos/Grid";
+import Exp from "../components/scroll/Exp";
+import Skills from "../components/game/Skills";
+import Foot from "../components/foot/Foot";
+import Menu from "../components/Menu/Menu";
+import Transition from "../../src/components/Transition";
+import Head from "next/head";
+import Header from "../components/header/Head";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
-  const Main = () => {   
+function Section({ children, animationProps }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-    return (
-      <>
+  const {
+    initialTransform = "translate(-100px, 0)",
+    initialOpacity = 0,
+    transition = "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+  } = animationProps;
+
+  const transformedStyle = {
+    transform: isInView ? "none" : initialTransform,
+    opacity: isInView ? 1 : initialOpacity,
+    transition: transition
+  };
+
+  return (
+    <motion.div ref={ref} style={transformedStyle}>
+      {children}
+    </motion.div>
+  );
+}
+
+const Main = () => {
+  return (
+    <>
       <div className="backgc">
-      <Head>
-        <title>✨Esmeralda Rivera Ux/Ui✨</title>
-      </Head>
-      <section id="head-section">
-      <Header/>
-      </section>
-        <Transition/>
+        <Head>
+          <title>✨Esmeralda Rivera Ux/Ui✨</title>
+        </Head>
+        <section id="head-section">
+          <Header />
+        </section>
+        <Transition />
         <section id="menu-section">
           <Menu />
         </section>
         <section id="head-section">
           <Head />
         </section>
-        <section id="grid-section">
-          <Grid />
-        </section>
-        <section id="exp-section">
-          <Exp />
-        </section>
-        <section id="skills-section">
-          <Skills />
-        </section>
+        <Section animationProps={{}}>
+          <motion.div id="grid-section">
+            <Grid />
+          </motion.div>
+        </Section>
+        <Section animationProps={{ initialTransform: "translate(100px, 0)", initialOpacity: 0 }}>
+          <motion.div id="exp-section">
+            <Exp />
+          </motion.div>
+        </Section>
+        <Section animationProps={{ initialTransform: "translate(0px, 100px)", initialOpacity: 0 }}>
+          <motion.div id="skills-section">
+            <Skills />
+          </motion.div>
+        </Section>
         <section id="foot-section">
           <Foot />
         </section>
       </div>
-      </>
-    );
-  };
-  
-  export default Main;
+    </>
+  );
+};
+
+export default Main;

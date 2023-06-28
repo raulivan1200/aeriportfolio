@@ -14,6 +14,7 @@ import { motion, useTransform } from "framer-motion";
 import { useState } from 'react'
 
 function Deskgrid() {
+
   const[cursorYear, setcursorYear]=useState("")
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -50,6 +51,8 @@ function Deskgrid() {
       }
     },
     project: {
+      scaleX: [1, 1.2, 0.8, 1.1, 0.9, 1],
+      scaleY: [1, 0.8, 1.2, 0.9, 1.1, 1],
       opacity: 1,
       // backgroundColor: "rgba(255, 255, 255, 0.6)",
       backgroundColor: "var(--black)",
