@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from '../../styles/Head.module.css';
 import Image from 'next/image'
+
 function Header() {
   
   return (  
-    <div className={styles.cont}>
+    <div className={styles.cont} style={{overflowX:"hidden"}}>
       <div className={styles.left}>
         <h2 className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </h2>
         <hr className={styles.hrx}/>
@@ -15,7 +16,7 @@ function Header() {
 
       <div className={styles.right} >
       <video
-        style={{ zIndex: 0 , width:'100%'}}
+        style={{ zIndex: 0 , width:'70vw'}}
         loop
         src="./axofin.webm"
         autoPlay

@@ -50,16 +50,16 @@ const Main = () => {
         <section id="head-section">
           <Head />
         </section>
-        <Section animationProps={{}}>
+        <Section animationProps={{ initialTransform: "translate(100px, 0)", initialOpacity: 0 }}>
           <motion.div id="grid-section">
             <Grid />
           </motion.div>
         </Section>
-        <Section animationProps={{ initialTransform: "translate(100px, 0)", initialOpacity: 0 }}>
-          <motion.div id="exp-section">
+        <section  id="exp-section">
+          <div>
             <Exp />
-          </motion.div>
-        </Section>
+          </div>
+        </section>
         <Section animationProps={{ initialTransform: "translate(0px, 100px)", initialOpacity: 0 }}>
           <motion.div id="skills-section">
             <Skills />

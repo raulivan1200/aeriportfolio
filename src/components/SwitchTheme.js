@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import Head from "next/head";
 const SwitchTheme = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false); // Set the initial state to true (light theme)
 
@@ -33,7 +33,18 @@ const SwitchTheme = () => {
     scale: isDarkTheme ? 1 : .9,
     transition: { duration: 0.3, ease: "linear" },
   };
-
+<head>
+<link
+    rel="preload"
+    href="./logos/moon.svg"
+    as="image"
+  />
+  <link
+    rel="preload"
+    href="./logos/sun.svg"
+    as="image"
+  />
+</head>
   return (
     <div className="mr" style={{ cursor: "pointer",marginTop:"0",paddingTop:"0" }} onClick={handleThemeToggle}>
       <motion.div

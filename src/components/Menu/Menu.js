@@ -49,7 +49,7 @@ function Menu({ onProjectClick, onContactClick }) {
   return (
     <div className="menux">
       <div className="izqx" style={{width:"60%"}}>
-      <Image src="./logos/open.svg" className='svco' alt='open' width={48} height={48} style={{cursor:"pointer"}} onClick={handleClick}></Image>
+      <Image priority src="./logos/open.svg" className='svco' alt='open' width={48} height={48} style={{cursor:"pointer"}} onClick={handleClick}></Image>
         <h5  className='mf' style={{color:"var(--black)", paddingLeft:"16px"}}>
             Esmeralda Rivera
         </h5>
