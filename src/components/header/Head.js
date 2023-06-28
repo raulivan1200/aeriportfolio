@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/Head.module.css';
 import Image from 'next/image'
-
+import { motion } from 'framer-motion';
 function Header() {
   
   return (  
@@ -10,9 +10,20 @@ function Header() {
 
         <h2 className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </h2>
         <hr className={styles.hrx}/>
-        
+       
+        <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        duration:6,
+      }}
+      >  
         <h3 className={styles.wh}>Abril Rivera</h3>
         <h7 className={styles.wh}>UX/UI Designer</h7>
+      </motion.div>
 
       </div>
 
