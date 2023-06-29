@@ -44,7 +44,7 @@ const Main = () => {
           <title>✨Esmeralda Rivera Ux/Ui✨</title>
         </Head>
         <section id="head-section">
-      <Parallax speed={5}   easing="easeInQuad"  translateY={['0px', '-50px']}>
+      <Parallax speed={5}   easing="easeIn"  translateY={['0px', '-50px']}>
           <Header />
       </Parallax>
         </section>
@@ -65,7 +65,9 @@ const Main = () => {
         </section>
         <Section animationProps={{ initialTransform: "translate(0px, -100px)", initialOpacity: 0 }}>
           <motion.div id="skills-section">
+          <Parallax speed={5}   easing="ease"  translateY={['0px', '-100px']}>
             <Skills />
+          </Parallax>
           </motion.div>
         </Section>
         <section id="foot-section">
