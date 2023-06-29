@@ -55,7 +55,7 @@ const Main = () => {
         <section id="head-section">
           <Head />
         </section>
-        <Section animationProps={{ initialTransform: "translate(100px, 0)", initialOpacity: 0 }}>
+        <Section animationProps={{ initialTransform: "translate(0px, -50px)", initialOpacity: 0 }}>
           <motion.div id="grid-section">
             <Grid />
           </motion.div>

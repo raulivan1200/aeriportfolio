@@ -46,13 +46,15 @@
   width: 90%;
   height: 70%;
 }
-.bigds, .bb2, .bb3, .bb4, .bb5, .bb6 {
+.bb2, .bb4, .bb5, .bb6 {
   padding-top: 15%;
   padding-bottom: 15%;
   border-radius: 30px;
   position: relative;
 }
-
+.bigds , .bb3{
+  padding-top: 0%;
+}
 .containerxm {
   width: 90%;
   margin: 0 auto;
