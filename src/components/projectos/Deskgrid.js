@@ -27,9 +27,13 @@ function Deskgrid() {
 
   let mouseXPosition = 0;
   let mouseYPosition = 0;
-
+  let mouseXmove=0;
+  let mouseYmove=0;
+  mouseXmove=mouse.clientX;
+  mouseYmove=mouse.clientY;
   if (mouse.x !== null) {
     mouseXPosition = mouse.clientX;
+
   }
 
   if (mouse.y !== null) {
@@ -126,54 +130,65 @@ function Deskgrid() {
 
         <div className={styles.containerds}>
         <Parallax translateY={[3, -15]} easing={'ease'} speed={9} scale={[1,1.02]}>
-
+    <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/12-60)*-1,y:(mouseYmove/12-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bigds} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>  
-  <div className={styles.brims}>
+  <div className={styles.brims} >
   <a href="/Billsplitter">  <Image className={styles.imrs}   src={ux1} alt="Abril Rivera front end ux design designer"></Image> </a>
+  
   </div>
   </div>
+    </motion.div>
   </Parallax>
 
   <Parallax translateY={[-15, 25]} easing={'ease'} speed={10} scale={[1,1.01]}>
+  <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/9-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
 
   <div className={styles.bb3} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
   <a href="/Billsplitter"> <Image className={styles.imrs}  src={ux2} alt="ux systems"></Image></a>
   </div>
      </div>
+  </motion.div>
      </Parallax>
 
      <Parallax translateY={[30, -10]} easing={'ease'} speed={11} scale={[1,1.03]}>
+     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/11-60)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb2} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
   <a href="/Billsplitter">  <Image className={styles.imrs}  src={ux3} alt="bill splitter ux ui designer"></Image></a>
   </div>
      </div>
+     </motion.div>
      </Parallax>
 
      <Parallax translateY={[15, 10]} easing={'ease'} speed={10} scale={[1,1.01]}>
+     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/10-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb4} onMouseEnter={TekoEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
    <a href="/Teko"> <Image className={styles.imrs}  src={ux4} alt="ux agency business design "></Image></a>
    </div>
      </div>
+     </motion.div>
      </Parallax>
 
      <Parallax translateY={[10, -30]} easing={'ease'} speed={3} scale={[1,1.05]}>
-
+     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/12-60)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb5} onMouseEnter={KidsyEnter} onMouseLeave={projectLeave}>
     <div className={styles.brims}>
         <a href="/Imagikids"> <Image className={styles.imrs}  src={ux5} alt="kids app ux design"></Image></a>
     </div>
   </div>
+     </motion.div>
   </Parallax>
 
   <Parallax translateY={[5, 30]} easing={'easeInSine'} speed={15} scale={[1.02,1.0]}>
+  <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/7-60)*-1,y:(mouseYmove/9-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb6} onMouseEnter={WofflesEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
   <a href="/Woffles"> <Image className={styles.imrs}  src={ux6} alt="ux restaurant design"></Image></a>
   </div>
      </div>
+  </motion.div>
      </Parallax>
 
 </div>

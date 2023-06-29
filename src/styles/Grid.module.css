@@ -38,11 +38,17 @@
   border-radius: 24px;
 }
 .bb2,.bb3,.bb6{
+  width: 70%;
   height: 80%;
   margin: 0;
 }
-
+.bigds,.bb2,.bb4,.bb5{
+  width: 90%;
+  height: 70%;
+}
 .bigds, .bb2, .bb3, .bb4, .bb5, .bb6 {
+  padding-top: 15%;
+  padding-bottom: 15%;
   border-radius: 30px;
   position: relative;
 }
@@ -168,6 +174,6 @@
   }
   .mlp{
     padding-left: 5%;
-    color:var(--black)
+    color:var(--black);
   }
   
