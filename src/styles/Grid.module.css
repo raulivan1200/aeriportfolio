@@ -138,8 +138,9 @@
       gap: 24px;
       flex-direction: column;
     }
-    .bb2,.bb3,.bb6{
+    .bigds,.bb2,.bb3,.bb4,.bb5,.bb6{
       height: 100% !important;
+      width: 100%;
     }
     .pjhrxx{
       width: 30% !important; 

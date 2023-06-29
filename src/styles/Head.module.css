@@ -58,7 +58,7 @@ width: 50%;
 flex-direction: column;
 justify-content: center;
 left: 5%;
-
+height: 100vh;
 }
 .right {
   height: 100vh;

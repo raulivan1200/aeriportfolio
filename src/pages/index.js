@@ -44,7 +44,7 @@ const Main = () => {
           <title>✨Esmeralda Rivera Ux/Ui✨</title>
         </Head>
         <section id="head-section">
-      <Parallax speed={5}   easing="easeIn"  translateY={['0px', '-50px']}>
+      <Parallax speed={5}   easing="easeInOutQuad"  translateX={['0px', '-50px']}>
           <Header />
       </Parallax>
         </section>

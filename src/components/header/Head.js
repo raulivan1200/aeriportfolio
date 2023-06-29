@@ -11,15 +11,9 @@ function Header() {
         <h2 className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </h2>
         <hr className={styles.hrx}/>
        
-        <motion.div 
-      initial={{opacity:0,x:5,y:0}}
-      animate={{opacity:1,y:0,x:0}}
-      transition={{duration:.3,ease:"easeInOut"}}
 
-      >  
         <h3 className={styles.wh}>Abril Rivera</h3>
         <h7 className={styles.wh}>UX/UI Designer</h7>
-      </motion.div>
 
       </div>
 
@@ -32,7 +26,6 @@ function Header() {
         playsinline
         muted
         type="video/webm"
-        className='mvid'
       >
       </video>
       </div>
