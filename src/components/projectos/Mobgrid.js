@@ -2,12 +2,12 @@ import React from 'react'
 import sample from "../../../public/images/sample.jpg"
 import Image from 'next/image'
 import styles from "../../styles/Grid.module.css"
-import ux1 from "/public/images/Portfolio/Sshead.png"
-import ux2 from "/public/images/Portfolio/woffleshead.png"
-import ux3 from "/public/images/Portfolio/billhead.png"
-import ux4 from "/public/images/Portfolio/tekohead.png"
-import ux5 from "/public/images/Portfolio/imagikidsheader.png"
-import ux6 from "/public/images/Portfolio/woffleshead.png"
+import sshe from "/public/images/Portfolio/Sshead.png"
+import wf from "/public/images/Portfolio/woffleshead.png"
+import bih from "/public/images/Portfolio/billhead.png"
+import tekoh from "/public/images/Portfolio/tekohead.png"
+import imgh from "/public/images/Portfolio/imagikidsheader.png"
+import process from "/public/images/Portfolio/woffleshead.png"
 
 function Mobgrid() {
   const images = [
@@ -17,39 +17,39 @@ function Mobgrid() {
     <div className={styles.containerds}>
 <div className={styles.bigds} >  
 <div className={styles.brims}>
-<a href="/Billsplitter">  <Image className={styles.imrs}   src={ux1} alt="Abril Rivera front end ux design designer"></Image> </a>
+<a href="/Salessystem">  <Image className={styles.imrs}   src={sshe} alt="Ux ui sales system"></Image> </a>
 </div>
 </div>
 
 
 <div className={styles.bb3} >
 <div className={styles.brims}>
-<a href="/Billsplitter"> <Image className={styles.imrs}  src={ux2} alt="ux systems"></Image></a>
+<a href="/Imagikids"> <Image className={styles.imrs}  src={imgh} alt="ux ui designerkids app ux design"></Image></a>
 </div>
  </div>
 
 <div className={styles.bb2} >
 <div className={styles.brims}>
-<a href="/Billsplitter">  <Image className={styles.imrs}  src={ux3} alt="bill splitter ux ui designer"></Image></a>
+<a href="/Woffles">  <Image className={styles.imrs}  src={wf} alt="ux restaurant designb"></Image></a>
 </div>
  </div>
 
 <div className={styles.bb4} >
 <div className={styles.brims}>
-<a href="/Teko"> <Image className={styles.imrs}  src={ux4} alt="ux agency business design "></Image></a>
+<a href="/Teko"> <Image className={styles.imrs}  src={tekoh} alt="ux agency business design "></Image></a>
 </div>
  </div>
 
 
 <div className={styles.bb5} >
 <div className={styles.brims}>
-    <a href="/Imagikids"> <Image className={styles.imrs}  src={ux5} alt="kids app ux design"></Image></a>
+    <a href="/Billsplitter"> <Image className={styles.imrs}  src={bih} alt="bill splitter"></Image></a>
 </div>
 </div>
 
 <div className={styles.bb6} >
 <div className={styles.brims}>
-<a href="/Woffles"> <Image className={styles.imrs}  src={ux6} alt="ux restaurant design"></Image></a>
+<a href="/404"> <Image className={styles.imrs}  src={process} alt="project on process"></Image></a>
 </div>
  </div>
 

@@ -26,7 +26,8 @@ function Header() {
         playsinline
         muted
         type="video/webm"
-      >
+        className={styles.mvm}
+        >
       </video>
       </div>
 

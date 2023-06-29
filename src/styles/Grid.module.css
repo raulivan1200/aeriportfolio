@@ -134,6 +134,8 @@
       padding-left: 10% !important;
     }
     .containerds{
+      padding-bottom: 0;
+      margin-top: -25%;
       display: flex;
       gap: 24px;
       flex-direction: column;
@@ -141,6 +143,8 @@
     .bigds,.bb2,.bb3,.bb4,.bb5,.bb6{
       height: 100% !important;
       width: 100%;
+      padding-top: 5%;
+      padding-bottom: 5%;
     }
     .pjhrxx{
       width: 30% !important; 

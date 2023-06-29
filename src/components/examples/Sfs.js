@@ -1,8 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from "../../styles/pj.module.css"
-import wofflescreens from "../../../public/images/sample.jpg"
-import wofflesrule from "../../../public/images/sample.jpg"
+import sysd from "../../../public/images/Portfolio/ssdetails.png"
 import { Imagerowf } from './Imagerowf'
 import Menupj from '../Menu/Menupj'
 
@@ -60,7 +59,7 @@ A partir de la información recopilada avanzamos y desarrollamos detalladamente 
 Se realizaron pruebas con los usuarios además de nuevas entrevistas para probar que los elementos que se estaban desarrollando realmente funcionaran para lo que querian lograr. 
 
     </h5>
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflescreens} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={sysd} alt=""/>
     
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>

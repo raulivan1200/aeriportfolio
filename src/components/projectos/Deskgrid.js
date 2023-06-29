@@ -2,12 +2,12 @@ import React from 'react'
 import sample from "../../../public/images/sample.jpg"
 import Image from 'next/image'
 import styles from "../../styles/Grid.module.css"
-import ux1 from "/public/images/Portfolio/Sshead.png"
-import ux2 from "/public/images/Portfolio/woffleshead.png"
-import ux3 from "/public/images/Portfolio/billhead.png"
-import ux4 from "/public/images/Portfolio/tekohead.png"
-import ux5 from "/public/images/Portfolio/imagikidsheader.png"
-import ux6 from "/public/images/Portfolio/woffleshead.png"
+import sshe from "/public/images/Portfolio/Sshead.png"
+import wf from "/public/images/Portfolio/woffleshead.png"
+import bih from "/public/images/Portfolio/billhead.png"
+import tekoh from "/public/images/Portfolio/tekohead.png"
+import imgh from "/public/images/Portfolio/imagikidsheader.png"
+import process from "/public/images/Portfolio/woffleshead.png"
 import { Parallax } from 'react-scroll-parallax'
 import useMouse from '@react-hook/mouse-position'
 import { motion, useTransform } from "framer-motion";
@@ -85,7 +85,7 @@ function Deskgrid() {
     damping: 28
   };
 
-  function projectEnter(event) {
+  function billsp(event) {
     setCursorText("Bill splitter");
     setCursorVariant("project");
     setcursorYear("2022")
@@ -101,7 +101,7 @@ function Deskgrid() {
     setCursorVariant("project");
     setcursorYear("2022")
   }
-  function KidsyEnter(event) {
+  function Imagike(event) {
     setcursorYear("2022")
     setCursorText("Kidsy");
     setCursorVariant("project");
@@ -116,7 +116,11 @@ function Deskgrid() {
     setcursorYear("2022")
     setCursorVariant("project");
   }
-
+  function proge(event) {
+    setCursorText("on progress");
+    setcursorYear("2023")
+    setCursorVariant("project");
+  }
   return (
     <div ref={ref}>
        <motion.div
@@ -131,9 +135,9 @@ function Deskgrid() {
         <div className={styles.containerds}>
         <Parallax translateY={[3, -15]} easing={'ease'} speed={9} scale={[1,1.02]}>
     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/12-60)*-1,y:(mouseYmove/12-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-  <div className={styles.bigds} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>  
+  <div className={styles.bigds} onMouseEnter={billsp} onMouseLeave={projectLeave}>  
   <div className={styles.brims} >
-  <a href="/Salessystem">  <Image className={styles.imrs}   src={ux1} alt="Abril Rivera front end ux design designer"></Image> </a>
+  <a href="/Salessystem">  <Image className={styles.imrs}   src={sshe} alt="Abril Rivera front end ux design designer"></Image> </a>
   
   </div>
   </div>
@@ -143,9 +147,9 @@ function Deskgrid() {
   <Parallax translateY={[-15, 25]} easing={'ease'} speed={10} scale={[1,1.01]}>
   <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/9-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
 
-  <div className={styles.bb3} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>
+  <div className={styles.bb3} onMouseEnter={WofflesEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
-  <a href="/Billsplitter"> <Image className={styles.imrs}  src={ux2} alt="ux systems"></Image></a>
+  <a href="/Woffles"> <Image className={styles.imrs}  src={wf} alt="ux systems"></Image></a>
   </div>
      </div>
   </motion.div>
@@ -153,9 +157,9 @@ function Deskgrid() {
 
      <Parallax translateY={[30, -10]} easing={'ease'} speed={11} scale={[1,1.03]}>
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/11-60)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-  <div className={styles.bb2} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>
+  <div className={styles.bb2} onMouseEnter={billsp} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
-  <a href="/Billsplitter">  <Image className={styles.imrs}  src={ux3} alt="bill splitter ux ui designer"></Image></a>
+  <a href="/Billsplitter">  <Image className={styles.imrs}  src={bih} alt="bill splitter ux ui designer"></Image></a>
   </div>
      </div>
      </motion.div>
@@ -165,7 +169,7 @@ function Deskgrid() {
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/10-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb4} onMouseEnter={TekoEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
-   <a href="/Teko"> <Image className={styles.imrs}  src={ux4} alt="ux agency business design "></Image></a>
+   <a href="/Teko"> <Image className={styles.imrs}  src={tekoh} alt="ux agency business design "></Image></a>
    </div>
      </div>
      </motion.div>
@@ -173,23 +177,15 @@ function Deskgrid() {
 
      <Parallax translateY={[10, -30]} easing={'ease'} speed={3} scale={[1,1.05]}>
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/6-100)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-  <div className={styles.bb5} onMouseEnter={KidsyEnter} onMouseLeave={projectLeave}>
+  <div className={styles.bb5} onMouseEnter={Imagike} onMouseLeave={projectLeave}>
     <div className={styles.brims}>
-        <a href="/Imagikids"> <Image className={styles.imrs}  src={ux5} alt="kids app ux design"></Image></a>
+        <a href="/Imagikids"> <Image className={styles.imrs}  src={imgh} alt="kids app ux design"></Image></a>
     </div>
   </div>
      </motion.div>
   </Parallax>
 
-  <Parallax translateY={[5, 30]} easing={'easeInSine'} speed={15} scale={[1.02,1.0]}>
-  <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/7-60)*-1,y:(mouseYmove/9-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-  <div className={styles.bb6} onMouseEnter={WofflesEnter} onMouseLeave={projectLeave}>
-  <div className={styles.brims}>
-  <a href="/Woffles"> <Image className={styles.imrs}  src={ux6} alt="ux restaurant design"></Image></a>
-  </div>
-     </div>
-  </motion.div>
-     </Parallax>
+
 
 </div>
 

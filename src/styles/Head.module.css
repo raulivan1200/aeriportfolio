@@ -15,6 +15,9 @@
  
 
   @media (max-width: 768px) {
+    .mvm{
+      width: 140vw !important;   
+    }
     .svcom{
       display: none;
     }
@@ -27,7 +30,9 @@
       padding-left: 0% !important;
       display: flex;
       flex-direction: column;
-      height: fit-content !important
+      height: fit-content !important;
+      padding-bottom: 15%;
+      
     }
     .right{
       height: 40vh !important;
@@ -38,6 +43,7 @@
     .left{
       padding-left: 10%;
       margin-left: 0 !important;
+      height: fit-content !important;
     }
     .hrx{
       width: 70vw !important;
