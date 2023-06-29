@@ -4,6 +4,16 @@
   -webkit-user-drag: none;
   -webkit-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none !important;
+
 }
 :root {
     --white: #ffffff;
@@ -21,7 +31,7 @@
     cursor: pointer;
     scale: 1.05;
     opacity: .95;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
   html[data-theme='light'] {
     --white: #ffffff;
@@ -31,6 +41,8 @@
     --background:#ffffff;
     .svco{
         filter: invert(0) !important;
+        transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
     }
     .svcom{
         filter: invert(0) !important;}
@@ -43,6 +55,8 @@
     --background:#000000;
     .svco{
         filter: invert(100%) !important;
+        transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
     }
     .svcom{
         filter: invert(1) !important;
@@ -74,6 +88,9 @@ html {
 
 
 @media screen and (max-width:768px) {
+  .menux{
+    top: 3% !important;
+  }
     .svcom{
         display: none;}
 
@@ -498,4 +515,15 @@ color: var(--black);
   .slick-list {
     margin: 0 -36px;
   }
-  
+  .rtr {
+    color: var(--white);
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 0.3s ease-out;
+  }
+  .rtr:hover{
+    cursor: pointer;
+    color: transparent;
+    transition: .3s ease-out;
+}

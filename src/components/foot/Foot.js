@@ -9,7 +9,7 @@ function Foot() {
       <div style={{width:"100vw"}}>
         <div className={styles.patx}>
     
-        <p style={{paddingBottom:"100px", paddingTop:"100px"}} className={styles.fbtext}>Work with the colors of creativity to create extraordinary experiences</p>
+        <p style={{paddingBottom:"100px", paddingTop:"100px"}} className={styles.fbtext}>Work with the<span className='rtr'> colors of creativity </span>to create extraordinary experiences</p>
         <a  style={{textDecoration:"none"}} href="mailto:someone@yoursite.com" target='_blank'><div className={styles.btn}><p style={{color:"var(--white)"}} className={styles.btx}>Let´s create</p></div></a>
               <div className={styles.socialMedia}>
         <a target="_blank" className={styles.acs} href="https://www.instagram.com/">
