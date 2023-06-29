@@ -9,7 +9,7 @@ import Header from "../components/header/Head";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
-
+import { Parallax } from "react-scroll-parallax";
 function Section({ children, animationProps }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -23,7 +23,8 @@ function Section({ children, animationProps }) {
   const transformedStyle = {
     transform: isInView ? "none" : initialTransform,
     opacity: isInView ? 1 : initialOpacity,
-    transition: transition
+    transition: transition,
+    duration:2,
   };
 
   return (
@@ -37,11 +38,15 @@ const Main = () => {
   return (
     <>
       <div className="backgc">
+
+
         <Head>
           <title>✨Esmeralda Rivera Ux/Ui✨</title>
         </Head>
         <section id="head-section">
+      <Parallax speed={5}   easing="easeInQuad"  translateY={['0px', '-50px']}>
           <Header />
+      </Parallax>
         </section>
         <Transition />
         <section id="menu-section">
@@ -56,11 +61,9 @@ const Main = () => {
           </motion.div>
         </Section>
         <section  id="exp-section">
-          <div>
             <Exp />
-          </div>
         </section>
-        <Section animationProps={{ initialTransform: "translate(0px, 100px)", initialOpacity: 0 }}>
+        <Section animationProps={{ initialTransform: "translate(0px, -100px)", initialOpacity: 0 }}>
           <motion.div id="skills-section">
             <Skills />
           </motion.div>

@@ -36,6 +36,7 @@ function Header() {
         playsinline
         muted
         type="video/webm"
+        className='mvid'
       >
       </video>
       </div>

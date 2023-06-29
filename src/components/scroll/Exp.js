@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Mbtables from './Mbtables';
 import { Tablers } from './Tablers';
 import Rollexp from './Rollexp';
-
 function Exp() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -18,6 +17,8 @@ function Exp() {
   return (
 
 <div>
+
+
 <div >
   
 {isMobile ? (
@@ -27,8 +28,9 @@ function Exp() {
         <Rollexp text=" Information  ●  Architecture  ●  Design  ●  System  ●  Wireframing  ●  Prototyping  ●  Mockups  ● " />
     </div>
         </>) : (
-        <Tablers/>
-      )}
+          
+          <Tablers/>
+          )}
 
 </div>
 </div>
