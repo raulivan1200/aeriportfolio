@@ -2,12 +2,12 @@ import React from 'react'
 import sample from "../../../public/images/sample.jpg"
 import Image from 'next/image'
 import styles from "../../styles/Grid.module.css"
-import ux1 from "/public/images/Portfolio/system.png"
-import ux2 from "/public/images/Portfolio/pay.png"
-import ux3 from "/public/images/Portfolio/system.png"
-import ux4 from "/public/images/Portfolio/teko.png"
-import ux5 from "/public/images/Portfolio/imagiki.png"
-import ux6 from "/public/images/Portfolio/woffles.png"
+import ux1 from "/public/images/Portfolio/Sshead.png"
+import ux2 from "/public/images/Portfolio/billinghead.png"
+import ux3 from "/public/images/Portfolio/Sshead.png"
+import ux4 from "/public/images/Portfolio/tekohead.png"
+import ux5 from "/public/images/Portfolio/imagikidsheader.png"
+import ux6 from "/public/images/Portfolio/woffleshead.png"
 import { Parallax } from 'react-scroll-parallax'
 import useMouse from '@react-hook/mouse-position'
 import { motion, useTransform } from "framer-motion";

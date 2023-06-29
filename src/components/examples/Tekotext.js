@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from "../../styles/pj.module.css"
 import Image from 'next/image'
-import wofflescreens from "/public/images/Portfolio/wofflesshoot.png"
-import wofflesrule from "/public/images/Portfolio/wofflescolors.png"
+
+import tekoh from "/public/images/Portfolio/tekohead.png"
+import teko2 from "/public/images/Portfolio/tekodetail.png"
+
 import Menupj from '../Menu/Menupj'
 
 import { Imagerowf } from './Imagerowf'
-function Wofflestext() {
+function Tekotext() {
   return (
     <div className={styles.pm}>
   <Menupj/>
@@ -56,7 +58,8 @@ Más allá de promocionar la empresa se buscaba darle personalidad y estilos pro
 Al entender el proyecto, me empecé a interesar por desarrollarlo partiendo por la investigación.
 
 </h5>
-<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflescreens} alt=""/>
+
+<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={teko2} alt=""/>
 
 <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
 
@@ -68,7 +71,6 @@ Al entender el proyecto, me empecé a interesar por desarrollarlo partiendo por 
 Finalmente empezamos a compartir más ideas de como podría darsele más voz y personalización a la pagina. 
 
 </h5>
-<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflesrule} alt=""/>
 
 
 
@@ -85,4 +87,4 @@ Finalmente empezamos a compartir más ideas de como podría darsele más voz y p
 </div>  )
 }
 
-export default Wofflestext
+export default Tekotext

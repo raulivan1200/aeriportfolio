@@ -4,7 +4,7 @@ import Foot from '../components/foot/Foot'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/pj.module.css"
-import tek from "/public/images/Portfolio/teko.png"
+import tek from "/public/images/Portfolio/tekohead.png"
 import Head from 'next/head';
 
 function teko() {

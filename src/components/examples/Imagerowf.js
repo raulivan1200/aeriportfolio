@@ -76,28 +76,19 @@ export const Imagerowf = () => {
 
       <Slider  ref={sliderRef} {...settings}>
           <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg'/></a>
+   <a href="/woffles"><img src="/images/woffleshead.png" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg"  className='rsimg'/></a>
+   <a href="/Imagikids"><img src="/images/woffleshead.png"  className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg"  className='rsimg'/></a>
+   <a href="/Teko"><img src="/images/woffleshead.png"  className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg"  className='rsimg'/></a>
+   <a href="/Salessystem"><img src="/images/woffleshead.png"  className='rsimg'/></a>
           </div>
         <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg' /></a>
-</div>
-        <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg' /></a>
-          </div>
-        <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg"  className='rsimg'/></a>
-</div>
-        <div className="img-wrapper">
-   <a href="/woffles"><img src="https://i.pinimg.com/736x/c6/8f/8e/c68f8e918c1637904b0409e330a4947c.jpg" className='rsimg' /></a>
+   <a href="/Billsplitter"><img src="/images/woffleshead.png" className='rsimg' /></a>
 </div>
         </Slider>
 
