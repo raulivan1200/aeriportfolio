@@ -3,8 +3,8 @@ import sample from "../../../public/images/sample.jpg"
 import Image from 'next/image'
 import styles from "../../styles/Grid.module.css"
 import ux1 from "/public/images/Portfolio/Sshead.png"
-import ux2 from "/public/images/Portfolio/billinghead.png"
-import ux3 from "/public/images/Portfolio/Sshead.png"
+import ux2 from "/public/images/Portfolio/woffleshead.png"
+import ux3 from "/public/images/Portfolio/billhead.png"
 import ux4 from "/public/images/Portfolio/tekohead.png"
 import ux5 from "/public/images/Portfolio/imagikidsheader.png"
 import ux6 from "/public/images/Portfolio/woffleshead.png"
@@ -133,7 +133,7 @@ function Deskgrid() {
     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/12-60)*-1,y:(mouseYmove/12-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bigds} onMouseEnter={projectEnter} onMouseLeave={projectLeave}>  
   <div className={styles.brims} >
-  <a href="/Billsplitter">  <Image className={styles.imrs}   src={ux1} alt="Abril Rivera front end ux design designer"></Image> </a>
+  <a href="/Salessystem">  <Image className={styles.imrs}   src={ux1} alt="Abril Rivera front end ux design designer"></Image> </a>
   
   </div>
   </div>

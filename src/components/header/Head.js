@@ -12,14 +12,10 @@ function Header() {
         <hr className={styles.hrx}/>
        
         <motion.div 
-      initial={{opacity:0}}
-      animate={{opacity:1}}
-      transition={{
-        type: "spring",
-        stiffness: 260,
-        damping: 20,
-        duration:6,
-      }}
+      initial={{opacity:0,x:5,y:0}}
+      animate={{opacity:1,y:0,x:0}}
+      transition={{duration:.3,ease:"easeInOut"}}
+
       >  
         <h3 className={styles.wh}>Abril Rivera</h3>
         <h7 className={styles.wh}>UX/UI Designer</h7>

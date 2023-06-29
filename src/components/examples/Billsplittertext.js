@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from "../../styles/pj.module.css"
-import wofflescreens from "../../../public/images/sample.jpg"
-import wofflesrule from "../../../public/images/sample.jpg"
+import billh from "../../../public/images/Portfolio/bill3g.png"
+import billd from "../../../public/images/Portfolio/bill3co.png"
+import billc from "../../../public/images/Portfolio/billsplitter.png"
 import Menupj from '../Menu/Menupj'
 import { Imagerowf } from './Imagerowf'
 
@@ -54,7 +55,7 @@ export const Billsplittertext = () => {
     <br/>
     Al finalizar la parte de el flujo y aterrizarla en wireframes, aplique los elementos visuales que se muestran en el resultado final.
     </h5>
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflescreens} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={billh} alt=""/>
     
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>
@@ -62,7 +63,7 @@ export const Billsplittertext = () => {
     <br/>
     Apartir de ellas genere un estilo para las pantallas que se habían planteado, considerando igual mantener y potencializar la aplicación.
     </h5>
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflesrule} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={billd} alt=""/>
     
     
     
@@ -72,7 +73,7 @@ export const Billsplittertext = () => {
     Mi meta era lograr que las pantallas se vieran armoniosas y capturar un ambiente traquilo y de juego que podría conllevar estar en una comida con amigos que finalmente se reparten la cuenta al finalizar.
      </h5>
      
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflesrule} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={billc} alt=""/>
      
       </div>
     </div>

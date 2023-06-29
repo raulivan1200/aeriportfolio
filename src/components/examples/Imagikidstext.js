@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "../../styles/pj.module.css"
 import Image from 'next/image'
-import wofflescreens from "/public/images/Portfolio/wofflesshoot.png"
-import wofflesrule from "/public/images/Portfolio/wofflescolors.png"
+import img from "/public/images/Portfolio/imagikidstile.png"
+import imco from "/public/images/Portfolio/imagikids.png"
 
 import { Imagerowf } from './Imagerowf'
 import Menupj from '../Menu/Menupj'
@@ -60,7 +60,7 @@ export const Imagikidstext = () => {
     Apartir de tener las funcionalidades básicas, empecé a desarrollar wireframes considerando las funciones.
     
     </h5>
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflescreens} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={img} alt=""/>
     
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>
@@ -70,7 +70,7 @@ export const Imagikidstext = () => {
     Previamente explore en una lluvia de ideas estructuras visuales que pudieran funcionar. 
     
     </h5>
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflesrule} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={imco} alt=""/>
     
     
     

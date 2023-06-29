@@ -76,19 +76,19 @@ export const Imagerowf = () => {
 
       <Slider  ref={sliderRef} {...settings}>
           <div className="img-wrapper">
-   <a href="/woffles"><img src="/images/woffleshead.png" className='rsimg'/></a>
+   <a href="/woffles"><img src="/images/Portfolio/woffleshead.png" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Imagikids"><img src="/images/woffleshead.png"  className='rsimg'/></a>
+   <a href="/Imagikids"><img src="/images/Portfolio/imagikidsheader.png"  className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Teko"><img src="/images/woffleshead.png"  className='rsimg'/></a>
+   <a href="/Teko"><img src="/images/Portfolio/tekohead.png"  className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Salessystem"><img src="/images/woffleshead.png"  className='rsimg'/></a>
+   <a href="/Salessystem"><img src="/images/Portfolio/Sshead.png"  className='rsimg'/></a>
           </div>
         <div className="img-wrapper">
-   <a href="/Billsplitter"><img src="/images/woffleshead.png" className='rsimg' /></a>
+   <a href="/Billsplitter"><img src="/images/Portfolio/billhead.png" className='rsimg' /></a>
 </div>
         </Slider>
 

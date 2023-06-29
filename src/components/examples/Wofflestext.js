@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "../../styles/pj.module.css"
 import Image from 'next/image'
-import wofflescreens from "/public/images/Portfolio/wofflesshoot.png"
-import wofflesrule from "/public/images/Portfolio/wofflescolors.png"
+import wofflescreens from "/public/images/Portfolio/woffles.png"
+import wofflesrule from "/public/images/Portfolio/wofflesdetail.png"
 import { Imagerowf } from './Imagerowf'
 import Menupj from '../Menu/Menupj'
 
