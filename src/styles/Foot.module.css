@@ -47,8 +47,17 @@
 .socialMedia {
   text-align: center;
 }
+.deskbreak{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
+  .mobilebreak{
+    display: none;
+  }
+  .deskbreak{
+    display: inline-block;
+  }
   .patx{
     padding-left: 10%;
   }
