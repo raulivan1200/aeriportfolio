@@ -4,7 +4,7 @@ import Dessk from './Dessk';
 
 function Skills() {
   return (
-    <div style={{paddingTop:"5%"}}>
+    <div>
         <Dessk/>
     </div>
   )
