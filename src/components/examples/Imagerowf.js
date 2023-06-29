@@ -59,7 +59,7 @@ export const Imagerowf = () => {
   return (
     <div style={{height:"fit-content"}}>
 
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "32px", width:"80%", justifyItems:"center", margin:"0 auto" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "32px", width:"80%", justifyItems:"center", margin:"0 auto", paddingTop:"5%"}}>
         <h1 style={{color:"var(--black)"}}>More projects</h1>
 <div style={{ display: "flex", justifyContent: "space-around", width: "10%", marginLeft: "auto" }}>  
        <button onClick={previous} style={{textAlign:"left"}} className='rsb'>

@@ -65,6 +65,7 @@ const SwitchTheme = () => {
 
         />
       </motion.div>
+      
       <motion.div
         variants={imageVariants}
         initial="hidden"
