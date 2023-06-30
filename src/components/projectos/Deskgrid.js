@@ -1,5 +1,4 @@
 import React from 'react'
-import sample from "../../../public/images/sample.jpg"
 import Image from 'next/image'
 import styles from "../../styles/Grid.module.css"
 import sshe from "/public/images/Portfolio/Sshead.png"

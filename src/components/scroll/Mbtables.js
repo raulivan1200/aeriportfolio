@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from "../../styles/tables.module.css"
-import sample from "../../../public/images/sample.jpg"
+import abril from "../../../public/images/abrilcv1.png"
 
 const Mbtables = () => {
   return (
@@ -15,7 +15,7 @@ const Mbtables = () => {
     <div className={styles.texcen} style={{paddingBottom:"5%"}}>
 
     <div className={styles.frim}>
-  <Image className={styles.frimx} src={sample} fill style={{objectFit:"cover !important"}} alt="Ux Mexico Abril Rivera" />
+  <Image className={styles.frimx} src={abril} fill style={{objectFit:"cover !important"}} alt="Ux Mexico Abril Rivera" />
   </div>
 
   <h1 className={styles.bate} style={{color:"var(--black)"}}>

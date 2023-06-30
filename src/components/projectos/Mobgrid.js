@@ -1,5 +1,4 @@
 import React from 'react'
-import sample from "../../../public/images/sample.jpg"
 import Image from 'next/image'
 import styles from "../../styles/Grid.module.css"
 import sshe from "/public/images/Portfolio/Sshead.png"
@@ -10,9 +9,6 @@ import imgh from "/public/images/Portfolio/imagikidsheader.png"
 import process from "/public/images/Portfolio/woffleshead.png"
 
 function Mobgrid() {
-  const images = [
-  sample,sample
-  ];
   return (
     <div className={styles.containerds}>
 <div className={styles.bigds} >  
