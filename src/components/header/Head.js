@@ -33,7 +33,7 @@ function Header() {
 
       <div className={styles.mousecont}>
      <h6 className={styles.thm}> Let´s Scroll</h6>
-      <Image className="svcom" src="./logos/mouse.svg"   width={30} height={30}></Image>
+      <Image className="svcom" src="./logos/mouse.svg"  alt='mouse' width={30} height={30}></Image>
       </div>
 
     </div>
