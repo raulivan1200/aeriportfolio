@@ -2,8 +2,24 @@ import React from 'react';
 import styles from '../../styles/Head.module.css';
 import Image from 'next/image'
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 function Header() {
-  
+
+  useEffect(() => {
+    const isIOSByUserAgent = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isIOSByPlatform =
+      navigator.platform === 'iPad' ||
+      navigator.platform === 'iPhone' ||
+      navigator.platform === 'iPod';
+
+    if (isIOSByUserAgent || isIOSByPlatform) {
+      console.log('This is an iOS device.');
+    } else {
+      console.log('This is not an iOS device!');
+    }
+  }, []);
+
+
   return (  
     <div className={styles.cont} style={{overflowX:"hidden"}}>
       <div className={styles.left}>
@@ -19,6 +35,7 @@ function Header() {
 
       <div className={styles.right} >
       <video
+        disablePictureInPicture 
         style={{ zIndex: 0 , width:'70vw'}}
         loop
         src="./axofin.webm"

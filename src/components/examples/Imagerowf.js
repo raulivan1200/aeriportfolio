@@ -76,7 +76,7 @@ export const Imagerowf = () => {
 
       <Slider  ref={sliderRef} {...settings}>
           <div className="img-wrapper">
-   <a href="/woffles"><img src="/images/Portfolio/woffleshead.png" alt="restaurant waffles food comida mexico menu diseno ux ui" className='rsimg'/></a>
+   <a href="/Woffles"><img src="/images/Portfolio/woffleshead.png" alt="restaurant waffles food comida mexico menu diseno ux ui" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
    <a href="/Imagikids"><img src="/images/Portfolio/imagikidsheader.png"  alt="kids toys design ux ui" className='rsimg'/></a>
