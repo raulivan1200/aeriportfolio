@@ -10,7 +10,6 @@ import { useRef } from "react";
 import { easeInOut, useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
-import noise from "../../public/images/nois.png"
 
 function Section({ children, animationProps }) {
   const ref = useRef(null);
