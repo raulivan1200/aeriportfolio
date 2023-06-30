@@ -11,7 +11,7 @@ const sfsale = () => {
      <Head>
         <title>📈 Sales System</title>
       </Head>
-    <Image src={Ssh} height={1080} width={1920} style={{objectFit:"scale-down !important", height:"auto", width:"100vw",backgroundColor:"white !important"}} alt='restaurant ux ui designer Abril Rivera woffles wofflles wofles'/>
+    <Image src={Ssh} height={1080} width={1920} style={{objectFit:"scale-down !important", height:"auto", width:"100vw",backgroundColor:"white !important"}} alt='sales system sales app sales design ux ui abril rivera portfolio'/>
         <Sfs/>
         <Foot/>
 

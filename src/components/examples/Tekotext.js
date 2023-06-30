@@ -59,7 +59,7 @@ Al entender el proyecto, me empecé a interesar por desarrollarlo partiendo por 
 
 </h5>
 
-<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={teko2} alt=""/>
+<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={teko2} alt="design system studio marketing"/>
 
 <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
 

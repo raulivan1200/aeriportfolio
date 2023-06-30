@@ -23,7 +23,7 @@ function Header() {
         loop
         src="./axofin.webm"
         autoPlay
-        playsinline
+        playsInline
         muted
         type="video/webm"
         className={styles.mvm}

@@ -36,14 +36,14 @@ export const Tablers = () => {
       <table className={styles.mytable}>
   <thead>
     <tr>
-      <th className={styles.myth}><Image src="/logos/figma.svg" style={{mixBlendMode:"difference", background: 'black',}} alt="xd" width={40} height={40}/></th>
-      <th className={styles.myth}><Image src="/logos/webf.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="xd" width={33} height={23}/></th>
-      <th className={styles.myth}><Image src="/logos/xd.svg"  style={{mixBlendMode:"difference", background: 'black',}}  alt="xd" width={40} height={40}/></th>
-      <th className={styles.myth}><Image src="/logos/pr.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="xd" width={40} height={40}/></th>
-      <th className={styles.myth}><Image src="/logos/indes.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="xd" width={40} height={41}/></th>
-      <th className={styles.myth}><Image src="/logos/ps.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="xd" width={40} height={40}/></th>
-      <th className={styles.myth}><Image src="/logos/ai.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="xd" width={40} height={40}/></th>
-      <th className={styles.myth}><Image src="/logos/ae.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="xd" width={38} height={38}/></th>
+      <th className={styles.myth}><Image src="/logos/figma.svg" style={{mixBlendMode:"difference", background: 'black',}} alt="figma" width={40} height={40}/></th>
+      <th className={styles.myth}><Image src="/logos/webf.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="webflow" width={33} height={23}/></th>
+      <th className={styles.myth}><Image src="/logos/xd.svg"  style={{mixBlendMode:"difference", background: 'black',}}  alt="adobe xd" width={40} height={40}/></th>
+      <th className={styles.myth}><Image src="/logos/pr.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="adobe premiere pro" width={40} height={40}/></th>
+      <th className={styles.myth}><Image src="/logos/indes.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="adobe indesign" width={40} height={41}/></th>
+      <th className={styles.myth}><Image src="/logos/ps.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="adobe photoshop" width={40} height={40}/></th>
+      <th className={styles.myth}><Image src="/logos/ai.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="adobe illustrator" width={40} height={40}/></th>
+      <th className={styles.myth}><Image src="/logos/ae.svg"  style={{mixBlendMode:"difference", background: 'black',}} alt="after effects" width={38} height={38}/></th>
     </tr>
   </thead>
 </table>

@@ -10,6 +10,8 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
+
+
 function Section({ children, animationProps }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -37,7 +39,7 @@ function Section({ children, animationProps }) {
 const Main = () => {
   return (
     <>
-      <div className="backgc">
+      <div>
 
 
         <Head>
@@ -63,7 +65,7 @@ const Main = () => {
         </section>
         <Section animationProps={{ initialTransform: "translate(0px, -100px)", initialOpacity: 0 }}>
           <motion.div id="skills-section">
-          <Parallax speed={5}   easing="ease"  translateX={['-100px', '0px']}>
+          <Parallax speed={5}   easing="ease"  translateX={['-20px', '0px']}>
             <Skills />
           </Parallax>
           </motion.div>

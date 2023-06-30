@@ -76,19 +76,19 @@ export const Imagerowf = () => {
 
       <Slider  ref={sliderRef} {...settings}>
           <div className="img-wrapper">
-   <a href="/woffles"><img src="/images/Portfolio/woffleshead.png" className='rsimg'/></a>
+   <a href="/woffles"><img src="/images/Portfolio/woffleshead.png" alt="restaurant waffles food comida mexico menu diseno ux ui" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Imagikids"><img src="/images/Portfolio/imagikidsheader.png"  className='rsimg'/></a>
+   <a href="/Imagikids"><img src="/images/Portfolio/imagikidsheader.png"  alt="kids toys design ux ui" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Teko"><img src="/images/Portfolio/tekohead.png"  className='rsimg'/></a>
+   <a href="/Teko"><img src="/images/Portfolio/tekohead.png"  alt="ux ui design studio" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Salessystem"><img src="/images/Portfolio/Sshead.png"  className='rsimg'/></a>
+   <a href="/Salessystem"><img src="/images/Portfolio/Sshead.png"  alt="sales store market ux ui" className='rsimg'/></a>
           </div>
         <div className="img-wrapper">
-   <a href="/Billsplitter"><img src="/images/Portfolio/billhead.png" className='rsimg' /></a>
+   <a href="/Billsplitter"><img src="/images/Portfolio/billhead.png" alt="ux ui bill" className='rsimg' /></a>
 </div>
         </Slider>
 

@@ -16,7 +16,7 @@ function Imagikid() {
       </Head>
     <div className='pm'>
       <div className={styles.conmi} style={{ position:"relative"}}>
-      <Image src={imkih} height={1080} width={1920} style={{objectFit:"cover !important", height:"100%", width:"100vw",backgroundColor:"white !important"}} alt='restaurant ux ui designer Abril Rivera woffles wofflles wofles'/>
+      <Image src={imkih} height={1080} width={1920} style={{objectFit:"cover !important", height:"100%", width:"100vw",backgroundColor:"white !important"}} alt='imagikids parenting site app mobile ux ui design imagi kids child parenting babysitting design'/>
 </div>
 <Imagikidstext/>
         <Foot/>

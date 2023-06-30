@@ -36,10 +36,10 @@ const Mbtables = () => {
 <table className={styles.mytable}>
         <thead>
           <tr>
-          <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}} src="/logos/figma.svg"  alt="xd" width={40} height={41}/></th>
-      <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/webf.svg" alt="xd" width={40} height={41}/></th>
-      <th className={styles.myth}><Image   style={{mixBlendMode:"difference", background: 'black',}} src="/logos/xd.svg" alt="xd" width={40} height={41}/></th>
-      <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/pr.svg" alt="xd" width={40} height={41}/></th>
+          <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}} src="/logos/figma.svg"  alt="figma" width={40} height={41}/></th>
+      <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/webf.svg" alt="webflow" width={40} height={41}/></th>
+      <th className={styles.myth}><Image   style={{mixBlendMode:"difference", background: 'black',}} src="/logos/xd.svg" alt="adobe xd" width={40} height={41}/></th>
+      <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/pr.svg" alt="premiere pro adobe ux ui" width={40} height={41}/></th>
           </tr>
         </thead>
       </table>
@@ -49,10 +49,10 @@ const Mbtables = () => {
     <table className={styles.mytable}>
         <thead>
           <tr>
-          <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/indes.svg" alt="xd" width={40} height={41}/></th>
-      <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/ps.svg" alt="xd" width={40} height={41}/></th>
-      <th className={styles.myth}><Image   style={{mixBlendMode:"difference", background: 'black',}} src="/logos/ai.svg" alt="xd" width={40} height={41}/></th>
-      <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/ae.svg" alt="xd" width={40} height={41}/></th>
+          <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/indes.svg" alt="adobe indesign" width={40} height={41}/></th>
+      <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/ps.svg" alt="photoshop" width={40} height={41}/></th>
+      <th className={styles.myth}><Image   style={{mixBlendMode:"difference", background: 'black',}} src="/logos/ai.svg" alt="adobe illustrator" width={40} height={41}/></th>
+      <th className={styles.myth}><Image  style={{mixBlendMode:"difference", background: 'black',}}  src="/logos/ae.svg" alt="adobe after effects" width={40} height={41}/></th>
           </tr>
         </thead>
       </table>

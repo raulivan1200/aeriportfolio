@@ -53,14 +53,14 @@ El desarrollo de esta propuesta duró menos de 24 horas, entre UX y UI.
   A partir de entender la principal funcionalidad que se queria desarrollar, empecé a plantear los requerimientos que debían inlcuirse y considerarse para ofrecer la mejor experiencia posible. Tomando en cuenta principalmente el ofrecer pocas pantallas y cumplir con la tarea especificada.
 <br/> Al finalizar la parte de el flujo y aterrizarla en wireframes, aplique los elementos visuales que se muestran en el resultado final.
 </h5>
-<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflescreens} alt=""/>
+<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflescreens} alt="restaurant design ux ui abril rivera"/>
 
 <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
  <h5 className={styles.pjlt}>
  Encontre varias referencias haciendo busquedas y consultas rapidas entre diversos sitios de recursos para aterrizar las mejores referencias en un rapido moodboard.
 <br/> Apartir de ellas genere un estilo para las pantallas que se habían planteado, considerando igual mantener y potencializar la aplicación.
 </h5>
-<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflesrule} alt=""/>
+<Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflesrule} alt="abril aeri ux ui design"/>
 
 
 

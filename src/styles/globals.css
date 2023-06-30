@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -61,12 +62,11 @@
     .svcom{
         filter: invert(1) !important;
     }
-
 }
 
 html[data-theme='light'],
 html[data-theme='dark'] {
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 html {
@@ -265,9 +265,7 @@ html {
     border: 1px solid  var(--white);
     padding: 10px;
   }
-  .backgc{
-    color:  var(--white);
-  }
+
   section {
     scroll-snap-align: start;
   }

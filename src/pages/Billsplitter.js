@@ -15,7 +15,7 @@ function Bill() {
       </Head>
       <main>
     <div className='pm'>
-        <Image src={billhead} height={1080} width={1920} style={{objectFit:"cover !important", height:"auto", width:"100vw",backgroundColor:"white !important"}} alt='restaurant ux ui designer Abril Rivera woffles wofflles wofles'/>
+        <Image src={billhead} height={1080} width={1920} style={{objectFit:"cover !important", height:"auto", width:"100vw",backgroundColor:"white !important"}} alt='bill system split bill splitter billsplitter billing system'/>
             <Billsplittertext/>
         <Foot/>
     </div>  

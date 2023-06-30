@@ -47,12 +47,6 @@ function Mobgrid() {
 </div>
 </div>
 
-<div className={styles.bb6} >
-<div className={styles.brims}>
-<a href="/404"> <Image className={styles.imrs}  src={process} alt="project on process"></Image></a>
-</div>
- </div>
-
 </div>
       
   )

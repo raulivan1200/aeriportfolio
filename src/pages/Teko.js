@@ -14,7 +14,7 @@ function teko() {
         <Head>
         <title>💙 Teko</title>
       </Head>
-        <Image src={tek} height={1080} width={1920} style={{objectFit:"scale-down !important", height:"auto", width:"100vw",backgroundColor:"white !important"}} alt='restaurant ux ui designer Abril Rivera woffles wofflles wofles'/>
+        <Image src={tek} height={1080} width={1920} style={{objectFit:"scale-down !important", height:"auto", width:"100vw",backgroundColor:"white !important"}} alt='design stuido ux ui system teko studio '/>
             <Tekotext/>
         <Foot/>
     </div>  

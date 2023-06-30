@@ -59,7 +59,7 @@ A partir de la información recopilada avanzamos y desarrollamos detalladamente 
 Se realizaron pruebas con los usuarios además de nuevas entrevistas para probar que los elementos que se estaban desarrollando realmente funcionaran para lo que querian lograr. 
 
     </h5>
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={sysd} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={sysd} alt="sales store system ux UI Ux/ui Ux"/>
     
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>

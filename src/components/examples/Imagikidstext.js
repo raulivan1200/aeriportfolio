@@ -60,7 +60,7 @@ export const Imagikidstext = () => {
     Apartir de tener las funcionalidades básicas, empecé a desarrollar wireframes considerando las funciones.
     
     </h5>
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={img} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={img} alt="kids toys parenting childs ninos nina parents babysitter app mobile ux"/>
     
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>
@@ -70,7 +70,7 @@ export const Imagikidstext = () => {
     Previamente explore en una lluvia de ideas estructuras visuales que pudieran funcionar. 
     
     </h5>
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={imco} alt=""/>
+    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={imco} alt="ux ui babysitting mexico ux ui design"/>
     
     
     
