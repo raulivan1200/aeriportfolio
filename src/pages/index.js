@@ -7,7 +7,7 @@ import Transition from "../../src/components/Transition";
 import Head from "next/head";
 import Header from "../components/header/Head";
 import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { easeInOut, useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 
@@ -25,7 +25,7 @@ function Section({ children, animationProps }) {
   const transformedStyle = {
     transform: isInView ? "none" : initialTransform,
     opacity: isInView ? 1 : initialOpacity,
-    transition: transition,
+    transition: easeInOut,
     duration:2,
   };
 
