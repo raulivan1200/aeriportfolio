@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const Transition = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [animationComplete, setAnimationComplete] = useState(false);
+    const [videoLoaded, setVideoLoaded] = useState(false);
   
     useEffect(() => {
       const timeout = setTimeout(() => {
@@ -20,10 +21,25 @@ const Transition = () => {
     };
     const handleVideoEnd = () => {
       setAnimationComplete(true);
+      setVideoLoaded(true);
     };
   
-    if (animationComplete) {
-      return null; // Don't render anything once the animation is complete
+    if (animationComplete && !videoLoaded) {
+      return (
+        <img
+          src="./abrilcv1.png"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: 99999999,
+            backgroundColor:"#0f4c82"
+          }}
+        />
+      );
     }
     
   return (
