@@ -29,7 +29,7 @@ const Transition = () => {
   return (
     <>
       <motion.video
-        src="./axocameramove.mp4"
+        src="./axofin.webm"
         autoPlay
         muted
         loop
@@ -44,6 +44,7 @@ const Transition = () => {
           height: "100%",
           objectFit: "cover",
           zIndex: 99999999,
+          backgroundColor:"#0f4c82"
         }}
         onAnimationComplete={handleAnimationComplete}
         onEnded={handleVideoEnd}
