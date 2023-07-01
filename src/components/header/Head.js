@@ -1,5 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
+import styles from '../../styles/Head.module.css';
+import Image from 'next/image'
+import { motion } from 'framer-motion';
 
 function isIOS() {
   const iOSDevices = /iPhone|iPad|iPod/.test(navigator.userAgent);
@@ -35,23 +38,74 @@ function isIOS() {
 
 function AppleComponent() {
   return <div>
-    <h1>
-    This is the Apple component. <br/>
-    This is the Apple component. <br/>
-    </h1>
+
+<div className={styles.cont} style={{overflowX:"hidden"}}>
+      <div className={styles.left}>
+
+        <h2 className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </h2>
+        <hr className={styles.hrx}/>
+       
+
+        <h3 className={styles.wh}>Abril Rivera</h3>
+        <h7 className={styles.wh}>UX/UI Designer</h7>
+
+      </div>
+
+      <div className={styles.right} >
+        <img src="https://media.makeameme.org/created/f-apple-rip.jpg" alt="meme"/>
+      </div>
+
+      <div className={styles.mousecont}>
+     <h6 className={styles.thm}> Let´s Scroll</h6>
+      <Image className="svcom" src="./logos/mouse.svg"  alt='mouse' width={30} height={30}></Image>
+      </div>
+
+    </div>
+
   </div>;
 }
 
 function NonAppleComponent() {
-  return <div>
-    <h1 >
-    This is the Non-Apple component. <br/>
-    This is the Non-Apple component. <br/>
-    </h1>
-    </div>;
-}
+  return (
 
-function App() {
+    <div className={styles.cont} style={{overflowX:"hidden"}}>
+      <div className={styles.left}>
+
+        <h2 className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </h2>
+        <hr className={styles.hrx}/>
+       
+
+        <h3 className={styles.wh}>Abril Rivera</h3>
+        <h7 className={styles.wh}>UX/UI Designer</h7>
+
+      </div>
+
+      <div className={styles.right} >
+      <video
+        disablePictureInPicture 
+        style={{ zIndex: 0 , width:'70vw'}}
+        loop
+        src="./axofin.webm"
+        autoPlay
+        playsInline
+        muted
+        type="video/webm"
+        className={styles.mvm}
+        >
+      </video>
+      </div>
+
+      <div className={styles.mousecont}>
+     <h6 className={styles.thm}> Let´s Scroll</h6>
+      <Image className="svcom" src="./logos/mouse.svg"  alt='mouse' width={30} height={30}></Image>
+      </div>
+
+    </div>
+
+  )
+    ;}
+
+function Header() {
   const [isApple, setIsApple] = useState(false);
 
   useEffect(() => {
@@ -65,4 +119,4 @@ function App() {
   );
 }
 
-export default App;
+export default Header;

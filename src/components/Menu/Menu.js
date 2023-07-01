@@ -3,7 +3,7 @@ import closex from "../../../public/logos/close.svg"
 import Image from 'next/image';
 import open from "../../../public/logos/open.svg"
 import SwitchTheme from '../SwitchTheme';
-import { motion,AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Menu({ onProjectClick, onContactClick }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,40 +48,39 @@ function Menu({ onProjectClick, onContactClick }) {
 
   return (
     <div className="menux">
-      <div className="izqx" style={{width:"60%"}}>
-      <Image priority src="./logos/open.svg" className='svco' alt='open' width={48} height={48} style={{cursor:"pointer"}} onClick={handleClick}></Image>
-        <h5  className='mf' style={{color:"var(--black)", paddingLeft:"16px"}}>
-            Esmeralda Rivera
+      <div className="izqx" style={{ width: "60%" }}>
+        <Image priority src="./logos/open.svg" className='svco' alt='open' width={48} height={48} style={{ cursor: "pointer" }} onClick={handleClick}></Image>
+        <h5 className='mf' style={{ color: "var(--black)", paddingLeft: "16px" }}>
+          Esmeralda Rivera
         </h5>
       </div>
       <div className="derx">
-      <p className='wect'>We can <a style={{color:"var(--black)", textDecorationColor:"var(--black)", lineHeight:"26px", fontWeight:"400px",letterSpacing:"1px"}} href="mailto:someone@exemple.com?subject=Questions&body=Escribe aquí si tienes preguntas ">create together</a> </p>
+        <p className='wect'>We can <a style={{ color: "var(--black)", textDecorationColor: "var(--black)", lineHeight: "26px", fontWeight: "400px", letterSpacing: "1px" }} href="mailto:someone@exemple.com?subject=Questions&body=Escribe aquí si tienes preguntas ">create together</a> </p>
         <AnimatePresence>
-        {isOpen && (
-          <motion.div className="menu-container" 
-          initial={{ y: '100vh', opacity: 0, scale: 0 }}
-              animate={{ y: 0, opacity: 1, scale: 1 }}
-              exit={{ y: '100vh', opacity: 0, scale: 0 }}
-              transition={{ ease: 'easeOut', duration: 0.2 }}
+          {isOpen && (
+            <motion.div className="menu-container"
+              initial={{ y: '-100vh', x: '-60vw', opacity: 0, scale: 0, damping: 500, stiffness: 1000, mass: 3  }}
+              animate={{ y: 0, x: 0, opacity: 1, scale: 1 }}
+              exit={{ y: '-100vh', x: '-50vw', opacity: 0, scale: 0}}
+              transition={{ duration: 0.4,damping: 500, stiffness: 1000, mass: 3 }}
+            >
+              <div className='mpm'>
+                <div style={{ width: "100%", justifyContent: "space-between", display: "flex", flexDirection: "row" }}>
+                  <Image priority src="./logos/close.svg" className='svco' alt='close' width={48} height={48} onClick={handleClose}></Image>
+                  <SwitchTheme />
+                </div>
 
-          >
-            <div className='mpm'> 
-           <div style={{width:"100%",justifyContent:"space-between", display:"flex", flexDirection:"row"}}>
-           <Image priority  src="./logos/close.svg" className='svco' alt='close' width={48} height={48} onClick={handleClose}></Image>
-            <SwitchTheme/>
-           </div>
+                <h2 className='menubutton' onClick={() => handleScrollTo('head-section')} style={{ width: "fit-content", fontSize: "64px", fontWeight: "600", color: "var(--black)" }}>Go Up</h2>
+                <h2 className='menubutton' onClick={() => handleScrollTo('grid-section')} style={{ width: "fit-content", fontSize: "64px", fontWeight: "600", color: "var(--black)" }}>Projects</h2>
+                <h2 className='menubutton' onClick={() => handleScrollTo('exp-section')} style={{ width: "fit-content", fontSize: "64px", fontWeight: "600", color: "var(--black)" }}>About Me</h2>
+                <h2 className='menubutton' onClick={() => handleScrollTo('skills-section')} style={{ width: "fit-content", fontSize: "64px", fontWeight: "600", color: "var(--black)" }}>My Journey</h2>
+                <a href="mailto:vannie.aeri@gmail.com" style={{ textDecoration: "none", color: "var(--black)" }}>
+                  <h2 style={{ fontSize: "20px", fontWeight: "400", marginTop: "-1%" }}>Lic. Esmeralda Rivera</h2>
+                </a>
+              </div>
 
-              <h2 className='menubutton' onClick={() => handleScrollTo('head-section')} style={{width:"fit-content",fontSize:"64px",fontWeight:"600",color:"var(--black)"}}>Go Up</h2>
-              <h2 className='menubutton' onClick={() => handleScrollTo('grid-section')} style={{width:"fit-content",fontSize:"64px",fontWeight:"600",color:"var(--black)"}}>Projects</h2>
-              <h2 className='menubutton' onClick={() => handleScrollTo('exp-section')} style={{width:"fit-content",fontSize:"64px",fontWeight:"600",color:"var(--black)"}}>About Me</h2>
-              <h2 className='menubutton' onClick={() => handleScrollTo('skills-section')} style={{width:"fit-content",fontSize:"64px",fontWeight:"600",color:"var(--black)"}}>My Journey</h2>
-            <a href="mailto:vannie.aeri@gmail.com" style={{textDecoration:"none", color:"var(--black)"}}>
-              <h2 style={{fontSize:"20px",fontWeight:"400",marginTop:"-1%"}}>Lic. Esmeralda Rivera</h2>
-            </a>
-            </div>
-
-          </motion.div>
-        )}
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
     </div>
