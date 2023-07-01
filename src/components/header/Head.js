@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 
 function isIOS() {
@@ -6,9 +7,16 @@ function isIOS() {
   const isTouchScreen = navigator.maxTouchPoints > 1;
   const iOSVersions = /(iPhone|iPod|iPad).*OS\s([0-9]{1,2})_/i.exec(navigator.userAgent);
   const iOSVersion = iOSVersions ? parseInt(iOSVersions[2], 10) : 0;
+  const isSafari = /^((?!chrome|android|crios|fxios|opera|edge|msie|trident).)*safari/i.test(navigator.userAgent);
+  const isM1 = navigator.cpuArchitecture === "arm64";
+  const isM2 = navigator.cpuArchitecture === "arm64e";
+  const isiPhone = /iPhone/.test(navigator.platform);
+  const isAppleWatch = /Watch/.test(navigator.platform);
+  const isAppleTV = /AppleTV/.test(navigator.platform);
+  const isSafari12OrHigher = isSafari && /^Version\/([1-9][2-9]|[2-9][0-9])\./i.test(navigator.userAgent);
 
   return (
-    iOSDevices ||
+    iOSDevices || isSafari || isM1 || isM2 || isSafari12OrHigher || isiPhone || isAppleWatch || isAppleTV ||
     (isMac && isTouchScreen) ||
     (iOSVersion >= 15 && iOSVersion <= 17) ||
     (iOSVersion === 14 && navigator.userAgent.includes('iPhone14')) ||
