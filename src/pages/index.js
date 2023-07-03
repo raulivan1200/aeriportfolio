@@ -38,11 +38,10 @@ function Section({ children, animationProps }) {
 const Main = () => {
   return (
     <>
-      <div>
-
-
+      <div >
         <Head>
           <title>✨Esmeralda Rivera Ux/Ui✨</title>
+          <meta name="description" content="Abril Rivera Experienced UX/UI designer bilingual. View my portfolio and contact me for your design projects." />
         </Head>
         <section id="head-section">
           <Header />

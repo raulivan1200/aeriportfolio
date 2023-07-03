@@ -1,7 +1,7 @@
 .pm{
     width: 100vw;
     height: 100%;
-    background-color: var(--white) !important;
+    background-color: var(--background) !important;
     padding-bottom: 140px;
 }
 
