@@ -151,8 +151,8 @@ color: var(--black);
     }
     .cont{padding-top: 15%;}
     .hrx{
-
-    }
+      margin-top: 1%;
+    } 
   }
 
   @media screen and (min-width:1921px) {
