@@ -52,7 +52,7 @@ function AppleComponent() {
       </div>
 
       <div className={styles.right} >
-        <img src="https://media.makeameme.org/created/f-apple-rip.jpg" alt="meme"/>
+        <img src="/saluteapple.png" style={{height:"40vh", width:"auto"}} alt="apple axo salute"></img>
       </div>
 
       <div className={styles.mousecont}>

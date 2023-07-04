@@ -12,8 +12,11 @@
     align-items: center;
 
   }
- 
+  @media (max-width: 468px) {
 
+  .left{
+    padding-top: 0% !important;
+  }}
   @media (max-width: 768px) {
     .mvm{
       width: 140vw !important;   

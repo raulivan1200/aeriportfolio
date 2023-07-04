@@ -24,9 +24,9 @@ export default function ErrorPage() {
 
   return (
     <>
-<div style={{backgroundColor:"var(--background)",textAlign:"center" ,alignContent:"center",justifyContent:"center",alignItems:"center",margin:"0 auto"}}>
+<div style={{zIndex:"-12",backgroundColor:"var(--background)",textAlign:"center" ,alignContent:"center",justifyContent:"center",alignItems:"center",margin:"0 auto", height:"100vh",overflow:"hidden"}}>
 <Head>
-        <title>⚠️Page not found⚠️</title>
+        <title>⚠️ Page not found ⚠️</title>
       </Head>
       <main style={{textAlign:"center"}}>
         <h1 style={{color:"var(--black) !important"}} >404</h1>
@@ -35,8 +35,14 @@ export default function ErrorPage() {
           This page cannot be found. Redirecting to the homepage in{' '}
           {secondsRemaining} {secondsRemaining > 1 ? 'seconds' : 'second'}.
         </h3>
-        <h6>perdon me equivoque si habia donde correr :v</h6>
-        <h1>😭😿💔😓😥😔😖</h1>
+        <h6>Sorry, our axo is sleeping</h6>
+        <h6>😢😭😟😞💔😓😥😔😖</h6>
+
+  
+<div style={{ width:"100vw",position: "absolute",display:"flex",zIndex:"9",height:"max-content",bottom:"0",justifyContent:"center", alignItems:"center", alignContent:"center"}}>
+        <img src="./mimidoasul.png" alt="axo sleep" style={{objectFit:"scale-down"}} className='fofim' />
+        </div>
+
       </main>
 </div>
     </>
