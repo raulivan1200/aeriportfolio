@@ -174,7 +174,7 @@ function Deskgrid() {
      </motion.div>
      </Parallax>
 
-     <Parallax translateY={[10, -30]} easing={'ease'} speed={3} scale={[1,1.05]}>
+     <Parallax translateY={[-20, 10]} easing={'ease'} speed={3} scale={[1,1.05]}>
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/6-100)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb5} onMouseEnter={Imagike} onMouseLeave={projectLeave}>
     <div className={styles.brims}>

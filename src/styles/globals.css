@@ -331,6 +331,10 @@ html {
     display: flex;
     background-color: var(--white);
     border: none;
+    font-size: 64px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif !important;
+    line-height: 96px;
 }
 .menubutton:hover{
     color: pink !important;
@@ -361,6 +365,12 @@ color: var(--black);
     overflow: hidden;
 }
 @media screen and (max-width:768px) {
+  .hidemobile{
+    display: none;
+  }
+  .hidedesktop{
+    display: block;
+  }
     .mpm{
         padding-top: 5%;
         padding-left: 5%;
@@ -528,4 +538,42 @@ color: var(--black);
     cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>✨</text></svg>"), auto;
     color: transparent;
     transition: .3s ease-out;
+}
+
+@media screen and (min-width:768px) {
+  .hidemobile{
+    display: inline;
+  }
+  .hidedesktop{
+    display: none;
+  }
+}
+
+.btn {
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.71px solid var(--black);
+  border-radius: 32px;
+  background-color: transparent;
+  color:  var(--black);
+  padding: 12px 24px;
+  gap: 10px;
+  width: fit-content;
+}
+
+.btn:hover{
+  scale: 1.01;
+  color: pink;
+}
+
+.btx {
+  color: var(--black);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0; /* Remove default margin */
+  line-height: 1; /* Reset line-height to prevent extra space */
 }

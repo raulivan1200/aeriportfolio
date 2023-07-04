@@ -70,12 +70,16 @@ function Menu({ onProjectClick, onContactClick }) {
                   <SwitchTheme />
                 </div>
 
-                <h2 className='menubutton' onClick={() => handleScrollTo('head-section')} style={{ width: "fit-content", fontSize: "64px", fontWeight: "600", color: "var(--black)" }}>Go Up</h2>
-                <h2 className='menubutton' onClick={() => handleScrollTo('grid-section')} style={{ width: "fit-content", fontSize: "64px", fontWeight: "600", color: "var(--black)" }}>Projects</h2>
-                <h2 className='menubutton' onClick={() => handleScrollTo('exp-section')} style={{ width: "fit-content", fontSize: "64px", fontWeight: "600", color: "var(--black)" }}>About Me</h2>
-                <h2 className='menubutton' onClick={() => handleScrollTo('skills-section')} style={{ width: "fit-content", fontSize: "64px", fontWeight: "600", color: "var(--black)" }}>My Journey</h2>
+                <span className='menubutton' onClick={() => handleScrollTo('head-section')} style={{ paddingTop:"5%",width: "fit-content", color: "var(--black)" }}>Go Up</span>
+                <span className='menubutton' onClick={() => handleScrollTo('grid-section')} style={{ width: "fit-content", color: "var(--black)" }}>Projects</span>
+                <span className='menubutton' onClick={() => handleScrollTo('exp-section')} style={{ width: "fit-content", color: "var(--black)" }}>About Me</span>
+                <span className='menubutton' onClick={() => handleScrollTo('skills-section')} style={{ width: "fit-content", color: "var(--black)" }}>My Journey</span>
+                <a  style={{textDecoration:"none",paddingTop:"5%"}} href="mailto:04.esmeraldarp@gmail.com" target='_blank' className='hidedesktop'><div className="btn"><p style={{color:"var(--black)"}} className="btx">Let´s create</p></div></a>
+                
                 <a href="mailto:vannie.aeri@gmail.com" style={{ textDecoration: "none", color: "var(--black)" }}>
-                  <h2 style={{ fontSize: "20px", fontWeight: "400", marginTop: "-1%" }}>Lic. Esmeralda Rivera</h2>
+                  <div style={{position:"fixed",bottom:"5%" , left:"5%"}}>
+                  <h2 style={{ fontSize: "20px", fontWeight: "400",width:"fit-content" }} className='hidemobile'>Lic. Esmeralda Rivera</h2>
+                  </div>
                 </a>
               </div>
 
