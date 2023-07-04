@@ -39,20 +39,19 @@ function isIOS() {
 function AppleComponent() {
   return <div>
 
-<div className={styles.cont} style={{overflowX:"hidden"}}>
+<div className={styles.cont} style={{overflowX:"hidden",height:"100vh !important"}}>
       <div className={styles.left}>
 
-        <h2 className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </h2>
+      <span className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </span>
         <hr className={styles.hrx}/>
        
-
         <h3 className={styles.wh}>Abril Rivera</h3>
         <h7 className={styles.wh}>UX/UI Designer</h7>
 
       </div>
 
       <div className={styles.right} >
-        <img src="/saluteapple.png" style={{height:"40vh", width:"auto"}} alt="apple axo salute"></img>
+        <img src="/saluteapple.png" className={styles.apim} alt="apple axo salute"></img>
       </div>
 
       <div className={styles.mousecont}>

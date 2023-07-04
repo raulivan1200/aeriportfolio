@@ -131,14 +131,18 @@
   height: 100%;
   overflow: visible;
 }
-  
+@media screen and (max-width:500px) {
+.containerds{
+  margin-top: -20% !important;
+}
+}
   @media screen and (max-width:768px) {
     .mlp{
       padding-left: 10% !important;
     }
     .containerds{
       padding-bottom: 0;
-      margin-top: -25%;
+      margin-top: 0%;
       display: flex;
       gap: 24px;
       flex-direction: column;

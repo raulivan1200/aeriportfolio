@@ -4,9 +4,6 @@ import Image from 'next/image'
 import { motion } from 'framer-motion';
 
 function isIOS() {
-
-
-
   const iOSDevices = /iPhone|iPad|iPod/.test(navigator.userAgent);
   const isMac = /Mac/.test(navigator.platform);
   const isTouchScreen = navigator.maxTouchPoints > 1;
@@ -41,8 +38,7 @@ function isIOS() {
 function AppleComponent() {
 
   return (
-
-<>
+    <>
 
 </>
   );
@@ -52,7 +48,6 @@ function NonAppleComponent() {
   return (
 
 <>
-
 
 </>
 
