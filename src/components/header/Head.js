@@ -71,7 +71,7 @@ function NonAppleComponent() {
     <div className={styles.cont} style={{overflowX:"hidden"}}>
       <div className={styles.left}>
 
-        <h2 className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </h2>
+        <span className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </span>
         <hr className={styles.hrx}/>
        
 

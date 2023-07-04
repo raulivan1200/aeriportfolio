@@ -41,14 +41,14 @@
       margin-left: 0% !important
     }
     .left{
+      padding-top: 30%;
       padding-left: 10%;
       margin-left: 0 !important;
       height: fit-content !important;
     }
     .hrx{
       width: 70vw !important;
-      margin-top: -3em;
-      margin-bottom: 0px;
+
     }
     .thm{
       display: none;
@@ -79,8 +79,6 @@ height: 100vh;
     display: block;
     background-color: var(--black);
       color:"var(--black)";
-    margin-top: -4.5em;
-    margin-bottom: -0.5em;
     margin-left: 0;
     border: 1px solid var(--black);
     
@@ -97,9 +95,7 @@ height: 100vh;
     .hrx{
       color:"var(--black)";
       width: 15vw;
-    margin-top: -4.5em;
-    margin-bottom: -0.5em;
-    height: 0.5%; /* to ensure the hr has some visible height */
+
     }
 }
 .wh{
@@ -109,8 +105,6 @@ height: 100vh;
     .hrx{
       color:"var(--black)";
       width: 15vw;
-    margin-top: 1em;
-    margin-bottom: 1em;
     height: 1px; /* to ensure the hr has some visible height */
     }
 }
@@ -154,12 +148,12 @@ color: var(--black);
     }
     .cont{padding-top: 15%;}
     .hrx{
-      margin-top: -8vh;
+
     }
   }
 
   @media screen and (min-width:1921px) {
     .bigtxt{
-      font-size: 96px;
+      font-size: 172px !important;
     }
   }

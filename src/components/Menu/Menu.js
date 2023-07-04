@@ -78,7 +78,7 @@ function Menu({ onProjectClick, onContactClick }) {
                 
                 <a href="mailto:vannie.aeri@gmail.com" style={{ textDecoration: "none", color: "var(--black)" }}>
                   <div style={{position:"fixed",bottom:"5%" , left:"5%"}}>
-                  <h2 style={{ fontSize: "20px", fontWeight: "400",width:"fit-content" }} className='hidemobile'>Lic. Esmeralda Rivera</h2>
+                  <h2 style={{ fontSize: "20px", fontWeight: "400",width:"fit-content" }} className='hidemobile hpink'>Lic. Esmeralda Rivera</h2>
                   </div>
                 </a>
               </div>
