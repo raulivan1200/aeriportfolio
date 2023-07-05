@@ -35,7 +35,7 @@ export default function ErrorPage() {
           This page cannot be found. Redirecting to the homepage in{' '}
           {secondsRemaining} {secondsRemaining > 1 ? 'seconds' : 'second'}.
         </h3>
-        <h6>Sorry, our axo is sleeping</h6>
+        <h6>Sorry, axo is sleeping</h6>
         <h6>😢😭😟😞💔😓😥😔😖</h6>
 
   

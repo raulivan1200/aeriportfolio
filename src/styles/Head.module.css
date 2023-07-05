@@ -99,9 +99,21 @@ height: 100vh;
       width: 15vw;
 
     }
+    .right{
+      padding-right: 0 !important;
+    }
 }
 .wh{
   color: white;
+  }
+  @media only screen and (max-width: 1000px) and (min-width:769px) {
+.apim{
+  width: 100% !important;
+  height: auto !important;
+}
+.right{
+  padding-right: 100% !important;
+}
   }
   @media only screen and (min-width: 2000px) {
     .hrx{
