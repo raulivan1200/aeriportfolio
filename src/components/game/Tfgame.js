@@ -104,7 +104,7 @@ function Tfgame() {
         setWords([]);
         setCurrentWordIndex(0);
       }
-    }, 2000);
+    }, 5000);
   
     return () => {
       clearInterval(interval);
