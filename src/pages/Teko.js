@@ -15,8 +15,8 @@ function teko() {
         <Head>
         <title>💙 Teko</title>
       </Head>
-      <div style={{width:"100vw",height:"100vh"}}>        
-      <ParallaxBanner style={{height:"100vh",width:"100vw",objectFit:"scale-down"}}>
+      <div>        
+      <ParallaxBanner style={{ aspectRatio: '16 / 10' }} className='conmi'>
       <ParallaxBannerLayer image="/images/Portfolio/tekohead.png" speed={-20} />
       </ParallaxBanner>
       </div>
