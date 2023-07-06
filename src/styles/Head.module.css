@@ -110,7 +110,7 @@ height: 100vh;
 .wh{
   color: white;
   }
-  @media only screen and (max-width: 1000px) and (min-width:769px) {
+  @media only screen and (max-width: 1025px) and (min-width:769px) {
 .apim{
   width: 100% !important;
   height: auto !important;
