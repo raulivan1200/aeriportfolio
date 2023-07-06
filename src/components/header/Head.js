@@ -58,7 +58,7 @@ function AppleComponent() {
 
     <div>
 
-<div className={styles.cont} style={{overflowX:"hidden",height:"100vh !important"}}>
+<div className={styles.cont} style={{overflow:"hidden !important",height:"100vh !important",width:"100vw"}}>
       <div className={styles.left}>
 
       <span className={styles.bigtxt} style={{fontSize:"96px"}}>
@@ -142,7 +142,7 @@ function NonAppleComponent() {
   };
   return (
 
-    <div className={styles.cont} style={{overflowX:"hidden",width:"fit-content"}}>
+    <div className={styles.cont} style={{overflowX:"hidden",width:"100vw"}}>
       <div className={styles.left}>
 
        <span className={styles.bigtxt} style={{fontSize:"96px"}}>
