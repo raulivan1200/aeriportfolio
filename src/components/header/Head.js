@@ -57,12 +57,12 @@ function AppleComponent() {
 
     <div>
 
-<div className={styles.cont} style={{overflow:"hidden !important",height:"100vh !important",width:"100vw"}}>
+<div className={styles.cont} style={{overflowX:"hidden !important",height:"100vh !important",width:"100vw"}}>
       <div className={styles.left}>
 
       <span className={styles.bigtxt} style={{fontSize:"96px"}}>
          
-      <div style={{overflow:"hidden",height:"fit-content",width:"fit-content"}}> 
+      <div style={{height:"fit-content",width:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
@@ -73,7 +73,7 @@ function AppleComponent() {
           </motion.div>
          </div>
 
-         <div style={{overflow:"hidden",width:"fit-content",height:"fit-content"}}> 
+         <div style={{width:"fit-content",height:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
@@ -140,12 +140,12 @@ function NonAppleComponent() {
   };
   return (
 
-    <div className={styles.cont} style={{overflowX:"hidden",width:"100vw"}}>
+    <div className={styles.cont} style={{width:"100vw"}}>
       <div className={styles.left}>
 
        <span className={styles.bigtxt} style={{fontSize:"96px"}}>
          
-         <div style={{overflow:"hidden",height:"fit-content",width:"fit-content"}}> 
+         <div style={{height:"fit-content",width:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
@@ -156,7 +156,7 @@ function NonAppleComponent() {
           </motion.div>
          </div>
 
-         <div style={{overflow:"hidden",width:"fit-content",height:"fit-content"}}> 
+         <div style={{width:"fit-content",height:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
