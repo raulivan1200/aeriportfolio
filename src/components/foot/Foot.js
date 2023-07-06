@@ -21,7 +21,7 @@ function Foot() {
           <h3 className={styles.smtxt}>LinkedIn</h3>
         </a>
       </div>
-        <h3 style={{color:"var(--white) !important",paddingTop:"68px", paddingBottom:"100px"}}>< span className={styles.han}>©</span> Esmeralda Rivera 2023</h3> 
+        <h3 style={{color:"var(--white) !important",paddingTop:"68px", paddingBottom:"100px"}}>< span className={styles.han} id="rotate-on-hover">©</span> Esmeralda Rivera 2023</h3> 
       </div>
         </div>
     </div>

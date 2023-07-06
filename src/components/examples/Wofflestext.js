@@ -5,30 +5,76 @@ import wofflescreens from "/public/images/Portfolio/woffles.png"
 import wofflesrule from "/public/images/Portfolio/wofflesdetail.png"
 import { Imagerowf } from './Imagerowf'
 import Menupj from '../Menu/Menupj'
+import { motion,useInView } from 'framer-motion'
+import { useRef } from 'react'
 
 function Wofflestext() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const animationVariants = {
+    hidden: {
+      x: -100,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className={styles.pm}>
 <Menupj/>
 
 <div className={styles.container}>
   <div className={styles.texle}>
-
+  <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: 0 }}
+          variants={animationVariants}>
+            
     <h4 className={styles.pjtb}>LandingPage for a restaurant</h4>
-
 <hr className={styles.hrr}/>
+          </motion.div>
 
 <div className={styles.txj}>
+<motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: .1 }}
+          variants={animationVariants}>
+
 <h6 className={styles.pb6}>Deliverables</h6> <h7 style={{color:"var(--black)"}}>Landing Page Design<br/>Design System <br/>Branding<br/>Responsive Versions </h7>
+          </motion.div>
 </div>
 
 <div className={styles.txj}>
+<motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: .2 }}
+          variants={animationVariants}>
+
 <h6 className={styles.pb6}>Tools</h6><h7 style={{color:"var(--black)"}}>Figma <br/>Photoshop <br/>Illustrator<br/>Paper & Pencil</h7>
+          </motion.div>
 </div>
 
 <div className={styles.txj}>
+<motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: .3 }}
+          variants={animationVariants}>
+
 <h6 className={styles.pb6}>Year</h6>
 <h7 style={{color:"var(--black)"}}>2022</h7>
+          </motion.div>
 </div>
 
 

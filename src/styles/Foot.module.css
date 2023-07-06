@@ -141,8 +141,11 @@ color: var(--white);
   scale: 1.01;
   color: pink;
 }
+.han{
+  transition: transform 0.5s;
+}
 .han:hover{
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   color: pink;
   transition: ease-in-out;
 }
