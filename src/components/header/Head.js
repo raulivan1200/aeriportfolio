@@ -110,7 +110,7 @@ function AppleComponent() {
       </div>
 
       <div className={styles.right} style={{boxSizing:"border-box"}} >
-        <Image src="/saluteapple.png" style={{objectFit:"scale-down",height:"100%",width:"100%"}} width={1920} height={1080} className={styles.apim} alt="apple axo salute"></Image>
+        <Image src="/saluteapple.png" style={{objectFit:"scale-down",bottom:0}} width={1920} height={1080} className={styles.apim} alt="apple axo salute"></Image>
       </div>
 
       <div className={styles.mousecont}>
