@@ -18,7 +18,7 @@ function WordFalling({ word, position }) {
   const ref = useRef();
 
   const getRandomColor = () => {
-    const colors = ["#b9e3c6", "#59c9a5", "#d81e5b", "#23395b", "#fffd98", "#690375"];
+    const colors = ["#04395e", "#f45866", "#dd1c1a", "#d78521", "#f6f930", "#802392"];
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
   };
@@ -31,7 +31,7 @@ function WordFalling({ word, position }) {
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
-    ref.current.position.y -= 0.005 * elapsedTime; // Update Y position based on elapsed time
+    ref.current.position.y -= 0.003 * elapsedTime; // Update Y position based on elapsed time
   });
 
   return (
@@ -90,18 +90,19 @@ function Tfgame() {
     const interval = setInterval(() => {
       if (currentWordIndex < initialWords.length) {
         const updatedWords = [...words];
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 6; i++) {
           if (currentWordIndex + i < initialWords.length) {
             updatedWords.push(initialWords[currentWordIndex + i]);
           }
         }
+        
         setWords(updatedWords);
-        setCurrentWordIndex(currentWordIndex + 3);
+        setCurrentWordIndex(currentWordIndex + 6);
       } else {
         setWords([]);
         setCurrentWordIndex(0);
       }
-    }, 4000);
+    }, 6000);
   
     return () => {
       clearInterval(interval);
@@ -116,9 +117,8 @@ function Tfgame() {
         <Axo position={[0, 0, 0]}/>
         </Suspense >
 
-        {words.map((word, index) => (
-          <WordFalling key={index} word={word.word} position={word.position} />
-        ))}
+        {words.map((word, index) => (<WordFalling key={index} word={word.word} position={word.position}/>        ))}
+        
 
         <rectAreaLight
       width={2}
