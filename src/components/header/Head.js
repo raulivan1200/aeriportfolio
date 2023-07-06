@@ -84,7 +84,7 @@ function NonAppleComponent() {
         disablePictureInPicture 
         style={{ zIndex: 0 , width:'70vw'}}
         loop
-        src="./axofin.webm"
+        src="./greetings.webm"
         autoPlay
         playsInline
         muted

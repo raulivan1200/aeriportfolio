@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image'
 import { motion } from 'framer-motion';
-
+import appletransition from './appletransition';
+import nonapple from './nonapple';
 function isIOS() {
   const iOSDevices = /iPhone|iPad|iPod/.test(navigator.userAgent);
   const isMac = /Mac/.test(navigator.platform);
@@ -39,7 +40,7 @@ function AppleComponent() {
 
   return (
     <>
-
+<appletransition/>
 </>
   );
 }
@@ -48,7 +49,7 @@ function NonAppleComponent() {
   return (
 
 <>
-
+<nonapple/>
 </>
 
   );}
