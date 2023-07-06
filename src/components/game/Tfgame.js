@@ -9,7 +9,7 @@ import  styles from "../../styles/Skills.module.css"
 function Tfgame() {
   return (
     <div style={{height:"80vh", justifyContent:"center",alignItems:"center"}} className={styles.tresde}>
-      <Canvas camera={{ fov: 70, position: [0, 100, 50] }}>
+      <Canvas camera={{ fov: 70, position: [0, 50, 50] }}>
         <OrbitControls/>
       <Suspense fallback={null}>
         <Axo position={[0, 0, 0]}/>
