@@ -15,9 +15,10 @@ function Bill() {
       </Head>
       <main>
     <div className='pm'>
-    <ParallaxBanner>
-      <ParallaxBannerLayer image="/images/Portfolio/billhead.png" speed={-20} />
-      </ParallaxBanner>            <Billsplittertext/>
+    <ParallaxBanner style={{height:"100vh",width:"100vw",objectFit:"scale-down"}}>
+      <ParallaxBannerLayer image="/images/Portfolio/billhead.png"  speed={-20} />
+      </ParallaxBanner>           
+       <Billsplittertext/>
         <Foot/>
     </div>  
     </main>

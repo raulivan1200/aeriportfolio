@@ -11,7 +11,7 @@ const sfsale = () => {
      <Head>
         <title>📈 Sales System</title>
       </Head>
-      <ParallaxBanner >
+      <ParallaxBanner style={{height:"100vh",width:"100vw",objectFit:"scale-down"}}>
       <ParallaxBannerLayer image="/images/Portfolio/Sshead.png" speed={-20} />
       </ParallaxBanner>        <Sfs/>
         <Foot/>
