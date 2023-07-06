@@ -118,7 +118,7 @@ height: 100vh;
   height: auto !important;
 }
 .right{
-  padding-right: 100% !important;
+  padding-right: 0% !important;
 }
   }
   @media only screen and (min-width: 2000px) {
@@ -167,7 +167,7 @@ color: var(--black);
   }}
   @media only screen and (max-width: 400px) {
     .bigtxt{
-    font-size: 20vw !important;
+    font-size: 17vw !important;
     line-height: 11vh;
     padding-top: 15%;
     }
