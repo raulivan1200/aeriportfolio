@@ -16,7 +16,7 @@ function Imagikid() {
       </Head>
     <div className='pm'>
       <div className={styles.conmi} style={{ position:"relative"}}>
-      <ParallaxBanner style={{ aspectRatio: '2 / 1' }}>
+      <ParallaxBanner >
       <ParallaxBannerLayer image="/images/Portfolio/imagikidsheader.png" speed={-20} />
       </ParallaxBanner></div>
 <Imagikidstext/>

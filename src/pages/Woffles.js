@@ -13,7 +13,7 @@ function Wofflles() {
           <Head>
         <title>🧇 Woffles</title>
       </Head>
-      <ParallaxBanner style={{ aspectRatio: '2 / 1' }}>
+      <ParallaxBanner >
       <ParallaxBannerLayer image="/images/Portfolio/woffleshead.png" speed={-20} />
       </ParallaxBanner>            <Wofflestext/>
         <Foot/>
