@@ -4,8 +4,8 @@ import Foot from '../components/foot/Foot'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/pj.module.css"
-import billhead from "/public/images/Portfolio/billhead.png"
 import Head from 'next/head';
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 
 function Bill() {
   return (
@@ -15,8 +15,9 @@ function Bill() {
       </Head>
       <main>
     <div className='pm'>
-        <Image src={billhead} height={1080} width={1920} style={{objectFit:"cover !important", height:"auto", width:"100vw",backgroundColor:"white !important"}} alt='bill system split bill splitter billsplitter billing system'/>
-            <Billsplittertext/>
+    <ParallaxBanner style={{ aspectRatio: '2 / 1' }}>
+      <ParallaxBannerLayer image="/images/Portfolio/billhead.png" speed={-20} />
+      </ParallaxBanner>            <Billsplittertext/>
         <Foot/>
     </div>  
     </main>

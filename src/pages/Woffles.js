@@ -4,8 +4,8 @@ import Foot from '../components/foot/Foot'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/pj.module.css"
-import wof from "/public/images/Portfolio/woffleshead.png"
 import Head from 'next/head';
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 
 function Wofflles() {
   return (
@@ -13,8 +13,9 @@ function Wofflles() {
           <Head>
         <title>🧇 Woffles</title>
       </Head>
-        <Image src={wof} height={1080} width={1920} style={{objectFit:"cover !important", height:"auto", width:"100vw",backgroundColor:"var(--white) !important"}} alt='restaurant ux ui designer Abril Rivera woffles wofflles wofles'/>
-            <Wofflestext/>
+      <ParallaxBanner style={{ aspectRatio: '2 / 1' }}>
+      <ParallaxBannerLayer image="/images/Portfolio/woffleshead.png" speed={-20} />
+      </ParallaxBanner>            <Wofflestext/>
         <Foot/>
     </div>  
   )
