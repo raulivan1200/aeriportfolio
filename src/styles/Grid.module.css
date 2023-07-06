@@ -1,5 +1,6 @@
 
 .containerds {
+  max-width: 100vw !important;
   padding-bottom: 100px;
   height: 110%;
   width: 90%;
