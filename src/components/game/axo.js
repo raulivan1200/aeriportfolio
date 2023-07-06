@@ -24,7 +24,7 @@ export default function Model(props) {
 
   useEffect(() => {
     const animationInterval = setInterval(() => {
-      const animationNames = ['Dancingone', 'chicken', 'dance3', 'fight', 'rumba','thanks'];
+      const animationNames = ['thanks','Dancingone', 'chicken', 'dance3', 'fight', 'rumba'];
       const currentAnimationIndex = animationNames.indexOf(currentAnimation);
       const nextAnimationIndex = (currentAnimationIndex + 1) % animationNames.length;
       const nextAnimation = animationNames[nextAnimationIndex];

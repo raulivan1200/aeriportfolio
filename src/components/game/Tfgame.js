@@ -9,8 +9,8 @@ import { useEffect } from "react";
 import { useRef } from "react";
 
 function getRandomPosition() {
-  const x = Math.random() * 40 - 20; // Random x coordinate between -20 and 20
-  const y = Math.random() * 30 + 20; // Random y coordinate between 20 and 50
+  const x = Math.random() * 50 - 30; // Random x coordinate between -20 and 20
+  const y = Math.random() * 40 + 30; // Random y coordinate between 20 and 50
   const z = Math.random() * -50 + 40; 
   return [x, y, z];
 }
@@ -51,6 +51,7 @@ function WordFalling({ word, position }) {
 let sizeclk;
 
 function Tfgame() {
+
   const initialWords = [
     { word: "User", position: getRandomPosition() },
     { word: "Experience", position: getRandomPosition() },
@@ -91,24 +92,25 @@ function Tfgame() {
     const interval = setInterval(() => {
       if (currentWordIndex < initialWords.length) {
         const updatedWords = [...words];
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 3; i++) {
           if (currentWordIndex + i < initialWords.length) {
             updatedWords.push(initialWords[currentWordIndex + i]);
           }
         }
         
         setWords(updatedWords);
-        setCurrentWordIndex(currentWordIndex + 6);
+        setCurrentWordIndex(currentWordIndex + 3);
       } else {
         setWords([]);
         setCurrentWordIndex(0);
       }
-    }, 6000);
+    }, 2000);
   
     return () => {
       clearInterval(interval);
     };
   }, [currentWordIndex, initialWords, words]);
+
 
   const handleCanvasClick = () => {
    sizeclk=sizeclk+1;
@@ -130,21 +132,13 @@ function Tfgame() {
       <Suspense fallback={null}>
         <Axo position={[0, 0, 0]}/>
         </Suspense >
-
         {words.map((word, index) => (<WordFalling key={index} word={word.word} position={word.position}/>        ))}
-        
 
-        <rectAreaLight
-      width={2}
-      height={2}
-      intensity={2}
-      color={"#ffc0cb"}
-      position={[1, 4, -2]}
-      rotation={[0, 180, 0]}
-      castShadow
-    />
-        <ambientLight intensity={1} />
-        <directionalLight />
+        <ambientLight intensity={0.5} />
+<ambientLight intensity={0.2} />
+        <pointLight    decay={10}  width={50}      height={50}      color={"#2a4494"}      intensity={1.7}      position={[-20, 30, 0]}      lookAt={[0, 0, 0]}      penumbra={10}    />
+        <rectAreaLight      width={10}      height={30}      color={"#e15a97"}      intensity={2}      position={[0, 0, 20]}      lookAt={[0, 0, 0]}      penumbra={20}    />
+        <rectAreaLight      width={10}     height={30}      color={"#faff00"}      intensity={16.8}      position={[25, 15, 5]}      lookAt={[0, 0, 0]}      penumbra={30}    />
       </Canvas>
     </div>
   );
