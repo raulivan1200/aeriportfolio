@@ -12,6 +12,10 @@
     align-items: center;
 
   }
+  .right{
+    overflow: hidden !important;
+
+  }
 
   @media (max-width: 768px) {
     .apim{
@@ -151,10 +155,14 @@ height: 100vh;
 font-style: normal;
 font-weight: 600;
 font-size: 96px !important;
-line-height: 90px;
+
 /* or 94% */
 color: var(--black);
   }
+  @media only screen and (min-width: 1921px) {
+  .bigtxt{
+    line-height: 144px;
+  }}
   @media only screen and (max-width: 400px) {
     .bigtxt{
     font-size: 20vw !important;

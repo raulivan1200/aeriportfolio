@@ -23,7 +23,7 @@ export default function Model(props) {
       actions[nextAnimation].reset().fadeIn(0.5).play(); // Transition: reset and fade in the next animation
 
       setCurrentAnimation(nextAnimation);
-    }, 5000);
+    }, 9000);
 
     return () => clearInterval(animationInterval);
   }, [actions, currentAnimation]);
