@@ -10,6 +10,7 @@
     align-content: center;
     justify-items: center;
     align-items: center;
+    clip-path: inset(0 0 0 calc((100vw - 100%) / 2)); /* Crop to 100vw */
 
   }
  
