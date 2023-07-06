@@ -52,6 +52,7 @@ function AppleComponent() {
       opacity: 1,
     },
   };
+  const cubicBezier = "cubic-bezier(0.0, 0.0, 0.42, 0.0, 0.58, 1.0, 1.0, 1.0)";
 
   return (
 
@@ -62,28 +63,28 @@ function AppleComponent() {
 
       <span className={styles.bigtxt} style={{fontSize:"96px"}}>
          
-         <div style={{overflow:"hidden",width:"fit-content"}}> 
+      <div style={{ clipPath: "inset(0)" }}>
          <motion.div
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: "easeInOut",delay: 0, duration:.3 }}
+          transition={{ ease: cubicBezier,delay: 0, duration:.5 }}
           variants={animationVariants}>
          Live<br/>
           </motion.div>
          </div>
 
-         <div style={{overflow:"hidden",width:"fit-content"}}> 
+         <div style={{ clipPath: "inset(0)",height:"fit-content",width:"fit-content" }}>
          <motion.div
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: "easeInOut",delay: 0.05 , duration:.3}}
+          transition={{ ease: cubicBezier,delay: 0.05 , duration:.5}}
           variants={animationVariants}>
 
          Creative 
-        <hr className={styles.hrx}/>
           </motion.div>
+        <hr className={styles.hrx}/>
          </div>
          
          </span>         
