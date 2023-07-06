@@ -8,52 +8,45 @@ import  styles from "../../styles/Skills.module.css"
 import { useEffect } from "react";
 import { useRef } from "react";
 
-
 function getRandomPosition() {
   const x = Math.random() * 40 - 20; // Random x coordinate between -20 and 20
   const y = Math.random() * 30 + 20; // Random y coordinate between 20 and 50
   const z = Math.random() * -50 + 40; 
   return [x, y, z];
 }
-function Instances({ count = 100000, temp = new THREE.Object3D(), words }) {
-  const instancedMeshRef = useRef();
+function WordFalling({ word, position }) {
+  const ref = useRef();
 
-  useEffect(() => {
-    // Set positions
-    for (let i = 0; i < count; i++) {
-      temp.position.set(Math.random(), Math.random(), Math.random());
-      temp.updateMatrix();
-      instancedMeshRef.current.setMatrixAt(i, temp.matrix);
-    }
-    // Update the instance
-    instancedMeshRef.current.instanceMatrix.needsUpdate = true;
-  }, []);
+  const getRandomColor = () => {
+    const colors = ["#b9e3c6", "#59c9a5", "#d81e5b", "#23395b", "#fffd98", "#690375"];
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
+  };
+
+  const getRandomSize = () => {
+    const minSize = 2;
+    const maxSize = 5;
+    return Math.random() * (maxSize - minSize) + minSize;
+  };
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
-    for (let i = 0; i < count; i++) {
-      const instance = instancedMeshRef.current;
-      const matrix = new THREE.Matrix4();
-      instance.getMatrixAt(i, matrix);
-      matrix.setPosition(
-        matrix.elements[12],
-        matrix.elements[13] - 0.005 * elapsedTime,
-        matrix.elements[14]
-      );
-      instance.setMatrixAt(i, matrix);
-    }
-    // Update the instance
-    instancedMeshRef.current.instanceMatrix.needsUpdate = true;
+    ref.current.position.y -= 0.005 * elapsedTime; // Update Y position based on elapsed time
   });
 
   return (
-    <instancedMesh ref={instancedMeshRef} args={[null, null, count]}>
-      <boxGeometry />
-      <meshPhongMaterial />
-    </instancedMesh>
+    <Text
+      ref={ref}
+      position={position}
+      color={getRandomColor()}
+      fontSize={getRandomSize()}
+      anchorX="center"
+      anchorY="middle"
+    >
+      {word}
+    </Text>
   );
 }
-
 
 
 function Tfgame() {
@@ -123,8 +116,9 @@ function Tfgame() {
         <Axo position={[0, 0, 0]}/>
         </Suspense >
 
-        <Instances count={initialWords.length} words={words} />
-
+        {words.map((word, index) => (
+          <WordFalling key={index} word={word.word} position={word.position} />
+        ))}
 
         <rectAreaLight
       width={2}
