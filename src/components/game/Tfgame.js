@@ -48,6 +48,7 @@ function WordFalling({ word, position }) {
   );
 }
 
+let sizeclk;
 
 function Tfgame() {
   const initialWords = [
@@ -109,9 +110,19 @@ function Tfgame() {
     };
   }, [currentWordIndex, initialWords, words]);
 
+  const handleCanvasClick = () => {
+   sizeclk=sizeclk+1;
+    const randomIndex = Math.floor(Math.random() * initialWords.length);
+    const randomWord = initialWords[randomIndex];
+    const position = getRandomPosition();
+     const fontSize =1+sizeclk;
+    const newWord = { word: randomWord.word, position };
+    setWords((prevWords) => [...prevWords, newWord]);
+  };
+
   return (
     <div style={{height:"80vh", justifyContent:"center",alignItems:"center"}} className={styles.tresde}>
-      <Canvas  camera={{ fov: 70, position: [0, 50, 50] }}>
+      <Canvas onClick={handleCanvasClick} camera={{ fov: 70, position: [0, 50, 50] }}>
         <OrbitControls  
         minDistance={30}
           maxDistance={100}
