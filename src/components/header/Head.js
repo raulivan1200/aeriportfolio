@@ -62,7 +62,7 @@ function AppleComponent() {
 
       <span className={styles.bigtxt} style={{fontSize:"96px"}}>
          
-      <div style={{overflow:"hidden"}}> 
+      <div style={{overflow:"hidden",height:"fit-content",width:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
@@ -73,7 +73,7 @@ function AppleComponent() {
           </motion.div>
          </div>
 
-         <div style={{overflow:"hidden",width:"fit-content"}}> 
+         <div style={{overflow:"hidden",width:"fit-content",height:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
@@ -145,7 +145,7 @@ function NonAppleComponent() {
 
        <span className={styles.bigtxt} style={{fontSize:"96px"}}>
          
-         <div style={{overflow:"hidden"}}> 
+         <div style={{overflow:"hidden",height:"fit-content",width:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
@@ -156,7 +156,7 @@ function NonAppleComponent() {
           </motion.div>
          </div>
 
-         <div style={{overflow:"hidden",width:"fit-content"}}> 
+         <div style={{overflow:"hidden",width:"fit-content",height:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"

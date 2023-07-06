@@ -35,18 +35,18 @@ const Textan = () => {
       await controls.start({
         y: 0,
         opacity: 1,
-        transition: { duration: 2, type: 'spring' }
+        transition: { duration: 2, type: 'spring',ease:"easeInOut" }
       });
       await new Promise(resolve => setTimeout(resolve, 5000));
       await controls.start({
         y: -100,
         opacity: 0,
-        transition: { duration: 2, type: 'spring', stiffness: 200 }
+        transition: { duration: 2, type: 'spring', stiffness: 200 ,ease:"easeInOut"}
       });
       await controls.start({
         y: 100,
         opacity: 0,
-        transition: { duration: 0 }
+        transition: { duration: 0,ease:"easeInOut" }
       });
 
       // Update the current text index to show the next text
