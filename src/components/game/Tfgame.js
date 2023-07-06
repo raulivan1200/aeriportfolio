@@ -31,7 +31,7 @@ function WordFalling({ word, position }) {
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
-    ref.current.position.y -= 0.003 * elapsedTime; // Update Y position based on elapsed time
+    ref.current.position.y -= 0.0025 * elapsedTime; // Update Y position based on elapsed time
   });
 
   return (
