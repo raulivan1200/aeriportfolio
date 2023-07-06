@@ -68,7 +68,7 @@ function AppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 1  , duration:.4}}
+          transition={{ ease: cubicBezier,delay: 0  , duration:.4}}
           variants={animationVariants}>
          Live<br/>
           </motion.div>
@@ -79,7 +79,7 @@ function AppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 1.05 , duration:.4 }}
+          transition={{ ease: cubicBezier,delay: 0.05 , duration:.4 }}
           variants={animationVariants}>
 
          Creative 
@@ -93,7 +93,7 @@ function AppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 4, }}
+          transition={{ ease: cubicBezier,delay: 1, }}
           variants={animationVariants}>
 
         <h3 className={styles.wh}>Abril Rivera</h3>
@@ -103,7 +103,7 @@ function AppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 5 }}
+          transition={{ ease: cubicBezier,delay: 2 }}
           variants={animationVariants}>
         <h7 className={styles.wh}>UX/UI Designer</h7>
           </motion.div>
@@ -111,7 +111,7 @@ function AppleComponent() {
       </div>
 
       <div className={styles.right} >
-        <img src="/saluteapple.png" className={styles.apim} alt="apple axo salute"></img>
+        <Image src="/saluteapple.png" className={styles.apim} alt="apple axo salute"></Image>
       </div>
 
       <div className={styles.mousecont}>
@@ -152,7 +152,7 @@ function NonAppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 1  , duration:.4}}
+          transition={{ ease: cubicBezier,delay: 0  , duration:.4}}
           variants={animationVariants}>
          Live<br/>
           </motion.div>
@@ -163,7 +163,7 @@ function NonAppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 1.05 , duration:.4 }}
+          transition={{ ease: cubicBezier,delay: 0.05 , duration:.4 }}
           variants={animationVariants}>
 
          Creative 
@@ -175,7 +175,7 @@ function NonAppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 4 }}
+          transition={{ ease: cubicBezier,delay: 1 }}
           variants={animationVariants}>
 
         <h3 className={styles.wh}>Abril Rivera</h3>
@@ -185,7 +185,7 @@ function NonAppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 5 }}
+          transition={{ ease: cubicBezier,delay: 2 }}
           variants={animationVariants}>
         <h7 className={styles.wh}>UX/UI Designer</h7>
           </motion.div>
