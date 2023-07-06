@@ -63,29 +63,29 @@ function AppleComponent() {
 
       <span className={styles.bigtxt} style={{fontSize:"96px"}}>
          
-      <div style={{ clipPath: "inset(0)" }}>
+      <div style={{overflow:"hidden"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 0, duration:.5 }}
+          transition={{ ease: "easeInOut",delay: 0  , duration:.3}}
           variants={animationVariants}>
          Live<br/>
           </motion.div>
          </div>
 
-         <div style={{ clipPath: "inset(0)",height:"fit-content",width:"fit-content" }}>
+         <div style={{overflow:"hidden",width:"fit-content"}}> 
          <motion.div
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: cubicBezier,delay: 0.05 , duration:.5}}
+          transition={{ ease: "easeInOut",delay: 0.05 , duration:.3 }}
           variants={animationVariants}>
 
          Creative 
           </motion.div>
-        <hr className={styles.hrx}/>
          </div>
+         
          
          </span>         
          
@@ -166,7 +166,6 @@ function NonAppleComponent() {
           variants={animationVariants}>
 
          Creative 
-        <hr className={styles.hrx}/>
           </motion.div>
          </div>
          
