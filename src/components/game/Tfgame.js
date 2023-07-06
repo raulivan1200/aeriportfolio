@@ -112,7 +112,10 @@ function Tfgame() {
   return (
     <div style={{height:"80vh", justifyContent:"center",alignItems:"center"}} className={styles.tresde}>
       <Canvas  camera={{ fov: 70, position: [0, 50, 50] }}>
-        <OrbitControls/>
+        <OrbitControls  
+        minDistance={30}
+          maxDistance={100}
+          />
       <Suspense fallback={null}>
         <Axo position={[0, 0, 0]}/>
         </Suspense >
