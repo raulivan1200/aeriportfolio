@@ -12,10 +12,7 @@
     align-items: center;
 
   }
-  .right{
-    overflow: hidden !important;
-
-  }
+ 
 
   @media (max-width: 768px) {
     .apim{
