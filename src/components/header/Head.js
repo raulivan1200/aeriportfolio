@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../../styles/Head.module.css';
 import Image from 'next/image'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
 import { motion } from 'framer-motion';
-
 function isIOS() {
   const iOSDevices = /iPhone|iPad|iPod/.test(navigator.userAgent);
   const isMac = /Mac/.test(navigator.platform);
@@ -37,16 +38,74 @@ function isIOS() {
 
 
 function AppleComponent() {
-  return <div>
+  
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const animationVariants = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
+  return (
+
+    <div>
 
 <div className={styles.cont} style={{overflowX:"hidden",height:"100vh !important"}}>
       <div className={styles.left}>
 
-      <span className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </span>
+      <span className={styles.bigtxt} style={{fontSize:"96px"}}>
+         
+         <div style={{overflow:"hidden",width:"fit-content"}}> 
+         <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: 0, duration:.3 }}
+          variants={animationVariants}>
+         Live<br/>
+          </motion.div>
+         </div>
+
+         <div style={{overflow:"hidden",width:"fit-content"}}> 
+         <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: 0.05 , duration:.3}}
+          variants={animationVariants}>
+
+         Creative 
         <hr className={styles.hrx}/>
-       
+          </motion.div>
+         </div>
+         
+         </span>         
+         
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: .4, }}
+          variants={animationVariants}>
+
         <h3 className={styles.wh}>Abril Rivera</h3>
+          </motion.div>
+
+          <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: .5 }}
+          variants={animationVariants}>
         <h7 className={styles.wh}>UX/UI Designer</h7>
+          </motion.div>
 
       </div>
 
@@ -60,22 +119,76 @@ function AppleComponent() {
       </div>
 
     </div>
-
-  </div>;
+  </div>
+    )
+    ;
 }
 
 function NonAppleComponent() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const animationVariants = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
 
-    <div className={styles.cont} style={{overflowX:"hidden"}}>
+    <div className={styles.cont} style={{overflowX:"hidden",width:"fit-content"}}>
       <div className={styles.left}>
 
-        <span className={styles.bigtxt} style={{fontSize:"96px"}}> Live<br/>Creative </span>
+       <span className={styles.bigtxt} style={{fontSize:"96px"}}>
+         
+         <div style={{overflow:"hidden"}}> 
+         <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: 0  , duration:.3}}
+          variants={animationVariants}>
+         Live<br/>
+          </motion.div>
+         </div>
+
+         <div style={{overflow:"hidden",width:"fit-content"}}> 
+         <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: 0.05 , duration:.3 }}
+          variants={animationVariants}>
+
+         Creative 
         <hr className={styles.hrx}/>
-       
+          </motion.div>
+         </div>
+         
+         </span>       
+      <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: .4 }}
+          variants={animationVariants}>
 
         <h3 className={styles.wh}>Abril Rivera</h3>
+          </motion.div>
+
+          <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ ease: "easeInOut",delay: .5 }}
+          variants={animationVariants}>
         <h7 className={styles.wh}>UX/UI Designer</h7>
+          </motion.div>
+
 
       </div>
 
