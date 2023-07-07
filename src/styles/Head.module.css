@@ -17,7 +17,7 @@
 
   @media (max-width: 768px) {
     .bigtxt{
-      font-size: 60% !important;
+      font-size: 24px !important;
     }
     .apim{
       width: 100vw !important;
@@ -99,7 +99,7 @@ height: 100vh;
 
   @media only screen and (min-width: 769px) {
     .bigtxt{
-      font-size: 50% !important;
+      font-size: 24px !important;
     }
     .thm{    color: var(--black) !important;
     }
@@ -159,7 +159,7 @@ height: 100vh;
     font-family: 'Raleway';
 font-style: normal;
 font-weight: 600;
-font-size: 96px !important;
+font-size: 24px;
 
 /* or 94% */
 color: var(--black);
