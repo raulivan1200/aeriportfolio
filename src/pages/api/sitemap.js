@@ -1,48 +1,54 @@
-const express = require('express')
-const { SitemapStream, streamToPromise } = require('sitemap')
-const { createGzip } = require('zlib')
-const { Readable } = require('stream')
+// pages/api/sitemap.js
 
-const app = express()
-let sitemap
-
-app.get('/sitemap.xml', function(req, res) {
-  res.header('Content-Type', 'application/xml');
-  res.header('Content-Encoding', 'gzip');
-  // if we have a cached entry send it
-  if (sitemap) {
-    res.send(sitemap)
-    return
+const generateSitemap = () => {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      
+      
+      <url>
+        <loc>https://aeriportfolio.vercel.app/</loc>
+        <lastmod>2023-07-07T19:45:12+00:00</lastmod>
+        <priority>1.00</priority>
+      </url>
+      
+      <url>
+        <loc>https://aeriportfolio.vercel.app/Salessystem</loc>
+        <lastmod>2023-07-07T19:45:12+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      
+      <url>
+        <loc>https://aeriportfolio.vercel.app/Woffles</loc>
+        <lastmod>2023-07-07T19:45:12+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      
+      <url>
+        <loc>https://aeriportfolio.vercel.app/Billsplitter</loc>
+        <lastmod>2023-07-07T19:45:12+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      
+      <url>
+        <loc>https://aeriportfolio.vercel.app/Teko</loc>
+        <lastmod>2023-07-07T19:45:12+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      
+      <url>
+        <loc>https://aeriportfolio.vercel.app/Imagikids</loc>
+        <lastmod>2023-07-07T19:45:12+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+      
+      </urlset>`;
+  
+    return xml;
+  };
+  
+  export default function handler(req, res) {
+    res.setHeader('Content-Type', 'text/xml');
+    res.write(generateSitemap());
+    res.end();
   }
-
-  try {
-    const smStream = new SitemapStream({ hostname: 'https://aeriportfolio.vercel.app/' })
-    const pipeline = smStream.pipe(createGzip())
-
-    // pipe your entries or directly write them.
-    smStream.write({ url: '/Salessystem',  changefreq: 'yearly', priority: 1 })
-    smStream.write({ url: '/Woffles',})
-    smStream.write({ url: '/Teko'})    // changefreq: 'weekly',  priority: 0.5
-    smStream.write({ url: '/Billsplitter'})
-    smStream.write({ url: '/Imagikids',  })
-    /* or use
-    Imagikids
-    Readable.from([{url: '/page-1'}...]).pipe(smStream)
-    if you are looking to avoid writing your own loop.
-    */
-
-    // cache the response
-    streamToPromise(pipeline).then(sm => sitemap = sm)
-    // make sure to attach a write stream such as streamToPromise before ending
-    smStream.end()
-    // stream write the response
-    pipeline.pipe(res).on('error', (e) => {throw e})
-  } catch (e) {
-    console.error(e)
-    res.status(500).end()
-  }
-})
-
-app.listen(3000, () => {
-  console.log('listening')
-});
+  
