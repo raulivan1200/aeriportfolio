@@ -2,7 +2,8 @@ import '@/styles/globals.css'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
-
+import { Analytics } from '@vercel/analytics/react';
+ 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <ParallaxProvider>
+  <Analytics />
   <Component {...pageProps} />
     </ParallaxProvider>)
 }
