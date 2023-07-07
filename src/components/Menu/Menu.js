@@ -76,7 +76,7 @@ function Menu({ onProjectClick, onContactClick }) {
                 <span className='menubutton' onClick={() => handleScrollTo('skills-section')} style={{ width: "fit-content", color: "var(--black)" }}>My Journey</span>
                 <a  style={{textDecoration:"none",paddingTop:"5%"}} href="mailto:04.esmeraldarp@gmail.com" target='_blank' className='hidedesktop'><div className="btn"><p style={{color:"var(--black)"}} className="btx">Let´s create</p></div></a>
                 
-                <a href="mailto:vannie.aeri@gmail.com" style={{ textDecoration: "none", color: "var(--black)" }}>
+                <a href="mailto:04.esmeraldarp@gmail.com" style={{ textDecoration: "none", color: "var(--black)" }}>
                   <div style={{position:"fixed",bottom:"5%" , left:"5%"}}>
                   <h2 style={{ fontSize: "20px", fontWeight: "400",width:"fit-content" }} className='hidemobile hpink'>Lic. Esmeralda Rivera</h2>
                   </div>

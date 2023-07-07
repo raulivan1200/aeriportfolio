@@ -14,10 +14,10 @@ function Foot() {
         <a target="_blank" className={styles.acs} href="https://www.instagram.com/">
           <h3 className={styles.smtxt}>Instagram</h3>
         </a>
-        <a target="_blank" className={styles.acs} href="https://www.behance.net/raulivrivera">
+        <a target="_blank" className={styles.acs} href="https://www.behance.net/esmeralrivera">
           <h3 className={styles.smtxt}>Behance</h3>
         </a>
-        <a target="_blank" className={styles.acs} href="https://www.linkedin.com/in/raul-rivera-bbb858242/">
+        <a target="_blank" className={styles.acs} href="https://www.linkedin.com/in/esmeralda-rivera-p-a0155b202/">
           <h3 className={styles.smtxt}>LinkedIn</h3>
         </a>
       </div>
