@@ -60,7 +60,7 @@ function AppleComponent() {
 <div className={styles.cont} style={{overflowX:"hidden !important",height:"100vh !important",width:"100vw"}}>
       <div className={styles.left}>
 
-      <span className={styles.bigtxt} style={{fontSize:"96px"}}>
+      <span className={styles.bigtxt}>
          
       <div style={{height:"fit-content",width:"fit-content"}}> 
          <motion.div
@@ -143,7 +143,7 @@ function NonAppleComponent() {
     <div className={styles.cont} style={{width:"100vw"}}>
       <div className={styles.left}>
 
-       <span className={styles.bigtxt} style={{fontSize:"96px"}}>
+       <span className={styles.bigtxt}>
          
          <div style={{height:"fit-content",width:"fit-content"}}> 
          <motion.div
