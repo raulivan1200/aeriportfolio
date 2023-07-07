@@ -62,7 +62,7 @@ function Menu({ onProjectClick, onContactClick }) {
               initial={{ y: '-100vh', x: '-60vw', opacity: 0, scale: 0, damping: 500, stiffness: 1000, mass: 3  }}
               animate={{ y: 0, x: 0, opacity: 1, scale: 1 }}
               exit={{ y: '-100vh', x: '-50vw', opacity: 0, scale: 0}}
-              transition={{ duration: 0.4,damping: 500, stiffness: 1000, mass: 3 }}
+              transition={{ duration: 0.3,damping: 500, stiffness: 1000, mass: 3 }}
             >
               <div className='mpm'>
                 <div style={{ width: "100%", justifyContent: "space-between", display: "flex", flexDirection: "row" }}>

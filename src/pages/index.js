@@ -40,6 +40,9 @@ const Main = () => {
     <>
       <div style={{overflowX:"hidden",width:"100%"}} >
         <Head>
+        <meta name="robots" content="all" />
+        <meta name="google" content="nositelinkssearchbox" />
+
           <title>✨Esmeralda Rivera Ux/Ui✨</title>
           <meta name="description" content="Abril Rivera Experienced UX/UI designer bilingual. View my portfolio and contact me for your design projects." />
         </Head>

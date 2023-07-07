@@ -9,6 +9,12 @@ const sfsale = () => {
         <>
         <div className="pm">
      <Head>
+     <meta name="robots" content="all" />
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta
+  name="description"
+  content="Design of a system for sales, Ux Ui, persona, scalable and maintainable"
+/>
         <title>📈 Sales System</title>
       </Head>
       <ParallaxBanner style={{height:"100vh",width:"100vw",objectFit:"scale-down"}}>

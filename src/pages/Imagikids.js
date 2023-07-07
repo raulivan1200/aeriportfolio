@@ -13,6 +13,12 @@ function Imagikid() {
   <>
     <Head>
         <title>👪 Imagikids</title>
+        <meta name="robots" content="all" />
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta
+  name="description"
+  content="UX UI design for a kids app, responsive, animated, user friendly"
+/>
       </Head>
     <div className='pm'>
       <div className={styles.conmi} style={{ position:"relative"}}>

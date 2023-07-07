@@ -12,6 +12,12 @@ function Bill() {
     <>
     <Head>
         <title>💵 Billsplitter</title>
+        <meta name="robots" content="all" />
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta
+  name="description"
+  content="Ux Ui Split your bills, responsive, research"
+/>
       </Head>
       <main>
     <div className='pm'>

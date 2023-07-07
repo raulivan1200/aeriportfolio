@@ -11,6 +11,12 @@ function Wofflles() {
   return (
     <div className='pm'>
           <Head>
+          <meta name="robots" content="all" />
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta
+  name="description"
+  content="Woffles site Ux Ui design for a restaurant responsive, user friendly, animated"
+/>
         <title>🧇 Woffles</title>
       </Head>
       <ParallaxBanner style={{height:"100vh",width:"100vw",objectFit:"scale-down"}}>

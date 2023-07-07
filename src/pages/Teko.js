@@ -13,6 +13,12 @@ function teko() {
   <>
     <div className='pm'>
         <Head>
+        <meta name="robots" content="all" />
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta
+  name="description"
+  content="web design for a Studio, responsive, branding, scalable and maintainable"
+/>
         <title>💙 Teko</title>
       </Head>
       <div>        
