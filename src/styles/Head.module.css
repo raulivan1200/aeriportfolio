@@ -17,7 +17,7 @@
 
   @media (max-width: 768px) {
     .bigtxt{
-      font-size: 80% !important;
+      font-size: 20vw !important;
     }
     .apim{
       width: 100vw !important;
