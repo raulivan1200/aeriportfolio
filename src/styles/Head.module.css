@@ -18,6 +18,7 @@
   @media (max-width: 768px) {
     .bigtxt{
       font-size: 24px !important;
+      color: rebeccapurple;
     }
     .apim{
       width: 100vw !important;
