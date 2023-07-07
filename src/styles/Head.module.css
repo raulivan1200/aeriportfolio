@@ -99,7 +99,7 @@ height: 100vh;
 
   @media only screen and (min-width: 769px) {
     .bigtxt{
-      font-size: 20vw !important;
+      font-size: 50% !important;
     }
     .thm{    color: var(--black) !important;
     }
