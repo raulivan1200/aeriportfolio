@@ -2,6 +2,8 @@
 User-agent: *
 Allow: /
 
-# User agent "Googlebot" should not crawl the `http://example.com/nogooglebot/` folder or any of its subdirectories.
+# User agent "Googlebot" should not crawl the `https://aeriportfolio.vercel.app/` folder or any of its subdirectories.
 User-agent: Googlebot
 Disallow: /nogooglebot/
+
+Sitemap: https://aeriportfolio.vercel.app/api/sitemap
