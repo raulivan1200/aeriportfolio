@@ -153,7 +153,7 @@ height: 100vh;
   }
 
   .thm{
-    color: var(--white);
+    color: var(--black) !important;
   }
   .bigtxt{
     font-family: 'Raleway';
