@@ -24,7 +24,7 @@ export const Tablers = () => {
 
 <div className={styles.texcen}>
   <div style={{width:"25vw", height:"80%"}} className={styles.frim}>
-  <Image className={styles.frimx} src={abril} fill style={{objectFit:"cover !important"}} alt="Ux Mexico Abril Rivera" />
+  <Image priority className={styles.frimx} src={abril} fill style={{objectFit:"cover !important"}} alt="Ux Mexico Abril Rivera" />
   </div>
   <h1 className={styles.bate} style={{fontFamily:"Raleway",fontSize:"15vw", fontWeight:"700", color:"var(--black)", }}>MY SKILLS</h1>
 </div>

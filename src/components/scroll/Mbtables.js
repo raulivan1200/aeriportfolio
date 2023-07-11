@@ -15,7 +15,7 @@ const Mbtables = () => {
     <div className={styles.texcen} style={{paddingBottom:"5%"}}>
 
     <div className={styles.frim}>
-  <Image className={styles.frimx} src={abril} fill style={{objectFit:"cover !important"}} alt="Ux Mexico Abril Rivera" />
+  <Image className={styles.frimx} priority src={abril} fill style={{objectFit:"cover !important"}} alt="Ux Mexico Abril Rivera" />
   </div>
 
   <h1 className={styles.bate} style={{color:"var(--black)"}}>
