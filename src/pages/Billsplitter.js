@@ -21,7 +21,7 @@ function Bill() {
       </Head>
       <main>
     <div className='pm'>
-    <ParallaxBanner style={{height:"100vh",width:"100vw",objectFit:"scale-down"}}>
+    <ParallaxBanner className='bannerpages' >
       <ParallaxBannerLayer image="/images/Portfolio/billhead.png"  speed={-20} />
       </ParallaxBanner>           
        <Billsplittertext/>

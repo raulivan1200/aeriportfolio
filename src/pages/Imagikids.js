@@ -22,7 +22,7 @@ function Imagikid() {
       </Head>
     <div className='pm'>
       <div className={styles.conmi} style={{ position:"relative"}}>
-      <ParallaxBanner style={{height:"100vh",width:"100vw",objectFit:"scale-down"}} >
+      <ParallaxBanner className='bannerpages' >
       <ParallaxBannerLayer image="/images/Portfolio/imagikidsheader.png" speed={-20} />
       </ParallaxBanner></div>
 <Imagikidstext/>

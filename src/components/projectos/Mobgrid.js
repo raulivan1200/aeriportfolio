@@ -13,33 +13,33 @@ function Mobgrid() {
     <div className={styles.containerds}>
 <div className={styles.bigds} >  
 <div className={styles.brims}>
-<a href="/Salessystem">  <Image className={styles.imrs}   src={sshe} alt="Ux ui sales system"></Image> </a>
+<a href="/Salessystem">  <Image placeholder="blur"  className={styles.imrs}   src={sshe} alt="Ux ui sales system"></Image> </a>
 </div>
 </div>
 
 
 <div className={styles.bb3} >
 <div className={styles.brims}>
-<a href="/Imagikids"> <Image className={styles.imrs}  src={imgh} alt="ux ui designerkids app ux design"></Image></a>
+<a href="/Imagikids"> <Image placeholder="blur"  className={styles.imrs}  src={imgh} alt="ux ui designerkids app ux design"></Image></a>
 </div>
  </div>
 
 <div className={styles.bb2} >
 <div className={styles.brims}>
-<a href="/Woffles">  <Image className={styles.imrs}  src={wf} alt="ux restaurant designb"></Image></a>
+<a href="/Woffles">  <Image placeholder="blur"  className={styles.imrs}  src={wf} alt="ux restaurant designb"></Image></a>
 </div>
  </div>
 
 <div className={styles.bb4} >
 <div className={styles.brims}>
-<a href="/Teko"> <Image className={styles.imrs}  src={tekoh} alt="ux agency business design "></Image></a>
+<a href="/Teko"> <Image placeholder="blur"  className={styles.imrs}  src={tekoh} alt="ux agency business design "></Image></a>
 </div>
  </div>
 
 
 <div className={styles.bb5} >
 <div className={styles.brims}>
-    <a href="/Billsplitter"> <Image className={styles.imrs}  src={bih} alt="bill splitter"></Image></a>
+    <a href="/Billsplitter"> <Image placeholder="blur"  className={styles.imrs}  src={bih} alt="bill splitter"></Image></a>
 </div>
 </div>
 

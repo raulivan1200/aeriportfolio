@@ -19,7 +19,7 @@ function Wofflles() {
 />
         <title>🧇 Woffles</title>
       </Head>
-      <ParallaxBanner style={{height:"100vh",width:"100vw",objectFit:"scale-down"}}>
+      <ParallaxBanner className='bannerpages'>
       <ParallaxBannerLayer image="/images/Portfolio/woffleshead.png" speed={-20} />
       </ParallaxBanner>            <Wofflestext/>
         <Foot/>

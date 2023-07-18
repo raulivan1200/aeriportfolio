@@ -136,7 +136,7 @@ function Deskgrid() {
     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/12-60)*-1,y:(mouseYmove/12-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bigds} onMouseEnter={billsp} onMouseLeave={projectLeave}>  
   <div className={styles.brims} >
-  <a href="/Salessystem">  <Image className={styles.imrs}   src={sshe} alt="Abril Rivera front end ux design designer"></Image> </a>
+  <a href="/Salessystem">  <Image placeholder="blur"  className={styles.imrs}   src={sshe} alt="Abril Rivera front end ux design designer"></Image> </a>
   
   </div>
   </div>
@@ -148,7 +148,7 @@ function Deskgrid() {
 
   <div className={styles.bb3} onMouseEnter={WofflesEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
-  <a href="/Woffles"> <Image className={styles.imrs}  src={wf} alt="ux systems"></Image></a>
+  <a href="/Woffles"> <Image placeholder="blur"  className={styles.imrs}  src={wf} alt="ux systems"></Image></a>
   </div>
      </div>
   </motion.div>
@@ -158,7 +158,7 @@ function Deskgrid() {
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/11-60)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb2} onMouseEnter={billsp} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
-  <a href="/Billsplitter">  <Image className={styles.imrs}  src={bih} alt="bill splitter ux ui designer"></Image></a>
+  <a href="/Billsplitter">  <Image placeholder="blur"   className={styles.imrs}  src={bih} alt="bill splitter ux ui designer"></Image></a>
   </div>
      </div>
      </motion.div>
@@ -168,7 +168,7 @@ function Deskgrid() {
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/10-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb4} onMouseEnter={TekoEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
-   <a href="/Teko"> <Image className={styles.imrs}  src={tekoh} alt="ux agency business design "></Image></a>
+   <a href="/Teko"> <Image placeholder="blur"  className={styles.imrs}  src={tekoh} alt="ux agency business design "></Image></a>
    </div>
      </div>
      </motion.div>
@@ -178,7 +178,7 @@ function Deskgrid() {
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/6-100)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb5} onMouseEnter={Imagike} onMouseLeave={projectLeave}>
     <div className={styles.brims}>
-        <a href="/Imagikids"> <Image className={styles.imrs}  src={imgh} alt="kids app ux design"></Image></a>
+        <a href="/Imagikids"> <Image placeholder="blur"  className={styles.imrs}  src={imgh} alt="kids app ux design"></Image></a>
     </div>
   </div>
      </motion.div>
