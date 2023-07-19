@@ -28,6 +28,7 @@
         -moz-filter: invert(0) !important;
         -o-filter: invert(0) !important; 
         -ms-filter: invert(0) !important;
+        scale: .6;
     }
     .svcom{
         filter: invert(0) !important;
@@ -40,7 +41,7 @@
   }
   .svco:hover{
     cursor: pointer;
-    scale: 1.05;
+    scale: .8;
     opacity: .95;
     transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
