@@ -85,9 +85,10 @@ export const Imagikidstext = () => {
     </h2>
      <h5 className={styles.pjlt}>
      
-     Es una aplicación que permite a una empresa de niñeras entrar en contacto con madres y padres de familia, para poder contratar servicios para sus pequeños. 
+     
+It is an application that allows a babysitting company to connect with mothers and fathers to hire services for their little ones.
     
-    La aplicación facilita la solicitud de los servicios, la comunicación, y además brinda una opción para que se pueda solicitar más tiempo del servicio.
+The application facilitates the request of services, communication, and also provides an option to request additional service time.
     
      </h5>
     
@@ -96,11 +97,11 @@ export const Imagikidstext = () => {
     <h2 className={styles.pjf}>My Role</h2>
      <h5 className={styles.pjlt}>
      
-     Este es un proyecto de prueba que desarrolle a lo largo de 1 mes. Para ello desarrolle las pantallas en base a un brief que se me brindo. 
+     This is a test project that I developed over the course of 1 month. To do so, I created the screens based on a provided brief.
     
-    Asi mismo plantee la estructura de la información para poder ir desarrollando el proyecto.
+     I also outlined the information structure to start developing the project.
     
-    Apartir de tener las funcionalidades básicas, empecé a desarrollar wireframes considerando las funciones.
+     Once I had the basic functionalities, I began developing wireframes considering the functions.
     
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={img} alt="kids toys parenting childs ninos nina parents babysitter app mobile ux"/>
@@ -108,9 +109,9 @@ export const Imagikidstext = () => {
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>
     
-     A partir de el logo que la empresa ficticia poseeia, desarrolle una paleta de colores y un esquema visual.
+     Based on the logo that the fictional company had, I developed a color palette and a visual scheme
     
-    Previamente explore en una lluvia de ideas estructuras visuales que pudieran funcionar. 
+     Previously, I explored visual structures in a brainstorming session that could work.
     
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={imco} alt="ux ui babysitting mexico ux ui design"/>
@@ -119,9 +120,9 @@ export const Imagikidstext = () => {
     
      <h5 className={styles.pjlt}>
     
-    Una vez lista esa parte aplique los colores, tipografia y estructura a las pantallas.
+     Once that part was ready, I applied the colors, typography, and structure to the screens.
     
-    Además de ello desarrolle el prototipó clickleable en figma.
+     In addition, I developed the clickable prototype in Figma.
     
     </h5>
      

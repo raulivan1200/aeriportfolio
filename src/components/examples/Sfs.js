@@ -82,11 +82,13 @@ export const Sfs = () => {
     </h2>
      <h5 className={styles.pjlt}>
 
-     En este caso trabajé de cerca con un equipo con conocimientos en diferentes ambitos para lograr desarrollar un programa que facilitar su trabajo día a día.
+     
+In this case, I worked closely with a team with expertise in different areas to develop a program that would facilitate their day-to-day work.
 
-Para empezar se realizó un analisis de las necesidades de los usuarios de este sistema que se deseaba desarrollar.
 
-A partir de ello se construyó la arquitectura de la información, considerando las funcionalidades de cada una de las secciones.
+To begin, an analysis of the needs of the users of this desired system was conducted.
+
+Based on that, the information architecture was constructed, considering the functionalities of each section.
 
      </h5>
     
@@ -95,11 +97,11 @@ A partir de ello se construyó la arquitectura de la información, considerando 
     <h2 className={styles.pjf}>My Role</h2>
      <h5 className={styles.pjlt}>
 
-     Para este proyecto participe en las entrevistas con los usuarios principales.
+     For this project, I participated in the interviews with the key users
 
-A partir de la información recopilada avanzamos y desarrollamos detalladamente las secciones a nivel wireframe de nivel medio.
+     Based on the gathered information, we progressed and developed the middle-level wireframe sections in detail.
 
-Se realizaron pruebas con los usuarios además de nuevas entrevistas para probar que los elementos que se estaban desarrollando realmente funcionaran para lo que querian lograr. 
+  We conducted tests with the users, in addition to new interviews, to verify that the elements being developed were actually functioning according to what they wanted to achieve.
 
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={sysd} alt="sales store system ux UI Ux/ui Ux"/>
@@ -107,7 +109,7 @@ Se realizaron pruebas con los usuarios además de nuevas entrevistas para probar
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>
 
-     En este caso exploramos con pequeños elementos presentes actualmente en el logo de la marca, centrandonos principalmente en las funciones del sistema.
+     In this case, we explored with small elements currently present in the brand's logo, focusing primarily on the system's functions.
 
     </h5>
       </div>

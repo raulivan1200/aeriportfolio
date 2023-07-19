@@ -85,34 +85,35 @@ function Wofflestext() {
     <h2 className={styles.pjf}>Woofles
 </h2>
  <h5 className={styles.pjlt}>
- Son varias pantallas de una aplicación para pagar la cuenta de una comida en diferentes restaurantes que cuenten con el servicio. 
+ There are several screens of an application for paying the bill at different restaurants that offer the service.
 <br/>
-Esta enfocada en conectar a diferentes usuarios para permitirles dividirse la cuenta según los platillos que han consumido o a partes iguales.
+It is focused on connecting different users to allow them to split the bill according to the dishes they have consumed or equally.
 <br/>
-El desarrollo de esta propuesta duró menos de 24 horas, entre UX y UI. 
+The development of this proposal took less than 24 hours, including UX and UI.
  </h5>
 
 
 
 <h2 className={styles.pjf}>My Role</h2>
  <h5 className={styles.pjlt}>
-  A partir de entender la principal funcionalidad que se queria desarrollar, empecé a plantear los requerimientos que debían inlcuirse y considerarse para ofrecer la mejor experiencia posible. Tomando en cuenta principalmente el ofrecer pocas pantallas y cumplir con la tarea especificada.
-<br/> Al finalizar la parte de el flujo y aterrizarla en wireframes, aplique los elementos visuales que se muestran en el resultado final.
+ After understanding the main functionality that needed to be developed, I started outlining the requirements that should be included and considered to offer the best possible experience. Taking into account the goal of providing few screens and fulfilling the specified task.
+<br/> After completing the flow and translating it into wireframes, I applied the visual elements that are shown in the final result.
 </h5>
 <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflescreens} alt="restaurant design ux ui abril rivera"/>
 
 <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
  <h5 className={styles.pjlt}>
- Encontre varias referencias haciendo busquedas y consultas rapidas entre diversos sitios de recursos para aterrizar las mejores referencias en un rapido moodboard.
-<br/> Apartir de ellas genere un estilo para las pantallas que se habían planteado, considerando igual mantener y potencializar la aplicación.
+ I found several references by searching and quickly consulting various resource websites to gather the best references in a quick moodboard.
+<br/> Based on those references, I generated a style for the screens that had been planned, considering both maintaining and enhancing the application.
 </h5>
 <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflesrule} alt="abril aeri ux ui design"/>
 
 
 
  <h5 className={styles.pjlt}>
- Me apoye constantemente en un sistema de diseño para lograr mantener la consistencia en las pantallas que iba armando. 
-<br/> Mi meta era lograr que las pantallas se vieran armoniosas y capturar un ambiente traquilo y de juego que podría conllevar estar en una comida con amigos que finalmente se reparten la cuenta al finalizar.
+ 
+I constantly relied on a design system to maintain consistency in the screens I was creating.
+<br/> My goal was to make the screens look harmonious and capture a calm and playful atmosphere that could be associated with having a meal with friends who ultimately split the bill at the end
  </h5>
  
  

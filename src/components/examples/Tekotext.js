@@ -86,9 +86,9 @@ Studio</h4>
 </h2>
  <h5 className={styles.pjlt}>
 
-En este caso es el desarrollo de un website para un estudio creativo.
+ In this case, it is the development of a website for a creative studio.
 
-Más allá de promocionar la empresa se buscaba darle personalidad y estilos propios y caracteristicos del equipo.
+ Beyond promoting the company, the goal was to give it personality and unique styles characteristic of the team.
 
  </h5>
 
@@ -97,9 +97,9 @@ Más allá de promocionar la empresa se buscaba darle personalidad y estilos pro
 <h2 className={styles.pjf}>My Role</h2>
  <h5 className={styles.pjlt}>
   
- Me uní al equipo de trabajo. empecé a trabjar con el project manager, para entender el proyecto y los objetivos del mismo.
+ I joined the team and started working with the project manager to understand the project and its objectives.
 
-Al entender el proyecto, me empecé a interesar por desarrollarlo partiendo por la investigación.
+ Once I understood the project, I became interested in developing it, starting with the research phase.
 
 </h5>
 
@@ -110,9 +110,10 @@ Al entender el proyecto, me empecé a interesar por desarrollarlo partiendo por 
 
  <h5 className={styles.pjlt}>
 
- Hice una busqueda de referencias que fueran alineadas con las ideas que el equipo tenía. A partir de un moodboard y una lluvia de ideas posterior a ello comparti con el equipo las mejores ideas.
+ 
+I conducted a search for references that aligned with the ideas the team had. Based on a moodboard and subsequent brainstorming session, I shared the best ideas with the team.
 
-Finalmente empezamos a compartir más ideas de como podría darsele más voz y personalización a la pagina. 
+Finally, we started sharing more ideas on how to give the website more voice and personalization.
 
 </h5>
 
@@ -120,7 +121,7 @@ Finalmente empezamos a compartir más ideas de como podría darsele más voz y p
 
  <h5 className={styles.pjlt}>
 
- Una vez logramos definir varios puntos, aterrizamos los elementos en wireframes para pasar a prototipos más reales que representaran realmente al estuidio.  
+ Once we were able to define several points, we translated those elements into wireframes to create more realistic prototypes that truly represented the studio.
 
  </h5>
  
