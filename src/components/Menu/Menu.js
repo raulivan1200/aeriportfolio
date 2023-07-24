@@ -66,8 +66,13 @@ function Menu({ onProjectClick, onContactClick }) {
             >
               <div className='mpm'>
                 <div style={{ width: "100%", justifyContent: "space-between", display: "flex", flexDirection: "row" }}>
+                  <div style={{display:"flex",flexDirection:"column"}}>   
                   <Image priority src="./logos/close.svg" className='svco' alt='close' width={48} height={48} onClick={handleClose}></Image>
                   <SwitchTheme />
+                  </div>
+                  <div style={{paddingRight:"5%"}}>
+                  <p className='wect'>We can <a style={{ color: "var(--black)", textDecorationColor: "var(--black)", lineHeight: "26px", fontWeight: "400px", letterSpacing: "1px" }} href="mailto:someone@exemple.com?subject=Questions&body=Escribe aquí si tienes preguntas ">create together</a> </p>
+                  </div>
                 </div>
 
                 <span className='menubutton' onClick={() => handleScrollTo('head-section')} style={{ paddingTop:"5%",width: "fit-content", color: "var(--black)" }}>Go Up</span>
