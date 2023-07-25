@@ -95,7 +95,7 @@ function AppleComponent() {
           transition={{ ease: "easeInOut",delay: 1, }}
           variants={animationVariants}>
 
-        <h3 className={styles.wh}>Abril Rivera</h3>
+        <h3 className={styles.wh}>Esmeralda Rivera</h3>
           </motion.div>
 
           <motion.div
@@ -176,7 +176,7 @@ function NonAppleComponent() {
           transition={{ ease: "easeInOut",delay: 1 }}
           variants={animationVariants}>
 
-        <h3 className={styles.wh}>Abril Rivera</h3>
+        <h3 className={styles.wh}>Esmeralda Rivera</h3>
           </motion.div>
 
           <motion.div
