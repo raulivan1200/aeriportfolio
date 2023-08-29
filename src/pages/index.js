@@ -10,6 +10,7 @@ import { useRef } from "react";
 import { easeInOut, useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
+import Expgrid from "@/components/game/Expgrid";
 
 function Section({ children, animationProps }) {
   const ref = useRef(null);
@@ -66,9 +67,10 @@ const Main = () => {
         </section>
         <Section animationProps={{ initialTransform: "translate(0px, -100px)", initialOpacity: 0 }}>
           <motion.div id="skills-section">
-          <Parallax speed={5}   easing="ease"  translateX={['-20px', '0px']}>
+            <Expgrid/>
+        {/* 
             <Skills />
-          </Parallax>
+        */}
           </motion.div>
         </Section>
         <section id="foot-section">

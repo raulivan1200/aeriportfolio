@@ -155,7 +155,7 @@
       padding-bottom: 5%;
     }
     .pjhrxx{
-      width: 30% !important; 
+      width: 30vw !important; 
       margin-left: 10% !important;
     }
     .cendss{
@@ -175,7 +175,7 @@
     border-radius: 30px;
   }
   .pjhrxx{
-    width:10%;
+    width:5vw;
      color:var(--black);
      height:1px;
       text-align:left;

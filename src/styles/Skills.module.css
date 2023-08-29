@@ -62,7 +62,6 @@ line-height: 28px;
       padding-left: 10%;
     }
     .hrpp{
-      margin-top: -5% !important;
     }
     .parentflex {
       flex-direction: column;
@@ -102,20 +101,84 @@ line-height: 28px;
 
 
 
-.hrpp{
-  background: var(--black);
-  height: 1px;
-  width: 40%;
-}
+
 .tfgame{
   height: 100%;
   background-color: yellow;
 }
 .hrpp{
-  margin-top: -3%;
-  width: 50%;
+  margin-top: -2.25vh;
+  width: 12vw;
   color: var(--black);
   background-color: var(--black);
   border-color: var(--black);
   margin-left: 0;
+  height: 1px;
+
+}
+
+
+.containerexpsk {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 80px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "ex1 ex2"
+    "ex3 ex4"
+    "ex5 ex6";
+  width: 100%;
+}
+
+.ex1 { grid-area: ex1;}
+
+.ex2 { grid-area: ex2; margin:0 0 5vh 0 ;}
+
+.ex3 { grid-area: ex3; }
+
+.ex4 { grid-area: ex4; margin:0 0 5vh 0 ;}
+
+.ex5 { grid-area: ex5; }
+
+.ex6 { grid-area: ex6; margin:0 0 5vh 0 ;}
+@media (max-width: 768px) {
+  .mcero{
+    margin: 0 !important;
+  }
+  .containerexpsk {
+    grid-template-columns: 1fr; /* Display as a single column */
+    grid-template-rows: auto; /* Let rows adjust based on content */
+    grid-template-areas:
+      "ex1"
+      "ex2"
+      "ex3"
+      "ex4"
+      "ex5"
+      "ex6";
+    gap: 0px; /* Adjust the gap as needed */
+  }
+  .hrpp{
+    width: 46vw;
+  }
+}
+.parentexp{
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+
+}
+.parentskilll{
+  padding: 10% 0%;
+}
+.padlef{
+  padding-left: 10%;
+}
+@media only screen and (min-width: 1300px) {
+  .parentexp{
+    width: 60% !important;}
+    .padlef{
+      padding-left: 20%;
+    }
 }
