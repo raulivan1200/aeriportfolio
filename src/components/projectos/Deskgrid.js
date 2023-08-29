@@ -132,7 +132,7 @@ function Deskgrid() {
         </motion.div>
 
         <div className={styles.containerds}>
-        <Parallax translateY={[3, -15]} easing={'ease'} speed={9} scale={[1,1.02]}>
+        <Parallax translateY={[3, -15]} easing={'ease'} speed={9} scale={[0.9,1.019]}>
     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/12-60)*-1,y:(mouseYmove/12-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bigds} onMouseEnter={billsp} onMouseLeave={projectLeave}>  
   <div className={styles.brims} >
@@ -143,7 +143,7 @@ function Deskgrid() {
     </motion.div>
   </Parallax>
 
-  <Parallax translateY={[-15, 25]} easing={'ease'} speed={10} scale={[1,1.01]}>
+  <Parallax translateY={[-15, 25]} easing={'ease'} speed={10} scale={[.94,1.017]}>
   <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/9-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
 
   <div className={styles.bb3} onMouseEnter={WofflesEnter} onMouseLeave={projectLeave}>
@@ -154,7 +154,7 @@ function Deskgrid() {
   </motion.div>
      </Parallax>
 
-     <Parallax translateY={[30, -10]} easing={'ease'} speed={11} scale={[1,1.03]}>
+     <Parallax translateY={[30, -10]} easing={'ease'} speed={11} scale={[0.95,1.1]}>
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/11-60)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb2} onMouseEnter={billsp} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
@@ -164,7 +164,7 @@ function Deskgrid() {
      </motion.div>
      </Parallax>
 
-     <Parallax translateY={[15, 10]} easing={'ease'} speed={10} scale={[1,1.01]}>
+     <Parallax translateY={[15, 10]} easing={'ease'} speed={10} scale={[0.96,1.013]}>
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/10-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb4} onMouseEnter={TekoEnter} onMouseLeave={projectLeave}>
   <div className={styles.brims}>
@@ -174,7 +174,7 @@ function Deskgrid() {
      </motion.div>
      </Parallax>
 
-     <Parallax translateY={[-20, 10]} easing={'ease'} speed={3} scale={[1,1.05]}>
+     <Parallax translateY={[-20, 10]} easing={'ease'} speed={3} scale={[0.93,1.12]}>
      <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/6-100)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
   <div className={styles.bb5} onMouseEnter={Imagike} onMouseLeave={projectLeave}>
     <div className={styles.brims}>
