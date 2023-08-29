@@ -141,6 +141,10 @@ line-height: 28px;
 .ex5 { grid-area: ex5; }
 
 .ex6 { grid-area: ex6; margin:0 0 5vh 0 ;}
+.mcero{
+  color: var(--black);
+}
+
 @media (max-width: 768px) {
   .mcero{
     margin: 0 !important;
