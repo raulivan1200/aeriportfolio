@@ -17,6 +17,8 @@
 
 }
 :root {
+    --bgb:rgba(255, 255, 255, 0);
+    --bgw:rgba(255, 255, 255, 0);
     --white: #ffffff;
     --black:#000000;
     --bs1:rgba(0, 0, 0, 0.70);
@@ -46,6 +48,8 @@
     transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
   html[data-theme='light'] {
+        --bgb:rgba(255, 255, 255, 0);
+    --bgw:rgba(255, 255, 255, 0);
     --white: #ffffff;
     --black:#000000;
     --bs1:rgba(0, 0, 0, 0.70);
@@ -68,6 +72,8 @@
       }
   }
   html[data-theme='dark'] {
+        --bgb:rgba(255, 255, 255, 0);
+    --bgw:rgba(0, 0, 0, 0);
     --white: #000000;
     --black:#ffffff;
     --bs1:rgba(0, 0, 0, 0.70);
@@ -335,14 +341,11 @@ filter: blur(80px);
       left: 0;
       right: 0;
       z-index: 1;
-      background-image: radial-gradient(
-        rgba(0, 0, 0, 0) 1px,
-        var(--background) 1px
-      );
       background-size: 4px 4px;
-      backdrop-filter: blur(3px);
-      -webkit-backdrop-filter: blur(3px);
-      -moz-backdrop-filter: blur(3px);
+      background: linear-gradient(to bottom,var(--bgb) 0%, var(--bgw) 100%);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      -moz-backdrop-filter: blur(2px);
     }
     .menux::before{
       display: block;
