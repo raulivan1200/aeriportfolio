@@ -3,9 +3,9 @@ import styles from "../../styles/Foot.module.css"
 
 function Foot() {
   return (
-    <div style={{display:"flex", flexDirection:"column", backgroundColor:"var(--black)", width:"100vw"}}>
+    <div style={{display:"flex", flexDirection:"column", backgroundColor:"var(--black)", width:"100%"}}>
 
-      <div style={{width:"100vw"}}>
+      <div style={{width:"100%"}}>
         <div className={styles.patx}>
     
         <p style={{paddingBottom:"100px", paddingTop:"100px"}} className={styles.fbtext}>Work with the<br className={styles.deskbreak}/><span className='rtr'> colors of creativity </span><br className={styles.mobilebreak}/>to create extraordinary experiences</p>

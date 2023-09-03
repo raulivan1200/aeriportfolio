@@ -575,7 +575,7 @@ color: var(--black);
   
   @media screen and (max-width:768px) {
     .bannerpages{
-      width: 100vw;
+      width: 100%;
       height: 70vh !important;
       object-fit: scale-down;
     }
@@ -676,7 +676,7 @@ color: var(--black);
 }
 
 .bannerpages{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
 }
