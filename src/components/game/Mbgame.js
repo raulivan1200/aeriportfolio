@@ -8,9 +8,10 @@ import  styles from "../../styles/Skills.module.css"
 import { useEffect } from "react";
 import { useRef } from "react";
 
-function Tfgame() {
+function Mbgame() {
+
   return (
-    <div style={{height:"100%", justifyContent:"center",alignItems:"center"}} className={styles.tresde}>
+    <div style={{height:"50vh", width:"80vw", justifyContent:"center",alignItems:"center"}}>
       <Canvas  camera={{ fov: 70, position: [0, 100, 10]}}>
       
       <Suspense fallback={null}>
@@ -31,4 +32,4 @@ function Tfgame() {
   );
 }
 
-export default Tfgame;
+export default Mbgame;

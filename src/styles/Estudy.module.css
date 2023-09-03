@@ -89,13 +89,7 @@
     .a4{
         order: 5;
     }
-    .ax{
-        position: relative !important;
-        order: 1;
-        height: 40vh;
-        width: 80vw;
-    }
   }
   .ax{
-    position: absolute;height: 70vh;width: 40vw;
+    position: absolute;height: 70vh;width: 40vw;margin-top: 20%;
   }

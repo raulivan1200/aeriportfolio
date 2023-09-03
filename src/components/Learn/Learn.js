@@ -1,7 +1,20 @@
 import React from 'react'
 import styles from "../../styles/Estudy.module.css"
 import Tfgame from '../game/Tfgame'
+import Mbgame from '../game/Mbgame';
+import { useEffect,useState } from 'react';
 function Learn() {
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 770); // Adjust breakpoint as needed
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className={styles.ninecen}>
         <div className={styles.wc}>            
@@ -27,9 +40,8 @@ I have the management of some languages such as Html, Css and JavaScript</h6></d
 
   </div>
 </div>
-<div className={styles.ax}>
-        <Tfgame/>
-        </div>
+    {isMobile ? <Mbgame/> : <><div className={styles.ax}><Tfgame /></div></>}
+
     </div>
   )
 }

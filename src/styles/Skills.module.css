@@ -56,14 +56,6 @@ line-height: 28px;
   @media screen and (max-width: 1005px) {
     .pad5{font-size: 40px !important;}}
   @media screen and (max-width: 768px) {
-    .tresde{
-      display: contents;
-      width: 90vw !important;
-      height: 75vh !important;
-      padding-left: 10%;
-      justify-content: center;
-      align-items: center;
-    }
     .hrpp{
     }
     .parentflex {
