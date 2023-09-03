@@ -9,15 +9,34 @@ import { useEffect } from "react";
 import { useRef } from "react";
 
 function Tfgame() {
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    // Check window width on component mount
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize); // Listen for window resize events
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div style={{height:"100%", justifyContent:"center",alignItems:"center"}} className={styles.tresde}>
       <Canvas  camera={{ fov: 70, position: [0, 100, 10]}}>
       
       <Suspense fallback={null}>
-        <Axo position={[0,-20, 0]} rotation={[-45,0,0]} scale={2}/>
-        </Suspense >
+      <Axo
+            position={[0, -20, 0]}
+            rotation={[-45, 0, 0]}
+            scale={isMobile ? 1 : 2} // Set scale to 1 on mobile
+          />
+                  </Suspense >
 
         <ambientLight intensity={0.5} />
 <ambientLight intensity={0.2} />

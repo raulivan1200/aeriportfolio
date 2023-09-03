@@ -57,7 +57,8 @@ line-height: 28px;
     .pad5{font-size: 40px !important;}}
   @media screen and (max-width: 768px) {
     .tresde{
-      width: 40vw !important;
+      display: contents;
+      width: 90vw !important;
       height: 75vh !important;
       padding-left: 10%;
       justify-content: center;
