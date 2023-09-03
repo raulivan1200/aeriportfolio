@@ -71,7 +71,7 @@ margin: 4px;;
       width: 80vw !important;
     }
     .conmi{
-      width: 100vw;
+      width: 100%;
       height: auto !important;
      }
     .pm{
@@ -131,7 +131,7 @@ font-size: 16px;
 .conmi{
   background-color: var(--white) !important;
   margin-top: -5%;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
