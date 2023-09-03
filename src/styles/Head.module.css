@@ -1,4 +1,11 @@
-  .cont {  
+@media screen and (max-width:1921px) and (min-width:1400px) {
+  
+  .hrx{
+  width: 20vw !important;
+  margin-top: .5% !important;
+}
+}
+.cont {  
     margin: 0 auto;
     height: 100vh !important;
     width: 100vw;
@@ -82,8 +89,10 @@ height: 100vh;
   bottom: 0;
 }
   .hrx {
+    margin-top: -1%;
+    position: absolute;
     justify-content: left;
-    width:15vw;
+    width:30vw;
     display: block;
     background-color: var(--black);
       color:"var(--black)";

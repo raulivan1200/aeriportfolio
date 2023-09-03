@@ -57,9 +57,11 @@ line-height: 28px;
     .pad5{font-size: 40px !important;}}
   @media screen and (max-width: 768px) {
     .tresde{
-      width: 80% !important;
+      width: 40vw !important;
       height: 75vh !important;
       padding-left: 10%;
+      justify-content: center;
+      align-items: center;
     }
     .hrpp{
     }
@@ -142,7 +144,7 @@ line-height: 28px;
 
 .ex6 { grid-area: ex6; margin:0 0 5vh 0 ;}
 .mcero{
-  color: var(--black);
+  color: var(--black) !important;
 }
 
 @media (max-width: 768px) {

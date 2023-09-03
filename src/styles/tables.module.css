@@ -55,6 +55,10 @@
   }
   
   @media screen and (max-width:768px) {
+    
+.hrexp{
+  width: 48vw;
+}
     .frim{
       margin-top: -1em;
       width:9rem;
@@ -173,3 +177,7 @@
 
 
 /* el tr ponerle margin - en desktop y en mobile ps asi veda xdd*/
+
+.hrexp{
+  width: 11vw;
+}

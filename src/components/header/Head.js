@@ -78,7 +78,7 @@ function AppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: "easeInOut",delay: 0.06 , duration:.4 }}
+          transition={{ ease: "easeInOut",delay: 0.1 , duration:.4 }}
           variants={animationVariants}>
 
          Creative 
@@ -92,7 +92,7 @@ function AppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: "easeInOut",delay: 1, }}
+          transition={{ ease: "easeInOut",delay: 0.3, }}
           variants={animationVariants}>
 
         <h3 className={styles.wh}>Esmeralda Rivera</h3>
@@ -102,7 +102,7 @@ function AppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: "easeInOut",delay: 1.5 }}
+          transition={{ ease: "easeInOut",delay: 0.5 }}
           variants={animationVariants}>
         <h7 className={styles.wh}>UX/UI Designer</h7>
           </motion.div>
@@ -161,7 +161,7 @@ function NonAppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: "easeInOut",delay: 0.6 , duration:.4 }}
+          transition={{ ease: "easeInOut",delay: 0.1 , duration:.4 }}
           variants={animationVariants}>
 
          Creative 
@@ -173,7 +173,7 @@ function NonAppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: "easeInOut",delay: 1 }}
+          transition={{ ease: "easeInOut",delay: 0.3 }}
           variants={animationVariants}>
 
         <h3 className={styles.wh}>Esmeralda Rivera</h3>
@@ -183,7 +183,7 @@ function NonAppleComponent() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          transition={{ ease: "easeInOut",delay: 1.5 }}
+          transition={{ ease: "easeInOut",delay: 0.5 }}
           variants={animationVariants}>
         <h7 className={styles.wh}>UX/UI Designer</h7>
           </motion.div>

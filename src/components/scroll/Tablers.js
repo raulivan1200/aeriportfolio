@@ -13,7 +13,7 @@ export const Tablers = () => {
   <div className={styles.myrows}>
     <div className={styles.columns}>
       <h1 className='wh' style={{fontWeight:"600"}}>Esmeralda</h1>
-      <hr style={{color:"var(--black)",marginTop:"-1.8vh",marginLeft:"0", width:"14.5vw", backgroundColor:"var(--black)",height:"1px" }}/>
+      <hr style={{color:"var(--black)",marginTop:"-1.8vh",marginLeft:"0", backgroundColor:"var(--black)",height:"1px" }} className={styles.hrexp}/>
       <h3 className='wh'>UX /UI Designer</h3>
           </div>
     <div className={styles.columns}>
@@ -24,7 +24,7 @@ export const Tablers = () => {
 
 <div className={styles.texcen}>
   <div style={{width:"25vw", height:"80%"}} className={styles.frim}>
-  <Image priority className={styles.frimx} src={abril} fill style={{objectFit:"cover !important"}} alt="Ux Mexico Abril Rivera" />
+  <Image priority className={styles.frimx} src={abril} placeholder='blur' fill style={{objectFit:"cover !important"}} alt="Ux Mexico Abril Rivera" />
   </div>
   <h1 className={styles.bate} style={{fontFamily:"Raleway",fontSize:"15vw", fontWeight:"700", color:"var(--black)", }}>MY SKILLS</h1>
 </div>

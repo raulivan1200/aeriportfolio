@@ -52,6 +52,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .textrowfo{
+    padding: 40px 0;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .two{
+    order: 3 !important;
+  }
   .mobilebreak{
     display: none;
   }
@@ -148,4 +156,20 @@ color: var(--white);
   transform: rotate(360deg);
   color: pink;
   transition: ease-in-out;
+}
+.one{
+order: 2;
+}
+.two{
+order: 1;
+}
+.textrowfo{
+  color: var(--white) !important;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -313,6 +313,8 @@ html {
     }
     
   }
+
+
   .menul{
       font-family: 'Inter';
       font-style: normal;
@@ -321,18 +323,43 @@ html {
       line-height: 29px;
       color:  var(--white);
   }
+  .blurbg{
+    -webkit-filter: blur(80px);
+filter: blur(80px);
+  }
   .menux {
-
       display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      position: fixed;
+      top: 0 !important;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-image: radial-gradient(
+        rgba(0, 0, 0, 0) 1px,
+        var(--background) 1px
+      );
+      background-size: 4px 4px;
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      -moz-backdrop-filter: blur(3px);
+    }
+    .menux::before{
+      display: block;
+      content: "";
+      position: absolute;
+      background: var(--black);
+
+    }
+    .menuchild{
       justify-content: space-between;
       align-items: center;
       width: 90%;
       margin: 0 auto;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1;
+      display: flex;
     }
     
 .izqx {
@@ -388,14 +415,36 @@ color: var(--black);
     padding-right: 5%;
   }
 .mpm{
+  z-index: 999999;
+  width: 100%;
+  background-color: var(--background);
+  height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
     padding-top: 1%;
     overflow: hidden;
+    align-items: center;
 }
-@media screen and (max-width:768px) {
+.wmpmm{
+  width: 90%;
+  align-items: center;
+}
 
+.wmpm{
+  width: 90%;
+  align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+  .wmpmm{
+    width: 95%;
+  }
   .hidemobile{
     display: none;
   }
@@ -630,4 +679,21 @@ color: var(--black);
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+}
+.gridfont{
+  font-size: 20px;
+  margin-top:16px;
+  font-family: 'Raleway', sans-serif; 
+  font-style: medium;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+@media screen and (max-height:1079px) and (min-width:1000px) and (max-width:1920px) {
+  .menubutton{
+    line-height: 60px;
+    font-size: 40px;
+  }
+}
+.lnh{
+  margin-top: -2%;
 }

@@ -13,176 +13,49 @@ import { motion, useTransform } from "framer-motion";
 import { useState } from 'react'
 
 function Deskgrid() {
-
-  const[cursorYear, setcursorYear]=useState("")
-  const [cursorText, setCursorText] = useState("");
-  const [cursorVariant, setCursorVariant] = useState("default");
-
-  const ref = React.useRef(null);
-  const mouse = useMouse(ref, {
-    enterDelay: 100,
-    leaveDelay: 100
-  });
-
-  let mouseXPosition = 0;
-  let mouseYPosition = 0;
-  let mouseXmove=0;
-  let mouseYmove=0;
-  mouseXmove=mouse.clientX;
-  mouseYmove=mouse.clientY;
-  if (mouse.x !== null) {
-    mouseXPosition = mouse.clientX;
-
-  }
-
-  if (mouse.y !== null) {
-    mouseYPosition = mouse.clientY;
-  }
-
-  const variants = {
-    default: {
-      opacity: 0,
-      height: 10,
-      width: 10,
-      fontSize: "16px",
-      backgroundColor: "var(--background)",
-      x: mouseXPosition,
-      y: mouseYPosition,
-      transition: {
-        type: "spring",
-        mass: 0.6
-      }
-    },
-    project: {
-      scaleX: [1, 1.2, 0.8, 1.1, 0.9, 1],
-      scaleY: [1, 0.8, 1.2, 0.9, 1.1, 1],
-      opacity: 1,
-      // backgroundColor: "rgba(255, 255, 255, 0.6)",
-      backgroundColor: "var(--black)",
-      color: "var(--white)",
-      height: 180,
-      width: 180,
-      fontSize: "18px",
-      x: mouseXPosition - 32,
-      y: mouseYPosition - 32
-    },
-    contact: {
-      opacity: 1,
-      backgroundColor: "#FFBCBC",
-      color: "#000",
-      height: 64,
-      width: 64,
-      fontSize: "32px",
-      x: mouseXPosition - 48,
-      y: mouseYPosition - 48
-    }
-  };
-
-  const spring = {
-    type: "spring",
-    stiffness: 500,
-    damping: 28
-  };
-
-  function billsp(event) {
-    setCursorText("Bill splitter");
-    setCursorVariant("project");
-    setcursorYear("2022")
-  }
-
-  function projectLeave(event) {
-    setCursorText("");
-    setCursorVariant("default");
-    setcursorYear("")
-  }
-  function TekoEnter(event) {
-    setCursorText("Teko Studio");
-    setCursorVariant("project");
-    setcursorYear("2022")
-  }
-  function Imagike(event) {
-    setcursorYear("2022")
-    setCursorText("Kidsy");
-    setCursorVariant("project");
-  }
-  function WofflesEnter(event) {
-    setCursorText("Woffles");
-    setcursorYear("2022")
-    setCursorVariant("project");
-  }
-  function SysalesEnter(event) {
-    setCursorText("Woffles");
-    setcursorYear("2022")
-    setCursorVariant("project");
-  }
-  function proge(event) {
-    setCursorText("on progress");
-    setcursorYear("2023")
-    setCursorVariant("project");
-  }
   return (
-    <div ref={ref}>
-       <motion.div
-          variants={variants}
-          className="circle"
-          animate={cursorVariant}
-          transition={spring}
-        >
-          <span className="cursorText"><h3>{cursorText}</h3><h6>{cursorYear}</h6></span>
-        </motion.div>
+    <div >
 
         <div className={styles.containerds}>
-        <Parallax translateY={[3, -15]} easing={'ease'} speed={9} scale={[0.9,1.019]}>
-    <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/12-60)*-1,y:(mouseYmove/12-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-  <div className={styles.bigds} onMouseEnter={billsp} onMouseLeave={projectLeave}>  
+  <div className={styles.bigds}>  
   <div className={styles.brims} >
   <a href="/Salessystem">  <Image placeholder="blur"  className={styles.imrs}   src={sshe} alt="Abril Rivera front end ux design designer"></Image> </a>
-  
+  <p className='wh gridfont'>Sales system</p>
+  <h6 className='lnh wh'>Easy-to-use sales system</h6>  
   </div>
   </div>
-    </motion.div>
-  </Parallax>
-
-  <Parallax translateY={[-15, 25]} easing={'ease'} speed={10} scale={[.94,1.017]}>
-  <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/9-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-
-  <div className={styles.bb3} onMouseEnter={WofflesEnter} onMouseLeave={projectLeave}>
+ 
+  <div className={styles.bb3} >
   <div className={styles.brims}>
   <a href="/Woffles"> <Image placeholder="blur"  className={styles.imrs}  src={wf} alt="ux systems"></Image></a>
+  <p className='wh gridfont'>Woffles</p>
+  <h6 className='lnh wh'>Awesome restaurant landing page</h6>
   </div>
      </div>
-  </motion.div>
-     </Parallax>
 
-     <Parallax translateY={[30, -10]} easing={'ease'} speed={11} scale={[0.95,1.1]}>
-     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/11-60)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-  <div className={styles.bb2} onMouseEnter={billsp} onMouseLeave={projectLeave}>
+  <div className={styles.bb2} >
   <div className={styles.brims}>
   <a href="/Billsplitter">  <Image placeholder="blur"   className={styles.imrs}  src={bih} alt="bill splitter ux ui designer"></Image></a>
+  <p className='wh gridfont'>Bill splitter</p>
+  <h6 className='lnh wh'>Share  bills with friends</h6>
   </div>
      </div>
-     </motion.div>
-     </Parallax>
 
-     <Parallax translateY={[15, 10]} easing={'ease'} speed={10} scale={[0.96,1.013]}>
-     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/8-60)*-1,y:(mouseYmove/10-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-  <div className={styles.bb4} onMouseEnter={TekoEnter} onMouseLeave={projectLeave}>
+  <div className={styles.bb4} >
   <div className={styles.brims}>
    <a href="/Teko"> <Image placeholder="blur"  className={styles.imrs}  src={tekoh} alt="ux agency business design "></Image></a>
+   <p className='wh gridfont'>Teko</p>
+  <h6 className='lnh wh'>Web design agency redesign</h6>
    </div>
      </div>
-     </motion.div>
-     </Parallax>
 
-     <Parallax translateY={[-20, 10]} easing={'ease'} speed={3} scale={[0.93,1.12]}>
-     <motion.div initial={{x:0,y:0}} animate={{x:(mouseXmove/6-100)*-1,y:(mouseYmove/8-60)*-1}} transition={{type: "spring",stiffness: 260,damping: 20}}>
-  <div className={styles.bb5} onMouseEnter={Imagike} onMouseLeave={projectLeave}>
+  <div className={styles.bb5} >
     <div className={styles.brims}>
         <a href="/Imagikids"> <Image placeholder="blur"  className={styles.imrs}  src={imgh} alt="kids app ux design"></Image></a>
+        <p className='wh gridfont'>Imagi Kids</p>
+  <h6 className='lnh wh'>Incredible & safe babysitting app</h6>
     </div>
   </div>
-     </motion.div>
-  </Parallax>
 
 
 

@@ -1,0 +1,101 @@
+
+.wc{
+    align-items: start;
+
+    width: 90%;
+    text-align: left;
+}
+.ninecen{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hrxx{
+    position: absolute;
+    width: 20vw;
+    color: black;
+    height: 1px;
+    margin-top: -2.5vh;
+}
+.containerss {  
+
+    height: 70vh !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "a1 pic a3"
+      "a2 pic a4";
+    width: 90%;
+  }
+  
+  .a1 {
+    justify-self: start;
+    align-self: start;
+    grid-area: a1;
+  }
+  
+  .a2 {
+    justify-self: start;
+    align-self: start;
+    grid-area: a2;
+  }
+  
+  .a3 {
+    justify-self: center;
+    align-self: center;
+    grid-area: a3;
+  }
+  
+  .a4 {
+    justify-self: center;
+    align-self: center;
+    grid-area: a4;
+  }
+  
+  .pic {
+    justify-self: center;
+    align-self: center;
+    grid-area: pic;
+    justify-content: center;
+    width: 100%; 
+  height: fit-content !important; 
+  }
+  @media screen and (max-width:769px) {
+    .containerss{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        
+    }
+    .a1{
+        order: 2;
+    }
+    .a2{
+        order: 4;
+    }
+    .a3{
+        order: 3;
+    }
+
+    .a4{
+        order: 5;
+    }
+    .ax{
+        position: relative !important;
+        order: 1;
+        height: 40vh;
+        width: 80vw;
+    }
+  }
+  .ax{
+    position: absolute;height: 70vh;width: 40vw;
+  }

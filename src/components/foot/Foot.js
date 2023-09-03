@@ -10,18 +10,16 @@ function Foot() {
     
         <p style={{paddingBottom:"100px", paddingTop:"100px"}} className={styles.fbtext}>Work with the<br className={styles.deskbreak}/><span className='rtr'> colors of creativity </span><br className={styles.mobilebreak}/>to create extraordinary experiences</p>
         <a  style={{textDecoration:"none"}} href="mailto:04.esmeraldarp@gmail.com" target='_blank'><div className={styles.btn}><p style={{color:"var(--white)"}} className={styles.btx}>Let´s create</p></div></a>
-              <div className={styles.socialMedia}>
-        <a target="_blank" className={styles.acs} href="https://www.instagram.com/">
-          <h3 className={styles.smtxt}>Instagram</h3>
-        </a>
-        <a target="_blank" className={styles.acs} href="https://www.behance.net/esmeralrivera">
-          <h3 className={styles.smtxt}>Behance</h3>
-        </a>
-        <a target="_blank" className={styles.acs} href="https://www.linkedin.com/in/esmeralda-rivera-p-a0155b202/">
-          <h3 className={styles.smtxt}>LinkedIn</h3>
-        </a>
-      </div>
-        <h3 style={{color:"var(--white) !important",paddingTop:"68px", paddingBottom:"100px"}}>< span className={styles.han} id="rotate-on-hover">©</span> Esmeralda Rivera 2023</h3> 
+         <div className={styles.textrowfo}> 
+         <div className={styles.two}>          
+        <h3 style={{color:"var(--white) !important"}}>< span className={styles.han} id="rotate-on-hover">©</span> Esmeralda Rivera 2023</h3> 
+         </div>
+<div className={styles.one}>  
+<a target="_blank" className={styles.acs} href="https://www.linkedin.com/in/esmeralda-rivera-p-a0155b202/">
+  <h3 className={styles.smtxt}>LinkedIn</h3>
+</a>
+</div>
+         </div>
       </div>
         </div>
     </div>

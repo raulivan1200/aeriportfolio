@@ -11,18 +11,10 @@ export default function Model(props) {
   const { nodes, materials, animations } = useGLTF('/axo-transformed.glb')
   const { actions } = useAnimations(animations, group)
   const [currentAnimation, setCurrentAnimation] = useState('rumba');
-  useEffect(() => {
-    actions.thanks.play();
-    const stopAnimationTimeout = setTimeout(() => {
-      actions.thanks.stop();
-    }, 9000); // 9000 milliseconds = 9 seconds
-
-    return () => {
-      clearTimeout(stopAnimationTimeout); // Clean up the timeout if the component unmounts before it triggers
-    };
-  }, []);
 
   useEffect(() => {
+    actions.rumba.play();
+
     const animationInterval = setInterval(() => {
       const animationNames = ['thanks','Dancingone', 'chicken', 'dance3', 'fight', 'rumba'];
       const currentAnimationIndex = animationNames.indexOf(currentAnimation);

@@ -11,6 +11,7 @@ import { easeInOut, useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 import Expgrid from "@/components/game/Expgrid";
+import Learn from "@/components/Learn/Learn";
 
 function Section({ children, animationProps }) {
   const ref = useRef(null);
@@ -72,6 +73,7 @@ const Main = () => {
             <Skills />
         */}
           </motion.div>
+          <Learn/>
         </Section>
         <section id="foot-section">
           <Foot />

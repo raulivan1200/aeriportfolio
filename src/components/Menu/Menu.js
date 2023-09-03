@@ -4,6 +4,7 @@ import Image from 'next/image';
 import open from "../../../public/logos/open.svg"
 import SwitchTheme from '../SwitchTheme';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Imrow } from '../examples/Imrow';
 
 function Menu({ onProjectClick, onContactClick }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,6 +49,8 @@ function Menu({ onProjectClick, onContactClick }) {
 
   return (
     <div className="menux">
+
+      <div className='menuchild'>
       <div className="izqx" style={{ width: "60%" }}>
         <Image priority src="./logos/open.svg" className='svco' alt='open' width={48} height={48} style={{ cursor: "pointer" }} onClick={handleClick}></Image>
         <h5 className='mf' style={{ color: "var(--black)", paddingLeft: "16px" }}>
@@ -65,33 +68,33 @@ function Menu({ onProjectClick, onContactClick }) {
               transition={{ duration: 0.3,dampizng: 500, stiffness: 1000, mass: 3 }}
             >
               <div className='mpm'>
+              <div className='wmpmm'>
+                
                 <div style={{ width: "100%", justifyContent: "space-between", display: "flex", flexDirection: "row" }}>
-                  <div style={{display:"flex",flexDirection:"column"}}>   
+                  <div style={{display:"flex",flexDirection:"row"}}>   
                   <Image priority src="./logos/close.svg" className='svco' alt='close' width={48} height={48} onClick={handleClose}></Image>
                   <SwitchTheme />
                   </div>
-                  <div style={{paddingRight:"5%"}}>
                   <p className='wect'>We can <a style={{ color: "var(--black)", textDecorationColor: "var(--black)", lineHeight: "26px", fontWeight: "400px", letterSpacing: "1px" }} href="mailto:someone@exemple.com?subject=Questions&body=Escribe aquí si tienes preguntas ">create together</a> </p>
-                  </div>
                 </div>
 
-                <span className='menubutton' onClick={() => handleScrollTo('head-section')} style={{ paddingTop:"5%",width: "fit-content", color: "var(--black)" }}>Go Up</span>
+                <span className='menubutton' onClick={() => handleScrollTo('head-section')} style={{width: "fit-content", color: "var(--black)" }}>Go Up</span>
                 <span className='menubutton' onClick={() => handleScrollTo('grid-section')} style={{ width: "fit-content", color: "var(--black)" }}>Projects</span>
                 <span className='menubutton' onClick={() => handleScrollTo('exp-section')} style={{ width: "fit-content", color: "var(--black)" }}>About Me</span>
                 <span className='menubutton' onClick={() => handleScrollTo('skills-section')} style={{ width: "fit-content", color: "var(--black)" }}>My Journey</span>
                 <a  style={{textDecoration:"none",paddingTop:"5%"}} href="mailto:04.esmeraldarp@gmail.com" target='_blank' className='hidedesktop'><div className="btn"><p style={{color:"var(--black)"}} className="btx">Let´s create</p></div></a>
-                
-                <a href="mailto:04.esmeraldarp@gmail.com" style={{ textDecoration: "none", color: "var(--black)" }}>
-                  <div style={{position:"fixed",bottom:"5%" , left:"5%"}}>
-                  <h2 style={{ fontSize: "20px", fontWeight: "400",width:"fit-content" }} className='hidemobile hpink'>Lic. Esmeralda Rivera</h2>
-                  </div>
-                </a>
+                <div className='hidemobile'>  
+                <Imrow/>
+                </div>
+
+              </div>
               </div>
 
             </motion.div>
           )}
         </AnimatePresence>
       </div>
+          </div>
     </div>
   );
 }
