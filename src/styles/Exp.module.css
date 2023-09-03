@@ -95,7 +95,7 @@
 
 .frim {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   z-index: 2;
   border-radius: 153.5px 153.5px 20px 20px;
