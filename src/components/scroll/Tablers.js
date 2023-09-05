@@ -32,7 +32,7 @@ export const Tablers = () => {
 <div className={styles.containers}>
   <div className={styles.myrows}>
     <div className={styles.columns}>
-      <h6 className='wh'>Amo el diseño de experiencias que van<br/>más alla de las expectativas.</h6>
+      <h6 className='wh'>I love designing experiences that go<br/>beyond expectations.</h6>
       <table className={styles.mytable}>
   <thead>
     <tr>

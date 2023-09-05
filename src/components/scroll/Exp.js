@@ -25,7 +25,7 @@ function Exp() {
   <>
         <Mbtables/>
         <div className={styles.ffs} style={{ width: "80%", overflowX: "scroll",textAlign:"center",margin:"0 auto" }}>
-        <Rollexp text=" Information  ●  Architecture  ●  Design  ●  System  ●  Wireframing  ●  Prototyping  ●  Mockups  ● " />
+        <Rollexp text=" Information  ●  Architecture  ●  Design  ●  System  ●  Wireframing  ●  Prototyping  ●  Mockups  ●" />
     </div>
         </>) : (
           

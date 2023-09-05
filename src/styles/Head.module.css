@@ -44,7 +44,7 @@
       padding-left: 0% !important;
       display: flex;
       flex-direction: column;
-      height: 100vh !important;
+      height: fit-content !important;
       padding-bottom: 15%;
       
     }

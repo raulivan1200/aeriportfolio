@@ -4,7 +4,12 @@ import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import {useState} from 'react'
 import { useRef } from "react";
-
+import Image from 'next/image'
+import wof from "../../../public/images/Portfolio/woffleshead.png"
+import imk from "../../../public/images/Portfolio/imagikidsheader.png"
+import teko from "../../../public/images/Portfolio/tekohead.png"
+import Ssh from "../../../public/images/Portfolio/Sshead.png"
+import billh from "../../../public/images/Portfolio/billhead.png"
 
 export const Imagerowf = () => {
   const sliderRef = useRef(null);
@@ -76,19 +81,19 @@ export const Imagerowf = () => {
 
       <Slider  ref={sliderRef} {...settings}>
           <div className="img-wrapper">
-   <a href="/Woffles"><img src="/images/Portfolio/woffleshead.png" alt="restaurant waffles food comida mexico menu diseno ux ui" className='rsimg'/></a>
+   <a href="/Woffles"><Image width={400} height={0} placeholder={'blur'} src={wof} alt="restaurant waffles food comida mexico menu diseno ux ui" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Imagikids"><img src="/images/Portfolio/imagikidsheader.png"  alt="kids toys design ux ui" className='rsimg'/></a>
+   <a href="/Imagikids"><Image width={400} height={0} placeholder={'blur'} src={imk}  alt="kids toys design ux ui" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Teko"><img src="/images/Portfolio/tekohead.png"  alt="ux ui design studio" className='rsimg'/></a>
+   <a href="/Teko"><Image width={400} height={0} placeholder={'blur'} src={teko}  alt="ux ui design studio" className='rsimg'/></a>
 </div>
         <div className="img-wrapper">
-   <a href="/Salessystem"><img src="/images/Portfolio/Sshead.png"  alt="sales store market ux ui" className='rsimg'/></a>
+   <a href="/Salessystem"><Image width={400} height={0} placeholder={'blur'} src={Ssh}  alt="sales store market ux ui" className='rsimg'/></a>
           </div>
         <div className="img-wrapper">
-   <a href="/Billsplitter"><img src="/images/Portfolio/billhead.png" alt="ux ui bill" className='rsimg' /></a>
+   <a href="/Billsplitter"><Image width={400} height={0} placeholder={'blur'} src={billh} alt="ux ui bill" className='rsimg' /></a>
 </div>
         </Slider>
 

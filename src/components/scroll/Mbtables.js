@@ -31,7 +31,7 @@ const Mbtables = () => {
 </div>
      <div style={{width:"100%"}}>
     <div>
-        <h6 style={{paddingLeft:"10%", marginBottom:"8px"}} className='wh'>Amo el diseño de experiencias que van <br/> más alla de las expectativas.</h6>
+    <h6 style={{paddingLeft:"10%", marginBottom:"8px"}} className='wh'>I love designing experiences that go <br/> beyond expectations.</h6>
 <div className={styles.conta}>
 <table className={styles.mytable}>
         <thead>
