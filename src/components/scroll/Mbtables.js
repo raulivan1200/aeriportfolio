@@ -19,11 +19,11 @@ const Mbtables = () => {
   </div>
 
   <h1 className={styles.bate} style={{color:"var(--black)"}}>
-  <span style={{color: "rgba(0, 0, 0, 0.3)",fontSize:"100%", margin: "80px 0px"}}>MY SKILLS</span><br/>
-  <span style={{color: "rgba(0, 0, 0, 0.7)",fontSize:"100%", margin: "80px 0px"}}>MY SKILLS</span><br/>
-  <span style={{color:"var(--black)",fontSize:"100%", margin: "80px 0px"}}>MY SKILLS</span><br/>
-  <span style={{color: "rgba(0, 0, 0, 0.7)",fontSize:"100%", margin: "80px 0px"}}>MY SKILLS</span><br/>
-  <span style={{color: "rgba(0, 0, 0, 0.3)",fontSize:"100%", margin: "80px 0px"}}>MY SKILLS</span><br/>
+  <span style={{color: "var(--bs2)",fontSize:"100%", fontWeight:"700", margin: "80px 0px"}}>MY SKILLS</span><br/>
+  <span style={{color: "var(--bs1)",fontSize:"100%",fontWeight:"700", margin: "80px 0px"}}>MY SKILLS</span><br/>
+  <span style={{color:"var(--black)",fontSize:"100%",fontWeight:"700", margin: "80px 0px"}}>MY SKILLS</span><br/>
+  <span style={{color: "var(--bs1)",fontSize:"100%",fontWeight:"700", margin: "80px 0px"}}>MY SKILLS</span><br/>
+  <span style={{color: "var(--bs2)",fontSize:"100%",fontWeight:"700", margin: "80px 0px"}}>MY SKILLS</span><br/>
 </h1>
 
 

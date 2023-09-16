@@ -162,15 +162,19 @@ height: 100vh;
   }
 
   .thm{
+    font-family: "Raleway" !important;
+    font-weight: 580 !important;
+    line-height: normal;
+    font-size: 16px;
     color: var(--black) !important;
   }
   .bigtxt{
-    font-family: 'Raleway';
-font-style: normal;
-font-weight: 600;
-font-size: 96px;
-
-/* or 94% */
+    margin-left: -2%;
+    font-family: Raleway;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 90px; /* 93.75% */
 color: var(--black);
   }
 

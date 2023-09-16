@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+  font-family: "Raleway";
+  src: url(/Inter-Regular.woff2) format("woff2");
+    font-weight: 400;
+      font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(/Raleway-Regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
 
 * {
   -webkit-user-drag: none;
@@ -17,13 +28,13 @@
 
 }
 :root {
-    --bgb:rgba(255, 255, 255, 0);
+    --bgb:#f1f1f1;
     --bgw:rgba(255, 255, 255, 0);
-    --white: #ffffff;
-    --black:#000000;
+    --white: #f4f4f4;
+    --black:#0d0d0d;
     --bs1:rgba(0, 0, 0, 0.70);
     --bs2:rgba(0, 0, 0, 0.30);
-    --background:#ffffff;
+    --background:#f4f4f4;
     .svco{
         filter: invert(0) !important;
         -webkit-filter: invert(0) !important;
@@ -50,11 +61,11 @@
   html[data-theme='light'] {
         --bgb:rgba(255, 255, 255, 0);
     --bgw:rgba(255, 255, 255, 0);
-    --white: #ffffff;
+    --white: #f1f1f1;
     --black:#000000;
-    --bs1:rgba(0, 0, 0, 0.70);
-    --bs2:rgba(0, 0, 0, 0.30);
-    --background:#ffffff;
+    --bs1:rgba(0, 0, 0, 0.7);
+    --bs2:rgba(0, 0, 0, 0.5);
+    --background:#f1f1f1;
     .svco{
         filter: invert(0) !important;
         transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -74,10 +85,10 @@
   html[data-theme='dark'] {
         --bgb:rgba(255, 255, 255, 0);
     --bgw:rgba(0, 0, 0, 0);
-    --white: #000000;
+    --white: #0d0d0d;
     --black:#ffffff;
-    --bs1:rgba(0, 0, 0, 0.70);
-    --bs2:rgba(0, 0, 0, 0.30);
+    --bs1:rgba(255, 255, 255, 0.7) ;
+    --bs2:rgba(255, 255, 255, 0.5);
     --background:rgb(0, 0, 0);
     .svco{
         filter: invert(100%) !important;
@@ -128,42 +139,42 @@ html {
     .svcom{
         display: none;}
 
-    h1{ font-family: 'Raleway', sans-serif; 
-        font-weight: 700;
+    h1{ font-family: 'Raleway'; 
+        font-weight: 550;
         font-size: 40px;
         line-height: 47px;
     } 
-    h2{ font-family: 'Raleway', sans-serif; 
+    h2{ font-family: 'Raleway'; 
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
         line-height: 42px;
     } 
-    h3{ font-family: 'Raleway', sans-serif; 
+    h3{ font-family: 'Raleway'; 
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
         
     } 
-    h4{ font-family: 'Raleway', sans-serif; 
+    h4{ font-family: 'Raleway'; 
         font-style: normal;
-        font-weight: 500;
+        font-weight: 550;
         font-size: 24px;
         line-height: 28px;
     } 
-    h5{ font-family: 'Raleway', sans-serif; 
+    h5{ font-family: 'Raleway'; 
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 16px;
         line-height: 19px;
     }
-    h6{ font-family: 'Inter', sans-serif;
+    h6{ font-family: 'Inter';
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
     }
     h7{
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter';
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
@@ -171,44 +182,44 @@ html {
     } 
 
 @media screen and (max-width:3000px) and (min-width:768px) {
-    h1{ font-family: 'Raleway', sans-serif; 
+    h1{ font-family: 'Raleway'; 
         font-style: normal;
-        font-weight: 700;
+        font-weight: 550;
         font-size: 40px;
         line-height: 47px;
     } 
-    h2{ font-family: 'Raleway', sans-serif; 
+    h2{ font-family: 'Raleway'; 
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
         line-height: 42px;
     } 
-    h3{ font-family: 'Raleway', sans-serif; 
+    h3{ font-family: 'Raleway'; 
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
     } 
-    h4{ font-family: 'Raleway', sans-serif; 
+    h4{ font-family: 'Raleway'; 
         font-style: normal;
-        font-weight: 500;
+        font-weight: 550;
         font-size: 24px;
         line-height: 28px;
     } 
-    h5{ font-family: 'Raleway', sans-serif; 
+    h5{ font-family: 'Raleway'; 
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 16px;
         line-height: 19px;
     }
-    h6{ font-family: 'Inter', sans-serif;
+    h6{ font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
     }
     h7{
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter';
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
@@ -219,7 +230,7 @@ html {
     .svco{
       scale: 1.5;
     }
-     h1{ font-family: 'Raleway', sans-serif !important; 
+     h1{ font-family: 'Raleway' !important; 
         font-style: normal;
         font-weight: 400;
         font-size: 60px;
@@ -228,7 +239,7 @@ html {
 
     } 
     h2{ 
-      font-family: 'Raleway', sans-serif !important; 
+      font-family: 'Raleway' !important; 
         font-style: normal;
         font-weight: 400;
         font-size: 96px !important;
@@ -236,7 +247,7 @@ html {
         color: var(--black);
 
     } 
-    h3{ font-family: 'Raleway', sans-serif !important; 
+    h3{ font-family: 'Raleway' !important; 
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 500;
@@ -245,25 +256,25 @@ html {
         color: var(--black);
 
     } 
-    h4{ font-family: 'Raleway', sans-serif !important; 
+    h4{ font-family: 'Raleway' !important; 
         font-family: 'Raleway';
         font-style: normal;
-        font-weight: 500;
+        font-weight: 550;
         font-size: 80px;
         line-height: 88px !important;
         color: var(--black);
 
     } 
-    h5{ font-family: 'Raleway', sans-serif !important; 
+    h5{ font-family: 'Raleway' !important; 
         font-family: 'Inter';
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 38px !important;
         line-height: 85px !important;
         color: var(--black);
 
     }
-    h6{ font-family: 'Inter', sans-serif !important;
+    h6{ font-family: 'Inter' !important;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -273,7 +284,7 @@ html {
 
     }
     h7{
-        font-family: 'Inter', sans-serif !important;
+        font-family: 'Inter' !important;
         font-weight: 400;
         font-size: 40px;
         line-height: 55px;
@@ -389,8 +400,8 @@ filter: blur(80px);
     background-color: var(--white);
     border: none;
     font-size: 64px;
-    font-weight: 600;
-    font-family: 'Raleway', sans-serif !important;
+    font-weight: 550;
+    font-family: 'Raleway' !important;
     line-height: 96px;
 }
 .menubutton:hover{
@@ -424,6 +435,12 @@ color: var(--black);
     padding-top: 1%;
     overflow: hidden;
     align-items: center;
+}
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
 }
 .wmpmm{
   width: 90%;
@@ -664,7 +681,7 @@ color: var(--black);
   color: var(--black);
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 550;
   font-size: 24px;
   margin: 0; /* Remove default margin */
   line-height: 1; /* Reset line-height to prevent extra space */
@@ -683,9 +700,9 @@ color: var(--black);
 .gridfont{
   font-size: 20px;
   margin-top:16px;
-  font-family: 'Raleway', sans-serif; 
+  font-family: 'Raleway'; 
   font-style: medium;
-  font-weight: 600;
+  font-weight: 550;
   letter-spacing: 0.4px;
 }
 @media screen and (max-height:1079px) and (min-width:1000px) and (max-width:1920px) {

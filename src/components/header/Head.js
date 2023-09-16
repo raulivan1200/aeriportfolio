@@ -38,13 +38,10 @@ function isIOS() {
 
 
 function AppleComponent() {
-  
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const animationVariants = {
     hidden: {
-      y: 100,
+      y: -20,
       opacity: 0,
     },
     visible: {
@@ -64,9 +61,10 @@ function AppleComponent() {
          
       <div style={{height:"fit-content",width:"fit-content"}}> 
          <motion.div
-          ref={ref}
+          
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+                    animate={"visible"}
+
           transition={{ ease: "easeInOut",delay: 0  , duration:.3}}
           variants={animationVariants}>
          Live<br/>
@@ -75,9 +73,10 @@ function AppleComponent() {
 
          <div style={{width:"fit-content",height:"fit-content"}}> 
          <motion.div
-          ref={ref}
+          
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+                    animate={"visible"}
+
           transition={{ ease: "easeInOut",delay: 0.1 , duration:.4 }}
           variants={animationVariants}>
 
@@ -89,9 +88,10 @@ function AppleComponent() {
          </span>         
          
         <motion.div
-          ref={ref}
+          
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+                    animate={"visible"}
+
           transition={{ ease: "easeInOut",delay: 0.3, }}
           variants={animationVariants}>
 
@@ -99,9 +99,9 @@ function AppleComponent() {
           </motion.div>
 
           <motion.div
-          ref={ref}
+          
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={"visible"}
           transition={{ ease: "easeInOut",delay: 0.5 }}
           variants={animationVariants}>
         <h7 className={styles.wh}>UX/UI Designer</h7>
@@ -125,8 +125,6 @@ function AppleComponent() {
 }
 
 function NonAppleComponent() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const animationVariants = {
     hidden: {
@@ -147,9 +145,9 @@ function NonAppleComponent() {
          
          <div style={{height:"fit-content",width:"fit-content"}}> 
          <motion.div
-          ref={ref}
+          
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={"visible"}
           transition={{ ease: "easeInOut",delay: 0  , duration:.3}}
           variants={animationVariants}>
          Live<br/>
@@ -158,9 +156,10 @@ function NonAppleComponent() {
 
          <div style={{width:"fit-content",height:"fit-content"}}> 
          <motion.div
-          ref={ref}
+          
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+                    animate={"visible"}
+
           transition={{ ease: "easeInOut",delay: 0.1 , duration:.4 }}
           variants={animationVariants}>
 
@@ -170,9 +169,10 @@ function NonAppleComponent() {
          
          </span>       
       <motion.div
-          ref={ref}
+          
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+                    animate={"visible"}
+
           transition={{ ease: "easeInOut",delay: 0.3 }}
           variants={animationVariants}>
 
@@ -180,9 +180,10 @@ function NonAppleComponent() {
           </motion.div>
 
           <motion.div
-          ref={ref}
+          
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+                    animate={"visible"}
+
           transition={{ ease: "easeInOut",delay: 0.5 }}
           variants={animationVariants}>
         <h7 className={styles.wh}>UX/UI Designer</h7>

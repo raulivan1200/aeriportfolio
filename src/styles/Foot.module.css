@@ -2,14 +2,11 @@
   padding-left: 5%;
 }
 .fbtext {
-  font-family: 'Raleway';
+  font-family:  "Inter";
+  font-size: 64px;
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 75px;
-  margin: 0; /* Reset margin */
-
-  /* Light Text */
+  line-height: normal;
   
   color:  var(--white);
 }
@@ -82,7 +79,7 @@
   }
   .fbtext {
     padding-bottom: 48px !important;
-    font-family: 'Raleway';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;

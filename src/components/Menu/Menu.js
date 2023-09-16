@@ -58,13 +58,13 @@ function Menu({ onProjectClick, onContactClick }) {
         </h5>
       </div>
       <div className="derx">
-        <p className='wect'>We can <a style={{ color: "var(--black)", textDecorationColor: "var(--black)", lineHeight: "26px", fontWeight: "400px", letterSpacing: "1px" }} href="mailto:someone@exemple.com?subject=Questions&body=Escribe aquí si tienes preguntas ">create together</a> </p>
+        <h5 className='hidemobile' style={{color:"var(--black)"}}>We can <a style={{ color: "var(--black)", textDecorationColor: "var(--black)", lineHeight: "26px", fontWeight: "400px", letterSpacing: "1px" }} href="mailto:someone@exemple.com?subject=Questions&body=Escribe aquí si tienes preguntas ">create together</a> </h5>
         <AnimatePresence>
           {isOpen && (
             <motion.div className="menu-container"
               initial={{ y: '-100vh', x: '-60vw', opacity: 0, scale: 0, damping: 500, stiffness: 1000, mass: 3  }}
               animate={{ y: 0, x: 0, opacity: 1, scale: 1 }}
-              exit={{ y: '-100vh', x: '-50vw', opacity: 0, scale: 0}}
+              exit={{ y: '-100vh', x: '0vw', opacity: 0, scale: 0}}
               transition={{ duration: 0.3,dampizng: 500, stiffness: 1000, mass: 3 }}
             >
               <div className='mpm'>
