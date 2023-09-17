@@ -41,7 +41,9 @@
         -moz-filter: invert(0) !important;
         -o-filter: invert(0) !important; 
         -ms-filter: invert(0) !important;
-        scale: .6;
+        width: 28px;
+        height: 28px;
+        opacity: .95;
     }
     .svcom{
         filter: invert(0) !important;
@@ -54,8 +56,8 @@
   }
   .svco:hover{
     cursor: pointer;
-    scale: .8;
-    opacity: .95;
+    scale: 1.1;
+    opacity: 1;
     transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
   html[data-theme='light'] {
@@ -624,8 +626,9 @@ color: var(--black);
 
     }
     .ssm{
-        width: 24px;
-        height: 24px;
+        width: 24px !important;
+        height: 24px !important;
+        scale: 2;
     }
   }
 
