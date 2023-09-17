@@ -12,7 +12,7 @@ import { useRef } from 'react'
 export const Billsplittertext = () => {
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true,amount:.3 });
 
   const animationVariants = {
     hidden: {
@@ -34,7 +34,7 @@ export const Billsplittertext = () => {
       <motion.div
           ref={ref}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+            animate={isInView ? "visible" : "hidden"}
           transition={{ ease: "easeInOut",delay: 0 }}
           variants={animationVariants}
 

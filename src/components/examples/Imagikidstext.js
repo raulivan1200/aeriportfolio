@@ -10,7 +10,7 @@ import { useRef } from 'react'
 
 export const Imagikidstext = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true,amount:.3 });
 
   const animationVariants = {
     hidden: {

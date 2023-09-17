@@ -8,9 +8,9 @@ const Menupj = () => {
       <div className='wmpm'>
         
 <div className='izqx'>
-  <a href="/" style={{textDecoration: "none",display: "flex", alignItems: "center"}}>
+  <a href="/" style={{textDecoration: "none",display: "flex", alignItems: "center",gap:"12px"}}>
     <div style={{display: "flex"}}>
-      <Image src={logoback} alt="logo" className="svco ssm" width={30} height={30} />
+      <Image src={logoback} alt="logo" className="svco ssm" width={48} height={48} />
 
     </div>
     <h6 className='wh' >Back</h6>
