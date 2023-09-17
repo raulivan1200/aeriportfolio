@@ -13,7 +13,7 @@ const Menupj = () => {
       <Image src={logoback} alt="logo" className="svco ssm" width={48} height={48} />
 
     </div>
-    <h6 className='wh' >Back</h6>
+    <h5 className='wh' >Back</h5>
     
   </a>
       </div>

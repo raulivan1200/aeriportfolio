@@ -34,8 +34,7 @@ export const Sfs = () => {
           animate={isInView ? "visible" : "hidden"}
           transition={{ ease: "easeInOut",delay: 0 }}
           variants={animationVariants}>
-        <h4 className={styles.pjtb}>Segmento de 
-    aplicación</h4>
+        <h4 className={styles.pjtb}>Sales System</h4>
     <hr className={styles.hrr}/>
           </motion.div>
     
@@ -78,7 +77,7 @@ export const Sfs = () => {
       </div>
       <div className={styles.texr}>
     
-        <h2 className={styles.pjf}>System for sales
+        <h2 className={styles.pjf}>Sales System
     </h2>
      <h5 className={styles.pjlt}>
 

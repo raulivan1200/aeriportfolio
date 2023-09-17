@@ -39,8 +39,7 @@ export const Billsplittertext = () => {
           variants={animationVariants}
 
         >
-        <h4 className={styles.pjtb}>Segmento de 
-    aplicación</h4>
+        <h4 className={styles.pjtb}>User segment</h4>
     <hr className={styles.hrr}/>
         </motion.div>
     

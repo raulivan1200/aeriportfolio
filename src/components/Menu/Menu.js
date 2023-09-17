@@ -71,7 +71,7 @@ function Menu({ onProjectClick, onContactClick }) {
               <div className='wmpmm'>
                 
                 <div style={{ width: "100%", justifyContent: "space-between", display: "flex", flexDirection: "row" }}>
-                  <div style={{display:"flex",flexDirection:"row"}}>   
+                  <div style={{display:"flex",flexDirection:"row",gap:"12px"}}>   
                   <Image priority src="./logos/close.svg" className='svco' alt='close' width={48} height={48} onClick={handleClose}></Image>
                   <SwitchTheme />
                   </div>

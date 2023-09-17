@@ -455,7 +455,6 @@ color: var(--black);
     display: flex;
     flex-direction: row;
     padding-top: 1%;
-    overflow: hidden;
     align-items: center;
     justify-content: space-between;
 }
