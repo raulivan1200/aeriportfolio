@@ -49,7 +49,7 @@ export const Imagikidstext = () => {
           animate={isInView ? "visible" : "hidden"}
           transition={{ ease: "easeInOut",delay: .1 }}
           variants={animationVariants}>
-    <h6 className={styles.pb6}>Deliverables</h6> <h7 style={{color:"var(--black)"}}>App para niñeras<br/>App para padres <br/>Design System <br/>Prototipo <br/> </h7>
+    <h6 className={styles.pb6}>Deliverables</h6> <h7 style={{color:"var(--black)"}}>App for babysitters<br/>App for parents <br/>Design System <br/>Prototype <br/> </h7>
         </motion.div>
     </div>
     
@@ -86,8 +86,8 @@ export const Imagikidstext = () => {
      <h5 className={styles.pjlt}>
      
      
-It is an application that allows a babysitting company to connect with mothers and fathers to hire services for their little ones.
-    
+   Mobile app that allows a babysitting company to connect with mothers and fathers to hire services for their little ones.
+<br/>  <br/>  
 The application facilitates the request of services, communication, and also provides an option to request additional service time.
     
      </h5>
@@ -97,32 +97,35 @@ The application facilitates the request of services, communication, and also pro
     <h2 className={styles.pjf}>My Role</h2>
      <h5 className={styles.pjlt}>
      
-     This is a test project that I developed over the course of 1 month. To do so, I created the screens based on a provided brief.
-    
-     I also outlined the information structure to start developing the project.
-    
-     Once I had the basic functionalities, I began developing wireframes considering the functions.
-    
+     To assess my UX/UI design skills, I completed a test project over the course of one month.
+<br/><br/>    
+     I began by outlining the information architecture to ensure that the screens would be user-friendly and the content would be organized in a logical way.     
+<br/><br/>
+Next, I designed the screens based on the provided brief, keeping the user experience and interface design principles in mind. Once the basic functionalities were implemented, I created wireframes to test the user flow and identify any potential usability issues.    
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={img} alt="kids toys parenting childs ninos nina parents babysitter app mobile ux"/>
     
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>
     
-     Based on the logo that the fictional company had, I developed a color palette and a visual scheme
-    
-     Previously, I explored visual structures in a brainstorming session that could work.
+     To create a cohesive brand identity, 
+     I developed a color palette and visual scheme inspired by their logo. 
+     <br/> <br/>
+     Prior to this, I explored various visual structures in a brainstorming session to identify potential design directions.
+
+
+
+
+
     
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={imco} alt="ux ui babysitting mexico ux ui design"/>
-    
-    
-    
+        
      <h5 className={styles.pjlt}>
     
-     Once that part was ready, I applied the colors, typography, and structure to the screens.
-    
-     In addition, I developed the clickable prototype in Figma.
+     Once the color palette, typography, and structure were finalized, I applied them to the screens to create a visually appealing and user-friendly interface. 
+     <br/> <br/>
+     Additionally, I developed a working prototype in Figma to test the user flow and identify any potential usability issues.
     
     </h5>
      

@@ -18,8 +18,7 @@ function Learn() {
   return (
     <div className={styles.ninecen}>
         <div className={styles.wc}>            
-    <h1 className='wh'>Education</h1>
-    <hr className={styles.hrxx} />
+    <h1 className='wh' style={{textDecoration:"underline",textDecorationThickness:"1.7px", textUnderlineOffset:"12.3px"}}>Education</h1>
         </div>
         <div className={styles.containerss}>
   <div className={styles.a1}>
@@ -31,11 +30,10 @@ Design</h2>
 Software Development</h2>
   </div>
   <div className={styles.a3}>
-    <h6 className='wh'>My training in industrial design helps me to have a focus on how to transfer real activities or situations to digital environments and experiences.</h6>
+    <h6 className='wh'>My education in industrial design has given me the skills to transfer real-world activities and situations to digital environments and experiences.</h6>
   </div>
-  <div className={styles.a4}><h6 className='wh'>My skills as a developer allow me to have a comprehensive vision.
-<br/>
-I have the management of some languages such as Html, Css and JavaScript</h6></div>
+  <div className={styles.a4}><h6 className='wh'>I am a skilled developer with a comprehensive understanding of the software development process and limits.
+<br/>HTML, CSS, and JavaScript.</h6></div>
   <div className={styles.pi}>
 
   </div>

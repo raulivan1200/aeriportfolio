@@ -134,6 +134,7 @@
   @media screen and (max-width:769px) {
     .mlp{
       padding-left: 10% !important;
+      padding-bottom: 20%;
     }
     .containerds{
       padding-bottom: 0;

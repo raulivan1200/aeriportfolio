@@ -16,8 +16,7 @@ function Grid() {
 
   return (
     <div >
-    <h1 className={styles.mlp}>Projects</h1>
-    <hr className={styles.pjhrxx} style={{marginTop: "-1.2%",color: "var(--black)",  backgroundColor: "var(--black)",  borderColor: "var(--black)",}} />
+    <h1 className={styles.mlp} style={{textDecoration:"underline",textDecorationThickness:"1.7px", textUnderlineOffset:"12.3px"}}>Projects</h1>
     {isMobile ? <Mobgrid /> : <Deskgrid />}
   </div>
   )

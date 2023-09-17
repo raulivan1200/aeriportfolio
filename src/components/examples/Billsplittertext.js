@@ -86,40 +86,47 @@ export const Billsplittertext = () => {
         <h2 className={styles.pjf}>BillSplitter
     </h2>
      <h5 className={styles.pjlt}>
-     There are several screens of an application for paying the bill at different restaurants that offer the service.
-    <br/>
-    It is focused on connecting different users to allow them to split the bill according to the dishes they have consumed or equally.
-    <br/>
-    The development of this proposal took less than 24 hours, including UX and UI.
+ 
+     I designed the key screens of a mobile app for online restaurant payments, with the main goal of facilitating and improving the user experience at checkout. The app allows users to have different payment methods available, making it more convenient and flexible for them to pay.
+        <br/><br/>
+        Using UX/UI principles, I created an intuitive and visually appealing interface that simplifies the payment process and significantly improves usability and user satisfaction.    
+        <br/><br/>
+        The main challenge was to consider the multiple scenarios that the app needed to cover, such as different payment methods, restaurant types, and user needs. Another important consideration was the short development time of the project, which was less than 24 hours.  
      </h5>
     
+     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={billc} alt="sistema de facturación ux ui"/>
     
     
     <h2 className={styles.pjf}>My Role</h2>
      <h5 className={styles.pjlt}>
-     After understanding the main functionality that needed to be developed, I started outlining the requirements that should be included and considered to offer the best possible experience. Taking into account the goal of providing few screens and fulfilling the specified task.
-    <br/>
-    After finalizing the flow and translating it into wireframes, I applied the visual elements shown in the final result.
+  
+     I developed the project independently, from the initial concept to the prototype.
+         <br/><br/>
+         My process began with a brief analysis of the needs that needed to be met. Based on this analysis, I set a series of goals to define a coherent user flow.
+         <br/><br/>
+         Next, I analyzed existing apps that could be related and collected information and images to create a mood board.
+         <br/><br/>
+          Once I had the flow defined, I proceeded to develop wireframes to validate the flow and then moved on to a more polished version, applying visual styles. All of this was done in Figma.
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={billh} alt="bill system ux ui abril rivera"/>
     
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>
-     I found several references by searching and quickly consulting various resource websites to gather the best references in a quick moodboard.
-    <br/>
-    Based on them, I created a style for the screens that had been planned, also considering maintaining and enhancing the application.
+
+     The interface design effectively communicated the functionality and also allowed for the visualization of future integrations. 
+         <br/><br/>
+         The feedback from users in the tests was positive, with 93% of comments being positive. All feedback was recorded and will be used to make necessary improvements.  
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={billd} alt="billing systems design ux ui"/>
     
     
     
      <h5 className={styles.pjlt}>
-     I constantly relied on a design system to maintain consistency in the screens I was creating.
-    <br/>
-    My goal was to make the screens look harmonious and capture a calm and playful atmosphere that could be associated with having a meal with friends who ultimately split the bill at the end.
-     </h5>
+      This required a focus on improving the user experience and developing an attractive interface that communicates the desired concepts and functionality.     
+         <br/><br/>
+     Using my skills in time management and efficient design, I was able to complete the project in a short timeframe while maintaining a high level of quality.
+      </h5>
      
-    <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={billc} alt="sistema de facturación ux ui"/>
      
       </div>
     </div>

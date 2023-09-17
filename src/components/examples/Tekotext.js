@@ -86,9 +86,9 @@ Studio</h4>
 </h2>
  <h5 className={styles.pjlt}>
 
- In this case, it is the development of a website for a creative studio.
+ In this case, the goal was to develop a website for a creative studio that would promote the company while also reflecting its unique personality and style.
 
- Beyond promoting the company, the goal was to give it personality and unique styles characteristic of the team.
+
 
  </h5>
 
@@ -97,9 +97,11 @@ Studio</h4>
 <h2 className={styles.pjf}>My Role</h2>
  <h5 className={styles.pjlt}>
   
- I joined the team and started working with the project manager to understand the project and its objectives.
+ I joined the team and collaborated with the project manager to gain a deep understanding of the project and its objectives.
+ <br/><br/>
+  Once I had a solid understanding of the project, I was eager to begin developing it, starting with the research phase.
 
- Once I understood the project, I became interested in developing it, starting with the research phase.
+
 
 </h5>
 
@@ -110,10 +112,9 @@ Studio</h4>
 
  <h5 className={styles.pjlt}>
 
- 
-I conducted a search for references that aligned with the ideas the team had. Based on a moodboard and subsequent brainstorming session, I shared the best ideas with the team.
-
-Finally, we started sharing more ideas on how to give the website more voice and personalization.
+ To align with the team's ideas, I conducted research for relevant references. Based on the moodboard and brainstorming session, I shared the most promising ideas with the team. 
+ <br/><br/>
+ Finally, we collaborated to develop more ideas for giving the website voice and personalization.
 
 </h5>
 
@@ -121,7 +122,8 @@ Finally, we started sharing more ideas on how to give the website more voice and
 
  <h5 className={styles.pjlt}>
 
- Once we were able to define several points, we translated those elements into wireframes to create more realistic prototypes that truly represented the studio.
+ Once we had defined several key elements, we translated them into wireframes to create realistic prototypes that truly captured the essence of the studio.
+
 
  </h5>
  

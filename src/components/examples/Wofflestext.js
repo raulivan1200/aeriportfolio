@@ -73,7 +73,7 @@ function Wofflestext() {
           variants={animationVariants}>
 
 <h6 className={styles.pb6}>Year</h6>
-<h7 style={{color:"var(--black)"}}>2022</h7>
+<h7 style={{color:"var(--black)"}}>2023</h7>
           </motion.div>
 </div>
 
@@ -85,26 +85,26 @@ function Wofflestext() {
     <h2 className={styles.pjf}>Woofles
 </h2>
  <h5 className={styles.pjlt}>
- There are several screens of an application for paying the bill at different restaurants that offer the service.
+ In this project, we developed a landing page for a restaurant.
+ <br/>
 <br/>
-It is focused on connecting different users to allow them to split the bill according to the dishes they have consumed or equally.
-<br/>
-The development of this proposal took less than 24 hours, including UX and UI.
- </h5>
+In general, restaurants display their menu and locations. In the case of Woofles, we focused on the ability to order delivery, taking into account the ease with which people can learn about the variety of customizations they can choose from. 
+</h5>
 
 
 
 <h2 className={styles.pjf}>My Role</h2>
  <h5 className={styles.pjlt}>
- After understanding the main functionality that needed to be developed, I started outlining the requirements that should be included and considered to offer the best possible experience. Taking into account the goal of providing few screens and fulfilling the specified task.
-<br/> After completing the flow and translating it into wireframes, I applied the visual elements that are shown in the final result.
-</h5>
+ I joined the team, working with the restaurant owner and their marketing and design team.
+<br/><br/> 
+Once we had a clear idea of what we wanted to achieve, we got to work.</h5>
 <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflescreens} alt="restaurant design ux ui abril rivera"/>
 
 <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
  <h5 className={styles.pjlt}>
- I found several references by searching and quickly consulting various resource websites to gather the best references in a quick moodboard.
-<br/> Based on those references, I generated a style for the screens that had been planned, considering both maintaining and enhancing the application.
+ We worked together to develop a personality for the website, based on the elements that the company already uses. 
+ <br/><br/>
+ I created a moodboard of different layouts and structures to share with the team and brainstorm ideas.
 </h5>
 <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={wofflesrule} alt="abril aeri ux ui design"/>
 
@@ -112,8 +112,11 @@ The development of this proposal took less than 24 hours, including UX and UI.
 
  <h5 className={styles.pjlt}>
  
-I constantly relied on a design system to maintain consistency in the screens I was creating.
-<br/> My goal was to make the screens look harmonious and capture a calm and playful atmosphere that could be associated with having a meal with friends who ultimately split the bill at the end
+ Throughout the project, I enjoyed developing the different elements and experimenting with the shapes of the graphical elements.
+ <br/> <br/>
+Finally, animations were added to the product, which is still under development and awaiting launch.
+
+
  </h5>
  
  

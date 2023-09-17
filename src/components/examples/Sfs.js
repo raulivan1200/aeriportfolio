@@ -83,12 +83,18 @@ export const Sfs = () => {
      <h5 className={styles.pjlt}>
 
      
-In this case, I worked closely with a team with expertise in different areas to develop a program that would facilitate their day-to-day work.
+     I collaborated closely with a multidisciplinary team to develop a program that would facilitate their daily work.
 
 
-To begin, an analysis of the needs of the users of this desired system was conducted.
+     <br/><br/>
 
-Based on that, the information architecture was constructed, considering the functionalities of each section.
+     The first step was to conduct a needs analysis of the users of this desired system.
+
+
+<br/><br/>
+Based on the findings of the needs analysis, we constructed the information architecture, considering the functionalities of each section.
+
+
 
      </h5>
     
@@ -97,11 +103,14 @@ Based on that, the information architecture was constructed, considering the fun
     <h2 className={styles.pjf}>My Role</h2>
      <h5 className={styles.pjlt}>
 
-     For this project, I participated in the interviews with the key users
+     I participated in key user interviews for this project.
 
-     Based on the gathered information, we progressed and developed the middle-level wireframe sections in detail.
+<br/><br/>
+Based on the gathered information, we developed the middle-level wireframe sections in detail.
 
-  We conducted tests with the users, in addition to new interviews, to verify that the elements being developed were actually functioning according to what they wanted to achieve.
+     <br/><br/>
+     We conducted user testing and follow-up interviews to verify that the elements were functioning according to user requirements.
+
 
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={sysd} alt="sales store system ux UI Ux/ui Ux"/>
@@ -109,7 +118,8 @@ Based on that, the information architecture was constructed, considering the fun
     <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
      <h5 className={styles.pjlt}>
 
-     In this case, we explored with small elements currently present in the brand's logo, focusing primarily on the system's functions.
+     We explored small elements currently present in the brand's logo to identify opportunities to incorporate them into the system's functions.
+
 
     </h5>
       </div>

@@ -173,10 +173,11 @@ height: 100vh;
     font-family: Raleway;
     font-size: 96px;
     font-style: normal;
-    font-weight: 550;
+    font-weight: 600;
     line-height: 90px; /* 93.75% */
 color: var(--black);
   }
+
 
   @media only screen and (max-width: 400px) {
     .bigtxt{
@@ -196,4 +197,10 @@ color: var(--black);
   .apim{
     width: 100%;
     height: auto;
+  }
+  .underline-text::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #000; /* Adjust the thickness and color as needed */
+    margin-top: -5px; /* Adjust this value to control the height */
   }

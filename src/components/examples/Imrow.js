@@ -62,10 +62,9 @@ export const Imrow = () => {
   };
 
   return (
-    <div style={{height:"fit-content"}}>
+    <div className='mfif' style={{height:"fit-content",    width: "100vw",    position: "absolute"}}>
 
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "32px", width:"100%", justifyItems:"center", margin:"0 auto", paddingTop:"5%"}}>
-        <h1 style={{color:"var(--black)"}}>More projects</h1>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingBottom: "0", width:"90%", justifyItems:"center", margin:"0 auto", paddingTop:"5%"}}>
 
       </div>
 
