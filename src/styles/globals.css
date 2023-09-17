@@ -605,7 +605,7 @@ color: var(--black);
       max-height: 70vh;
     }
 .mf{
-  font-size: 12px !important;
+  font-size: 16px !important;
 }
 .slick-slide > div {
   margin: 0 16px;
@@ -626,9 +626,9 @@ color: var(--black);
 
     }
     .ssm{
-        width: 24px !important;
-        height: 24px !important;
-        scale: 2;
+        width: 28px !important;
+        height: 28px !important;
+        scale: 1;
     }
   }
 
