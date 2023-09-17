@@ -127,6 +127,7 @@ font-weight: 600;
 font-size: 16px;
  }
  .radim{
+  padding: 5% 0;
  }
 .conmi{
   background-color: var(--white) !important;

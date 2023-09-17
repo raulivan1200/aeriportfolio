@@ -118,6 +118,7 @@ Studio</h4>
 
 </h5>
 
+<h2 className={styles.pjf}>DEVELOPMENT</h2>
 
 
  <h5 className={styles.pjlt}>

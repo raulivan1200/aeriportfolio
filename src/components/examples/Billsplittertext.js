@@ -110,7 +110,7 @@ export const Billsplittertext = () => {
     </h5>
     <Image   className={styles.radim} width={1920} height={1080} style={{height:"auto",width:"100%", objectFit:"scale-down"}} src={billh} alt="bill system ux ui abril rivera"/>
     
-    <h2 className={styles.pjf}>BRANDING & LOGOMARK</h2>
+    <h2 className={styles.pjf}>RESULTS</h2>
      <h5 className={styles.pjlt}>
 
      The interface design effectively communicated the functionality and also allowed for the visualization of future integrations. 
