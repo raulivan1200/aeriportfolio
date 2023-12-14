@@ -721,23 +721,6 @@ color: var(--black);
 .lnh{
   margin-top: -2%;
 }
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--black) var(--white);
-}
-*::-webkit-scrollbar {
-  width: 14px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--white);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--black);
-  border-radius: 8px;
-  border: 4px solid var(--white);
-}
 
 .mfif{
   margin-left: -5%; ;
